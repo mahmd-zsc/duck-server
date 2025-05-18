@@ -1,0 +1,1138 @@
+[
+  {
+    "word": "Arbeitgeber",
+    "meaning": "صاحب العمل",
+    "pronunciation": "آربايت جيبر",
+    "plural": "Arbeitgeber",
+    "incorrectPlurals": ["Arbeitgebers", "Arbeitgeberen"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Mein Arbeitgeber ist sehr freundlich",
+        "meaning": "صاحب العمل لدي لطيف جداً"
+      },
+      {
+        "sentence": "Der Arbeitgeber zahlt das Gehalt",
+        "meaning": "صاحب العمل يدفع الراتب"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Chef", "meaning": "رئيس" },
+      { "word": "Dienstherr", "meaning": "رب العمل" }
+    ],
+    "antonyms": [
+      { "word": "Arbeitnehmer", "meaning": "موظف" },
+      { "word": "Angestellter", "meaning": "موظف" }
+    ]
+  },
+  {
+    "word": "Ausbildung",
+    "meaning": "تدريب",
+    "pronunciation": "آوسبيلدونج",
+    "plural": "Ausbildungen",
+    "incorrectPlurals": ["Ausbildunger", "Ausbildungs"],
+    "article": "die",
+    "examples": [
+      {
+        "sentence": "Er macht eine Ausbildung zum Mechaniker",
+        "meaning": "هو يتدرب ليصبح ميكانيكي"
+      },
+      {
+        "sentence": "Die Ausbildung dauert drei Jahre",
+        "meaning": "التدريب يستمر ثلاث سنوات"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Lehre", "meaning": "تلمذة" },
+      { "word": "Training", "meaning": "تدريب" }
+    ],
+    "antonyms": [
+      { "word": "Praxis", "meaning": "خبرة عملية" },
+      { "word": "Berufserfahrung", "meaning": "خبرة مهنية" }
+    ]
+  },
+  {
+    "word": "Beruf",
+    "meaning": "مهنة",
+    "pronunciation": "بيروف",
+    "plural": "Berufe",
+    "incorrectPlurals": ["Berufer", "Berufs"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Was ist dein Beruf?",
+        "meaning": "ما هي مهنتك؟"
+      },
+      {
+        "sentence": "Er hat einen interessanten Beruf",
+        "meaning": "لديه مهنة مثيرة للاهتمام"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Job", "meaning": "وظيفة" },
+      { "word": "Tätigkeit", "meaning": "نشاط مهني" }
+    ],
+    "antonyms": [
+      { "word": "Hobby", "meaning": "هواية" },
+      { "word": "Freizeitbeschäftigung", "meaning": "نشاط وقت الفراغ" }
+    ]
+  },
+  {
+    "word": "Hochschule",
+    "meaning": "كلية/معهد عالي",
+    "pronunciation": "هوخشوله",
+    "plural": "Hochschulen",
+    "incorrectPlurals": ["Hochschules", "Hochschuleer"],
+    "article": "die",
+    "examples": [
+      {
+        "sentence": "Sie studiert an der Hochschule",
+        "meaning": "هي تدرس في الكلية"
+      },
+      {
+        "sentence": "Diese Hochschule ist sehr bekannt",
+        "meaning": "هذه الكلية مشهورة جداً"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Universität", "meaning": "جامعة" },
+      { "word": "Akademie", "meaning": "أكاديمية" }
+    ],
+    "antonyms": [
+      { "word": "Schule", "meaning": "مدرسة" },
+      { "word": "Berufsschule", "meaning": "مدرسة مهنية" }
+    ]
+  },
+  {
+    "word": "Job",
+    "meaning": "وظيفة",
+    "pronunciation": "جوب",
+    "plural": "Jobs",
+    "incorrectPlurals": ["Joben", "Jobser"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Ich suche einen neuen Job",
+        "meaning": "أبحث عن وظيفة جديدة"
+      },
+      {
+        "sentence": "Der Job macht mir Spaß",
+        "meaning": "أستمتع بالوظيفة"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Arbeit", "meaning": "عمل" },
+      { "word": "Stelle", "meaning": "وظيفة" }
+    ],
+    "antonyms": [
+      { "word": "Arbeitslosigkeit", "meaning": "بطالة" },
+      { "word": "Freizeit", "meaning": "وقت الفراغ" }
+    ]
+  },
+  {
+    "word": "Praktikum",
+    "meaning": "تدريب عملي",
+    "pronunciation": "براكتيكوم",
+    "plural": "Praktika",
+    "incorrectPlurals": ["Praktikums", "Praktikumen"],
+    "article": "das",
+    "examples": [
+      {
+        "sentence": "Sie macht ein Praktikum bei einer Firma",
+        "meaning": "هي تقوم بتدريب عملي في شركة"
+      },
+      {
+        "sentence": "Das Praktikum war sehr nützlich",
+        "meaning": "التدريب العملي كان مفيداً جداً"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Training", "meaning": "تدريب" },
+      { "word": "Berufspraxis", "meaning": "خبرة مهنية" }
+    ],
+    "antonyms": [
+      { "word": "Theorie", "meaning": "نظرية" },
+      { "word": "Studium", "meaning": "دراسة" }
+    ]
+  },
+  {
+    "word": "Schule",
+    "meaning": "مدرسة",
+    "pronunciation": "شوله",
+    "plural": "Schulen",
+    "incorrectPlurals": ["Schules", "Schuleer"],
+    "article": "die",
+    "examples": [
+      {
+        "sentence": "Meine Kinder gehen zur Schule",
+        "meaning": "أولادي يذهبون إلى المدرسة"
+      },
+      {
+        "sentence": "Die Schule beginnt um 8 Uhr",
+        "meaning": "المدرسة تبدأ في الساعة الثامنة"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Lehranstalt", "meaning": "مؤسسة تعليمية" },
+      { "word": "Bildungseinrichtung", "meaning": "مؤسسة تعليمية" }
+    ],
+    "antonyms": [
+      { "word": "Zuhause", "meaning": "المنزل" },
+      { "word": "Ferien", "meaning": "عطلة" }
+    ]
+  },
+  {
+    "word": "Stelle",
+    "meaning": "وظيفة/مكان",
+    "pronunciation": "شتله",
+    "plural": "Stellen",
+    "incorrectPlurals": ["Stelles", "Stelleer"],
+    "article": "die",
+    "examples": [
+      {
+        "sentence": "Er bewirbt sich auf eine Stelle",
+        "meaning": "هو يتقدم لوظيفة"
+      },
+      {
+        "sentence": "An dieser Stelle war ein Unfall",
+        "meaning": "في هذا المكان كان هناك حادث"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Position", "meaning": "منصب" },
+      { "word": "Ort", "meaning": "مكان" }
+    ],
+    "antonyms": [
+      { "word": "Arbeitslosigkeit", "meaning": "بطالة" },
+      { "word": "Leere", "meaning": "فراغ" }
+    ]
+  },
+  {
+    "word": "arbeiten als/bei ...",
+    "meaning": "يعمل كـ/في ...",
+    "pronunciation": "آربايتن ألس/باي",
+    "examples": [
+      {
+        "sentence": "Ich arbeite als Lehrer",
+        "meaning": "أعمل كمدرس"
+      },
+      {
+        "sentence": "Sie arbeitet bei einer Bank",
+        "meaning": "هي تعمل في بنك"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "tätig sein als/bei", "meaning": "يكون نشطاً كـ/في" }
+    ],
+    "antonyms": [
+      { "word": "arbeitslos sein", "meaning": "يكون عاطلاً عن العمل" }
+    ]
+  },
+  {
+    "word": "studieren",
+    "meaning": "يدرس (في الجامعة)",
+    "pronunciation": "شتوديرن",
+    "examples": [
+      {
+        "sentence": "Er studiert Medizin",
+        "meaning": "هو يدرس الطب"
+      },
+      {
+        "sentence": "Ich möchte in Deutschland studieren",
+        "meaning": "أريد أن أدرس في ألمانيا"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "lernen", "meaning": "يتعلم" }],
+    "antonyms": [
+      { "word": "arbeiten", "meaning": "يعمل" },
+      { "word": "pausieren", "meaning": "يأخذ استراحة" }
+    ]
+  },
+  {
+    "word": "arbeitslos",
+    "meaning": "عاطل عن العمل",
+    "pronunciation": "آربايتس لوس",
+    "examples": [
+      {
+        "sentence": "Er ist seit einem Monat arbeitslos",
+        "meaning": "هو عاطل عن العمل منذ شهر"
+      },
+      {
+        "sentence": "Arbeitslos zu sein ist schwer",
+        "meaning": "أن تكون عاطلاً عن العمل صعب"
+      }
+    ],
+    "type": "adjective",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "erwerbslos", "meaning": "بدون عمل" },
+      { "word": "beschäftigungslos", "meaning": "بدون عمل" }
+    ],
+    "antonyms": [
+      { "word": "berufstätig", "meaning": "موظف" },
+      { "word": "angestellt", "meaning": "موظف" }
+    ]
+  },
+  {
+    "word": "von Beruf",
+    "meaning": "مهنة (حرفياً: من المهنة)",
+    "pronunciation": "فون بيروف",
+    "examples": [
+      {
+        "sentence": "Was sind Sie von Beruf?",
+        "meaning": "ما هي مهنتك؟"
+      },
+      {
+        "sentence": "Ich bin von Beruf Lehrer",
+        "meaning": "مهنتي مدرس"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "beruflich", "meaning": "مهني" }],
+    "antonyms": [{ "word": "privat", "meaning": "شخصي" }]
+  },
+  {
+    "word": "Was",
+    "meaning": "ما",
+    "pronunciation": "فاس",
+    "examples": [
+      {
+        "sentence": "Was machst du?",
+        "meaning": "ماذا تفعل؟"
+      },
+      {
+        "sentence": "Was ist das?",
+        "meaning": "ما هذا؟"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Wie", "meaning": "كيف" }],
+    "antonyms": [{ "word": "Antwort", "meaning": "إجابة" }]
+  },
+  {
+    "word": "Architekt",
+    "meaning": "مهندس معماري",
+    "pronunciation": "آرشيتكت",
+    "plural": "Architekten",
+    "incorrectPlurals": ["Architekts", "Architekter"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Architekt entwirft das Haus",
+        "meaning": "المهندس المعماري يصمم المنزل"
+      },
+      {
+        "sentence": "Mein Bruder ist Architekt",
+        "meaning": "أخي مهندس معماري"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Baumeister", "meaning": "بنّاء" }],
+    "antonyms": [{ "word": "Abbruchunternehmer", "meaning": "مقاول هدم" }]
+  },
+  {
+    "word": "Arzt",
+    "meaning": "طبيب",
+    "pronunciation": "آرتست",
+    "plural": "Ärzte",
+    "incorrectPlurals": ["Arzts", "Arztes"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Ich gehe zum Arzt",
+        "meaning": "أذهب إلى الطبيب"
+      },
+      {
+        "sentence": "Die Ärztin ist sehr freundlich",
+        "meaning": "الطبيبة لطيفة جداً"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Doktor", "meaning": "دكتور" },
+      { "word": "Mediziner", "meaning": "طبيب" }
+    ],
+    "antonyms": [{ "word": "Patient", "meaning": "مريض" }]
+  },
+  {
+    "word": "Friseur",
+    "meaning": "حلاق",
+    "pronunciation": "فريزور",
+    "plural": "Friseure",
+    "incorrectPlurals": ["Friseurs", "Friseuren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Ich gehe zum Friseur",
+        "meaning": "أذهب إلى الحلاق"
+      },
+      {
+        "sentence": "Der Friseur schneidet mir die Haare",
+        "meaning": "الحلاق يقص شعري"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Coiffeur", "meaning": "حلاق" },
+      { "word": "Haarschneider", "meaning": "قصّاش شعر" }
+    ],
+    "antonyms": [{ "word": "Kunde", "meaning": "زبون" }]
+  },
+  {
+    "word": "Ingenieur",
+    "meaning": "مهندس",
+    "pronunciation": "إنغنير",
+    "plural": "Ingenieure",
+    "incorrectPlurals": ["Ingenieurs", "Ingenieuren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Er ist Maschinenbauingenieur",
+        "meaning": "هو مهندس ميكانيكي"
+      },
+      {
+        "sentence": "Die Ingenieurin plant die Brücke",
+        "meaning": "المهندسة تخطط للجسر"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Techniker", "meaning": "فني" }],
+    "antonyms": [{ "word": "Arbeiter", "meaning": "عامل" }]
+  },
+  {
+    "word": "Journalist",
+    "meaning": "صحفي",
+    "pronunciation": "زورناليست",
+    "plural": "Journalisten",
+    "incorrectPlurals": ["Journalists", "Journalister"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Journalist schreibt einen Artikel",
+        "meaning": "الصحفي يكتب مقالاً"
+      },
+      {
+        "sentence": "Sie arbeitet als Journalistin",
+        "meaning": "هي تعمل كصحفية"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Reporter", "meaning": "مراسل" },
+      { "word": "Redakteur", "meaning": "محرر" }
+    ],
+    "antonyms": [{ "word": "Leser", "meaning": "قارئ" }]
+  },
+  {
+    "word": "Kellner",
+    "meaning": "نادل",
+    "pronunciation": "كلنر",
+    "plural": "Kellner",
+    "incorrectPlurals": ["Kellners", "Kellneren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Kellner bringt das Essen",
+        "meaning": "النادل يجلب الطعام"
+      },
+      {
+        "sentence": "Die Kellnerin ist sehr schnell",
+        "meaning": "النادلة سريعة جداً"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Servierkraft", "meaning": "موظف خدمة" },
+      { "word": "Bedienung", "meaning": "خدمة" }
+    ],
+    "antonyms": [{ "word": "Gast", "meaning": "زائر" }]
+  },
+  {
+    "word": "Krankenschwester",
+    "meaning": "ممرضة",
+    "pronunciation": "كرانكن شفيستر",
+    "plural": "Krankenschwestern",
+    "incorrectPlurals": ["Krankenschwesteren", "Krankenschwests"],
+    "article": "die",
+    "examples": [
+      {
+        "sentence": "Die Krankenschwester hilft dem Patienten",
+        "meaning": "الممرضة تساعد المريض"
+      },
+      {
+        "sentence": "Sie ist eine gute Krankenschwester",
+        "meaning": "هي ممرضة جيدة"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Pflegekraft", "meaning": "مقدم رعاية" },
+      { "word": "Schwester", "meaning": "ممرضة" }
+    ],
+    "antonyms": [{ "word": "Arzt", "meaning": "طبيب" }]
+  },
+  {
+    "word": "Lehrer",
+    "meaning": "مدرس",
+    "pronunciation": "ليرر",
+    "plural": "Lehrer",
+    "incorrectPlurals": ["Lehrers", "Lehreren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Lehrer erklärt die Aufgabe",
+        "meaning": "المدرس يشرح الواجب"
+      },
+      {
+        "sentence": "Meine Mutter ist Lehrerin",
+        "meaning": "أمي مدرسة"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Pädagoge", "meaning": "تربوي" },
+      { "word": "Dozent", "meaning": "محاضر" }
+    ],
+    "antonyms": [{ "word": "Schüler", "meaning": "تلميذ" }]
+  },
+  {
+    "word": "Mechatroniker",
+    "meaning": "فني ميكاترونكس",
+    "pronunciation": "ميكاترونيكر",
+    "plural": "Mechatroniker",
+    "incorrectPlurals": ["Mechatronikers", "Mechatronikeren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Er ist Mechatroniker bei BMW",
+        "meaning": "هو فني ميكاترونكس في بي إم دبليو"
+      },
+      {
+        "sentence": "Mechatroniker reparieren Maschinen",
+        "meaning": "فنيو الميكاترونكس يصلحون الآلات"
+      }
+    ],
+    "type": "noun",
+    "level": "advanced",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Techniker", "meaning": "فني" }],
+    "antonyms": [{ "word": "Laie", "meaning": "هاوٍ" }]
+  },
+  {
+    "word": "Student",
+    "meaning": "طالب جامعي",
+    "pronunciation": "شتودنت",
+    "plural": "Studenten",
+    "incorrectPlurals": ["Students", "Studentener"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Student lernt für die Prüfung",
+        "meaning": "الطالب يدرس للامتحان"
+      },
+      {
+        "sentence": "Sie ist Studentin der Medizin",
+        "meaning": "هي طالبة طب"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Studierender", "meaning": "دارس" }],
+    "antonyms": [
+      { "word": "Dozent", "meaning": "محاضر" },
+      { "word": "Professor", "meaning": "أستاذ جامعي" }
+    ]
+  },
+  {
+    "word": "Schauspieler",
+    "meaning": "ممثل",
+    "pronunciation": "شاوسبييلر",
+    "plural": "Schauspieler",
+    "incorrectPlurals": ["Schauspielers", "Schauspieleren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Schauspieler spielt im Theater",
+        "meaning": "الممثل يلعب في المسرح"
+      },
+      {
+        "sentence": "Sie ist eine berühmte Schauspielerin",
+        "meaning": "هي ممثلة مشهورة"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "Darsteller", "meaning": "ممثل" },
+      { "word": "Akteur", "meaning": "ممثل" }
+    ],
+    "antonyms": [{ "word": "Zuschauer", "meaning": "مشاهد" }]
+  },
+  {
+    "word": "Schüler",
+    "meaning": "تلميذ",
+    "pronunciation": "شولر",
+    "plural": "Schüler",
+    "incorrectPlurals": ["Schülers", "Schüleren"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Schüler macht Hausaufgaben",
+        "meaning": "التلميذ يقوم بالواجبات المنزلية"
+      },
+      {
+        "sentence": "Die Schülerin liest ein Buch",
+        "meaning": "التلميذة تقرأ كتاباً"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Lernender", "meaning": "متعلم" }],
+    "antonyms": [{ "word": "Lehrer", "meaning": "مدرس" }]
+  },
+  {
+    "word": "Sekretär",
+    "meaning": "سكرتير",
+    "pronunciation": "زكريتير",
+    "plural": "Sekretäre",
+    "incorrectPlurals": ["Sekretärs", "Sekretären"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Sekretär organisiert die Termine",
+        "meaning": "السكرتير ينظم المواعيد"
+      },
+      {
+        "sentence": "Die Sekretärin telefoniert",
+        "meaning": "السكرتيرة تتحدث بالهاتف"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Assistent", "meaning": "مساعد" }],
+    "antonyms": [{ "word": "Chef", "meaning": "رئيس" }]
+  },
+  {
+    "word": "Verkäufer",
+    "meaning": "بائع",
+    "pronunciation": "فيركويفر",
+    "plural": "Verkäufer",
+    "incorrectPlurals": ["Verkäufers", "Verkäuferen"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Der Verkäufer hilft den Kunden",
+        "meaning": "البائع يساعد الزبائن"
+      },
+      {
+        "sentence": "Sie arbeitet als Verkäuferin",
+        "meaning": "هي تعمل كبائعة"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Kaufmann", "meaning": "تاجر" }],
+    "antonyms": [{ "word": "Kunde", "meaning": "زبون" }]
+  },
+  {
+    "word": "Alter",
+    "meaning": "عمر",
+    "pronunciation": "آلتر",
+    "plural": "Alter",
+    "incorrectPlurals": ["Alters", "Altern"],
+    "article": "das",
+    "examples": [
+      {
+        "sentence": "Das Alter ist nur eine Zahl",
+        "meaning": "العمر مجرد رقم"
+      },
+      {
+        "sentence": "In welchem Alter beginnt die Schule?",
+        "meaning": "في أي عمر يبدأ المدرسة؟"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Lebensalter", "meaning": "سن" }],
+    "antonyms": [{ "word": "Jugend", "meaning": "شباب" }]
+  },
+  {
+    "word": "Familienstand",
+    "meaning": "الحالة الاجتماعية",
+    "pronunciation": "فاميليين شتاند",
+    "plural": "Familienstände",
+    "incorrectPlurals": ["Familienstands", "Familienstander"],
+    "article": "der",
+    "examples": [
+      {
+        "sentence": "Was ist Ihr Familienstand?",
+        "meaning": "ما هي حالتك الاجتماعية؟"
+      },
+      {
+        "sentence": "Der Familienstand ist wichtig für die Steuer",
+        "meaning": "الحالة الاجتماعية مهمة للضرائب"
+      }
+    ],
+    "type": "noun",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Zivilstand", "meaning": "الحالة المدنية" }],
+    "antonyms": []
+  },
+  {
+    "word": "Jahr",
+    "meaning": "سنة",
+    "pronunciation": "يار",
+    "plural": "Jahre",
+    "incorrectPlurals": ["Jahrs", "Jahren"],
+    "article": "das",
+    "examples": [
+      {
+        "sentence": "Ein Jahr hat zwölf Monate",
+        "meaning": "السنة فيها اثنا عشر شهراً"
+      },
+      {
+        "sentence": "Nächstes Jahr reise ich",
+        "meaning": "سنة القادمة سأسافر"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Jahrgang", "meaning": "دفعة" }],
+    "antonyms": [
+      { "word": "Monat", "meaning": "شهر" },
+      { "word": "Tag", "meaning": "يوم" }
+    ]
+  },
+  {
+    "word": "alt",
+    "meaning": "قديم / عجوز",
+    "pronunciation": "ألت",
+    "examples": [
+      { "sentence": "Das ist ein altes Haus.", "meaning": "دي بيت قديم." },
+      { "sentence": "Meine Großmutter ist alt.", "meaning": "جدتي عجوز." }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "antik", "meaning": "قديم (أثري)" },
+      { "word": "betagt", "meaning": "مسن / كبير في السن" }
+    ],
+    "antonyms": [{ "word": "jung", "meaning": "شاب / جديد" }]
+  },
+  {
+    "word": "Kind",
+    "meaning": "طفل",
+    "pronunciation": "كايند",
+    "plural": "Kinder",
+    "incorrectPlurals": ["Kinds", "Kindes"],
+    "article": "das",
+    "examples": [
+      {
+        "sentence": "Das Kind spielt im Garten",
+        "meaning": "الطفل يلعب في الحديقة"
+      },
+      {
+        "sentence": "Sie haben drei Kinder",
+        "meaning": "لديهم ثلاثة أطفال"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "Nachwuchs", "meaning": "ذرية" }],
+    "antonyms": [{ "word": "Erwachsener", "meaning": "بالغ" }]
+  },
+  {
+    "word": "leben",
+    "meaning": "يعيش",
+    "pronunciation": "ليبن",
+    "examples": [
+      {
+        "sentence": "Wir leben in einer großen Stadt",
+        "meaning": "نحن نعيش في مدينة كبيرة"
+      },
+      {
+        "sentence": "Er lebt seit 10 Jahren hier",
+        "meaning": "هو يعيش هنا منذ 10 سنوات"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "wohnen", "meaning": "يسكن" }],
+    "antonyms": [{ "word": "sterben", "meaning": "يموت" }]
+  },
+  {
+    "word": "allein",
+    "meaning": "وحيد / لوحدي",
+    "pronunciation": "ألاين",
+    "examples": [
+      {
+        "sentence": "Ich bin heute allein zu Hause.",
+        "meaning": "أنا النهاردة لوحدي في البيت."
+      },
+      { "sentence": "Er fühlt sich allein.", "meaning": "هو حاسس بالوحدة." }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "einsam", "meaning": "وحيد / معزول" },
+      { "word": "solo", "meaning": "لوحده" }
+    ],
+    "antonyms": [{ "word": "zusammen", "meaning": "مع بعض / مع حد" }]
+  },
+  {
+    "word": "zusammenleben",
+    "meaning": "يعيش معاً",
+    "pronunciation": "تسوزامنليبن",
+    "examples": [
+      {
+        "sentence": "Sie leben zusammen",
+        "meaning": "هم يعيشون معاً"
+      },
+      {
+        "sentence": "Zusammenleben erfordert Kompromisse",
+        "meaning": "العيش معاً يتطلب تنازلات"
+      }
+    ],
+    "type": "verb",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "gemeinsam leben", "meaning": "يعيشون معاً" }],
+    "antonyms": [{ "word": "getrennt leben", "meaning": "يعيشون منفصلين" }]
+  },
+
+  {
+    "word": "geschieden",
+    "meaning": "مطلق",
+    "pronunciation": "جيشيدن",
+    "examples": [
+      {
+        "sentence": "Sie ist geschieden",
+        "meaning": "هي مطلقة"
+      },
+      {
+        "sentence": "Geschiedene haben oft Kinder",
+        "meaning": "المطلقون غالباً لديهم أطفال"
+      }
+    ],
+    "type": "adjective",
+    "level": "intermediate",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "getrennt", "meaning": "منفصل" }],
+    "antonyms": [{ "word": "verheiratet", "meaning": "متزوج" }]
+  },
+  {
+    "word": "verheiratet",
+    "meaning": "متزوج",
+    "pronunciation": "فيرهايراتيت",
+    "examples": [
+      {
+        "sentence": "Sie sind seit 5 Jahren verheiratet",
+        "meaning": "هم متزوجون منذ 5 سنوات"
+      },
+      {
+        "sentence": "Verheiratet zu sein ist schön",
+        "meaning": "أن تكون متزوجاً شيء جميل"
+      }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "vermählt", "meaning": "متزوج" }],
+    "antonyms": [
+      { "word": "ledig", "meaning": "عازب" },
+      { "word": "geschieden", "meaning": "مطلق" }
+    ]
+  },
+  {
+    "word": "Wo",
+    "meaning": "اين",
+    "pronunciation": "فو",
+    "examples": [
+      {
+        "sentence": "Wo wohnst du?",
+        "meaning": "أين تسكن؟"
+      },
+      {
+        "sentence": "Wo ist die Toilette?",
+        "meaning": "أين الحمام؟"
+      }
+    ],
+    "type": "noun",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "An welchem Ort", "meaning": "في أي مكان" }],
+    "antonyms": [{ "word": "Hier", "meaning": "هنا" }]
+  },
+  {
+    "word": "glauben",
+    "meaning": "يعتقد/يؤمن",
+    "pronunciation": "جلاوبن",
+    "examples": [
+      {
+        "sentence": "Ich glaube dir",
+        "meaning": "أنا أصدقك"
+      },
+      {
+        "sentence": "Er glaubt an Gott",
+        "meaning": "هو يؤمن بالله"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "denken", "meaning": "يعتقد" }],
+    "antonyms": [{ "word": "wissen", "meaning": "يعرف" }]
+  },
+  {
+    "word": "haben",
+    "meaning": "يملك",
+    "pronunciation": "هابن",
+    "examples": [
+      {
+        "sentence": "Ich habe einen Hund",
+        "meaning": "أملك كلباً"
+      },
+      {
+        "sentence": "Hast du Zeit?",
+        "meaning": "هل لديك وقت؟"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "besitzen", "meaning": "يمتلك" }],
+    "antonyms": [{ "word": "nicht haben", "meaning": "لا يملك" }]
+  },
+  {
+    "word": "machen",
+    "meaning": "يفعل/يصنع",
+    "pronunciation": "ماخن",
+    "examples": [
+      {
+        "sentence": "Was machst du?",
+        "meaning": "ماذا تفعل؟"
+      },
+      {
+        "sentence": "Ich mache Hausaufgaben",
+        "meaning": "أنا أقوم بالواجبات المنزلية"
+      }
+    ],
+    "type": "verb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "tun", "meaning": "يفعل" }],
+    "antonyms": [{ "word": "unterlassen", "meaning": "يمتنع عن" }]
+  },
+  {
+    "word": "richtig",
+    "meaning": "صحيح",
+    "pronunciation": "ريشتج",
+    "examples": [
+      {
+        "sentence": "Das ist richtig",
+        "meaning": "هذا صحيح"
+      },
+      {
+        "sentence": "Die Antwort ist richtig",
+        "meaning": "الإجابة صحيحة"
+      }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "korrekt", "meaning": "دقيق" }],
+    "antonyms": [{ "word": "falsch", "meaning": "خطأ" }]
+  },
+  {
+    "word": "falsch",
+    "meaning": "خطأ",
+    "pronunciation": "فالش",
+    "examples": [
+      {
+        "sentence": "Das ist falsch",
+        "meaning": "هذا خطأ"
+      },
+      {
+        "sentence": "Eine falsche Antwort",
+        "meaning": "إجابة خاطئة"
+      }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "inkorrekt", "meaning": "غير صحيح" }],
+    "antonyms": [{ "word": "richtig", "meaning": "صحيح" }]
+  },
+  {
+    "word": "super",
+    "meaning": "رائع",
+    "pronunciation": "زوبر",
+    "examples": [
+      {
+        "sentence": "Das ist super!",
+        "meaning": "هذا رائع!"
+      },
+      {
+        "sentence": "Super gemacht!",
+        "meaning": "عمل رائع!"
+      }
+    ],
+    "type": "adjective",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [
+      { "word": "toll", "meaning": "رائع" },
+      { "word": "großartig", "meaning": "عظيم" }
+    ],
+    "antonyms": [{ "word": "schlecht", "meaning": "سيء" }]
+  },
+  {
+    "word": "aber",
+    "meaning": "لكن",
+    "pronunciation": "آبر",
+    "examples": [
+      {
+        "sentence": "Ich möchte kommen, aber ich kann nicht",
+        "meaning": "أريد أن آتي لكن لا أستطيع"
+      },
+      {
+        "sentence": "Klein aber fein",
+        "meaning": "صغير لكن جميل"
+      }
+    ],
+    "type": "konjunktion",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "jedoch", "meaning": "لكن" }],
+    "antonyms": [{ "word": "und", "meaning": "و" }]
+  },
+  {
+    "word": "nicht",
+    "meaning": "لا (نفي)",
+    "pronunciation": "نيشت",
+    "examples": [
+      {
+        "sentence": "Ich verstehe nicht",
+        "meaning": "أنا لا أفهم"
+      },
+      {
+        "sentence": "Nicht jetzt!",
+        "meaning": "ليس الآن!"
+      }
+    ],
+    "type": "adverb",
+    "level": "beginner",
+    "isReviewed": false,
+    "reviewCount": 0,
+    "synonyms": [{ "word": "kein", "meaning": "لا" }],
+    "antonyms": [{ "word": "doch", "meaning": "بلى" }]
+  }
+]

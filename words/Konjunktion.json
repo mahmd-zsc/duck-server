@@ -1,0 +1,54 @@
+[
+  { "word": "und", "meaning": "و", "pronunciation": "أوند" },
+  { "word": "oder", "meaning": "أو", "pronunciation": "أودر" },
+  { "word": "aber", "meaning": "لكن", "pronunciation": "آبر" },
+  { "word": "denn", "meaning": "لأن", "pronunciation": "دِن" },
+  { "word": "sondern", "meaning": "بل", "pronunciation": "زوندرن" },
+
+  { "word": "weil", "meaning": "لأن", "pronunciation": "فايل" },
+  { "word": "dass", "meaning": "أن", "pronunciation": "داس" },
+  { "word": "ob", "meaning": "هل", "pronunciation": "أوب" },
+  { "word": "wenn", "meaning": "إذا", "pronunciation": "فين" },
+  { "word": "als", "meaning": "عندما (للماضي)", "pronunciation": "ألز" },
+  { "word": "obwohl", "meaning": "رغم", "pronunciation": "أوبفول" },
+  { "word": "bevor", "meaning": "قبل", "pronunciation": "بِفور" },
+  { "word": "nachdem", "meaning": "بعد", "pronunciation": "ناخديم" },
+  { "word": "während", "meaning": "بينما", "pronunciation": "فيرنت" },
+  { "word": "damit", "meaning": "لكي", "pronunciation": "داميت" },
+  { "word": "falls", "meaning": "لو", "pronunciation": "فالس" },
+  { "word": "sobald", "meaning": "حالما", "pronunciation": "زووبالت" },
+  { "word": "solange", "meaning": "طالما", "pronunciation": "زولانغه" },
+  { "word": "obgleich", "meaning": "مع أن", "pronunciation": "أوبغليخ" },
+  { "word": "obschon", "meaning": "رغم أن", "pronunciation": "أوبشون" },
+  { "word": "seitdem", "meaning": "منذ أن", "pronunciation": "زيتديم" },
+  {
+    "word": "währenddessen",
+    "meaning": "في حين ذلك",
+    "pronunciation": "فيرنتديسن"
+  },
+  { "word": "indem", "meaning": "بأن", "pronunciation": "إنديم" },
+  { "word": "soweit", "meaning": "طالما/بقدر ما", "pronunciation": "زوفايت" },
+  { "word": "solcher", "meaning": "مثل هذا", "pronunciation": "زولخر" },
+  { "word": "sodass", "meaning": "بحيث", "pronunciation": "زوداس" },
+  { "word": "wohingegen", "meaning": "بينما", "pronunciation": "فوهيڭيگن" },
+  { "word": "zumal", "meaning": "خصوصًا", "pronunciation": "تسومال" },
+  {
+    "word": "zumindest",
+    "meaning": "على الأقل",
+    "pronunciation": "تسومينديست"
+  },
+  { "word": "obzwar", "meaning": "مع أن", "pronunciation": "أوبتسفار" },
+  { "word": "seit", "meaning": "منذ", "pronunciation": "زيت" },
+  { "word": "wodurch", "meaning": "بسبب", "pronunciation": "فودورخ" },
+  { "word": "wofür", "meaning": "لأجل", "pronunciation": "فوفيور" },
+  { "word": "wogegen", "meaning": "ضد", "pronunciation": "فوگيغن" },
+  { "word": "womit", "meaning": "بواسطة", "pronunciation": "فوميت" },
+  { "word": "woran", "meaning": "على ماذا", "pronunciation": "فوران" },
+  { "word": "worauf", "meaning": "عليه", "pronunciation": "فورآوف" },
+  { "word": "wovor", "meaning": "من ماذا", "pronunciation": "فوفور" },
+  {
+    "word": "währenddessen",
+    "meaning": "في الوقت ذاته",
+    "pronunciation": "فيرنتديسن"
+  }
+]

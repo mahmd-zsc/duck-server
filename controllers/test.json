@@ -1,0 +1,114 @@
+
+
+
+
+ {
+  word: "Haus",
+  meaning: "منزل",
+  pronunciation: "هاوس",
+  plural: "Häuser",
+  incorrectPlurals: ["Hauses", "Hauser"],
+  article: "das",
+  examples: [
+    {
+      sentence: "Ich gehe nach Hause",
+      meaning: "أنا ذاهب إلى المنزل"
+    },
+    {
+      sentence: "Das Haus ist groß",
+      meaning: "المنزل كبير"
+    }
+  ],
+  type: "noun",
+  level: "beginner",
+  isReviewed: false,
+  reviewCount: 0,
+  synonyms: [
+    { word: "Gebäude", meaning: "مبنى" },
+    { word: "Wohnung", meaning: "شقة" }
+  ],
+  antonyms: [
+    { word: "Freiluft", meaning: "الخارج/الفضاء المفتوح" },
+    { word: "Draußen", meaning: "الخارج" }
+  ],
+};
+ملاحظات 
+✅ علامات الترقيم: لازم تكون الجملة منتهية بـ . أو ! أو ?
+
+✅ الـ article, synonyms, antonyms: لو الكلمة مش فيها الحاجات دي، نشيلها.
+
+✅ النوع: لازم يكون واحد من دول:      
+ "noun",
+      "verb",
+      "adjective",
+      "pronoun",
+      "adverb",
+      "pronouns",
+      "pronouns",
+      لو مش من دول اختار من دول اقرب حاجه ليه
+
+✅ المستوى: لازم يكون beginner, intermediate, advanced
+
+✅ أمثلة: لازم يكون فيه مثالين على الأقل
+اكتب معني الكلمة بس في meaing ومتقولشي ملاحظات فيها زي التحية  دي في جنوب المانيا✅
+
+ [
+  "Arbeitgeber (der, -)",
+  "Ausbildung (die, -en)",
+  "Beruf (der, -e)",
+  "Hochschule (die, -n) / Universität (die, -en)",
+  "Job (der, -s)",
+  "Praktikum (das, Praktika)",
+  "Schule (die, -n)",
+  "Stelle (die, -n)",
+  "arbeiten als/bei ...",
+  "studieren",
+  "arbeitslos",
+  "von Beruf",
+  "Was ...?",
+  
+  # Berufe
+  "Architekt (der, -en)",
+  "Arzt (der, -e)",
+  "Friseur (der, -e) / Coiffeur (der, -e) / Coiffeuse (die, -n)",
+  "Ingenieur (der, -e)",
+  "Journalist (der, -en)",
+  "Kellner (der, -)",
+  "Krankenschwester (die, -n)",
+  "Lehrer (der, -)",
+  "Mechatroniker (der, -)",
+  "Student (der, -en)",
+  "Schauspieler (der, -)",
+  "Schüler (der, -)",
+  "Sekretär (der, -e)",
+  "Verkäufer (der, -)",
+  
+  # Persönliches
+  "Alter (das)",
+  "Familienstand (der) / Zivilstand (der)",
+  "Jahr (das, -e)",
+  "... Jahre alt sein",
+  "Kind (das, -er)",
+  "leben",
+  "allein leben",
+  "zusammenleben",
+  "wohnen in",
+  "geschieden",
+  "verheiratet",
+  "Wo ...?",
+  
+  # Weitere wichtige Wörter
+  "glauben",
+  "haben",
+  "machen",
+  "richtig",
+  "falsch",
+  "super",
+  "aber",
+  "kein-",
+  "nicht",
+  
+  # Beispielsätze
+  "Wir leben in Vollsögen.",
+  "Ich arbeite nicht."
+]

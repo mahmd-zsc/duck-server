@@ -1,0 +1,582 @@
+[
+  {
+    "word": "sein",
+    "meaning": "يكون",
+    "pronunciation": "زَايْن"
+  },
+  {
+    "word": "haben",
+    "meaning": "يملك",
+    "pronunciation": "هَابِن"
+  },
+  {
+    "word": "werden",
+    "meaning": "يصبح",
+    "pronunciation": "فِيرْدِن"
+  },
+  {
+    "word": "können",
+    "meaning": "يستطيع",
+    "pronunciation": "كُوْنِن"
+  },
+  {
+    "word": "müssen",
+    "meaning": "يجب عليه",
+    "pronunciation": "مُوْسِن"
+  },
+  {
+    "word": "sagen",
+    "meaning": "يقول",
+    "pronunciation": "زَاجِن"
+  },
+  {
+    "word": "machen",
+    "meaning": "يفعل / يصنع",
+    "pronunciation": "مَاخِن"
+  },
+  {
+    "word": "geben",
+    "meaning": "يعطي",
+    "pronunciation": "غِيبِن"
+  },
+  {
+    "word": "kommen",
+    "meaning": "يأتي",
+    "pronunciation": "كُومِن"
+  },
+  {
+    "word": "sollen",
+    "meaning": "ينبغي عليه",
+    "pronunciation": "زُولِن"
+  },
+  {
+    "word": "wollen",
+    "meaning": "يريد",
+    "pronunciation": "فُولِن"
+  },
+  {
+    "word": "gehen",
+    "meaning": "يذهب",
+    "pronunciation": "غِيهِن"
+  },
+  {
+    "word": "wissen",
+    "meaning": "يعرف (حقيقة)",
+    "pronunciation": "فِيسِن"
+  },
+  {
+    "word": "sehen",
+    "meaning": "يرى",
+    "pronunciation": "زِيهِن"
+  },
+  {
+    "word": "lassen",
+    "meaning": "يترك / يدع",
+    "pronunciation": "لَاسِن"
+  },
+  {
+    "word": "stehen",
+    "meaning": "يقف",
+    "pronunciation": "شْتِيهِن"
+  },
+  {
+    "word": "finden",
+    "meaning": "يجد",
+    "pronunciation": "فِينْدِن"
+  },
+  {
+    "word": "bleiben",
+    "meaning": "يبقى",
+    "pronunciation": "بْلَايْبِن"
+  },
+  {
+    "word": "liegen",
+    "meaning": "يستلقي / يكون موضوعًا",
+    "pronunciation": "لِيجِن"
+  },
+  {
+    "word": "heißen",
+    "meaning": "يُدعى / يعني",
+    "pronunciation": "هَايْسِن"
+  },
+  {
+    "word": "denken",
+    "meaning": "يفكر",
+    "pronunciation": "دِنْكِن"
+  },
+  {
+    "word": "nehmen",
+    "meaning": "يأخذ",
+    "pronunciation": "نِيهْمِن"
+  },
+  {
+    "word": "tun",
+    "meaning": "يفعل",
+    "pronunciation": "تُون"
+  },
+  {
+    "word": "dürfen",
+    "meaning": "يسمح له",
+    "pronunciation": "دُورْفِن"
+  },
+  {
+    "word": "glauben",
+    "meaning": "يعتقد",
+    "pronunciation": "غْلَاوْبِن"
+  },
+  {
+    "word": "halten",
+    "meaning": "يمسك / يوقف",
+    "pronunciation": "هَالْتِن"
+  },
+  {
+    "word": "nennen",
+    "meaning": "يسمي",
+    "pronunciation": "نِينِن"
+  },
+  {
+    "word": "mögen",
+    "meaning": "يحب",
+    "pronunciation": "مُوْجِن"
+  },
+  {
+    "word": "zeigen",
+    "meaning": "يظهر",
+    "pronunciation": "تسَايْجِن"
+  },
+  {
+    "word": "führen",
+    "meaning": "يقود",
+    "pronunciation": "فُوْرِن"
+  },
+  {
+    "word": "sprechen",
+    "meaning": "يتكلم",
+    "pronunciation": "شْبْرِيشِن"
+  },
+  {
+    "word": "bringen",
+    "meaning": "يُحضر",
+    "pronunciation": "بْرِينْجِن"
+  },
+  {
+    "word": "leben",
+    "meaning": "يعيش",
+    "pronunciation": "لِيبِن"
+  },
+  {
+    "word": "fahren",
+    "meaning": "يسوق / يذهب (بمركبة)",
+    "pronunciation": "فَارِن"
+  },
+  {
+    "word": "meinen",
+    "meaning": "يعني / يعتقد",
+    "pronunciation": "مَايْنِن"
+  },
+  {
+    "word": "fragen",
+    "meaning": "يسأل",
+    "pronunciation": "فْرَاجِن"
+  },
+  {
+    "word": "kennen",
+    "meaning": "يعرف (شخصًا/شيئًا)",
+    "pronunciation": "كِينِن"
+  },
+  {
+    "word": "gelten",
+    "meaning": "ينطبق / يكون ساريًا",
+    "pronunciation": "جِلْتِن"
+  },
+  {
+    "word": "stellen",
+    "meaning": "يضع / يقدم",
+    "pronunciation": "شْتِلِن"
+  },
+  {
+    "word": "spielen",
+    "meaning": "يلعب",
+    "pronunciation": "شْبِيلِن"
+  },
+  {
+    "word": "arbeiten",
+    "meaning": "يعمل",
+    "pronunciation": "آرْبَايْتِن"
+  },
+  {
+    "word": "brauchen",
+    "meaning": "يحتاج",
+    "pronunciation": "بْرَاوْخِن"
+  },
+  {
+    "word": "folgen",
+    "meaning": "يتبع",
+    "pronunciation": "فُولْجِن"
+  },
+  {
+    "word": "lernen",
+    "meaning": "يتعلم",
+    "pronunciation": "لِرْنِن"
+  },
+  {
+    "word": "bestehen",
+    "meaning": "يتكون / يصر على",
+    "pronunciation": "بِشْتِيهِن"
+  },
+  {
+    "word": "verstehen",
+    "meaning": "يفهم",
+    "pronunciation": "فِيرْشْتِيهِن"
+  },
+  {
+    "word": "setzen",
+    "meaning": "يجلس / يضع",
+    "pronunciation": "زِيتْسِن"
+  },
+  {
+    "word": "bekommen",
+    "meaning": "يحصل على",
+    "pronunciation": "بِكُومِن"
+  },
+  {
+    "word": "beginnen",
+    "meaning": "يبدأ",
+    "pronunciation": "بِغِينِن"
+  },
+  {
+    "word": "erzählen",
+    "meaning": "يحكي",
+    "pronunciation": "إيرْتسِيلِن"
+  },
+  {
+    "word": "versuchen",
+    "meaning": "يحاول",
+    "pronunciation": "فِيرْزُوخِن"
+  },
+  {
+    "word": "schreiben",
+    "meaning": "يكتب",
+    "pronunciation": "شْرَايْبِن"
+  },
+  {
+    "word": "laufen",
+    "meaning": "يجري",
+    "pronunciation": "لَاوْفِن"
+  },
+  {
+    "word": "erklären",
+    "meaning": "يشرح",
+    "pronunciation": "إيرْكْلِيرِن"
+  },
+  {
+    "word": "entscheiden",
+    "meaning": "يقرر",
+    "pronunciation": "إينْتْشَايْدِن"
+  },
+  {
+    "word": "sitzen",
+    "meaning": "يجلس",
+    "pronunciation": "زِيتْسِن"
+  },
+  {
+    "word": "ziehen",
+    "meaning": "يسحب / ينتقل",
+    "pronunciation": "تسِيهِن"
+  },
+  {
+    "word": "scheinen",
+    "meaning": "يبدو / يلمع",
+    "pronunciation": "شَايْنِن"
+  },
+  {
+    "word": "fallen",
+    "meaning": "يسقط",
+    "pronunciation": "فَالِن"
+  },
+  {
+    "word": "gehören",
+    "meaning": "ينتمي / يكون ملكًا لـ",
+    "pronunciation": "غِهُورِن"
+  },
+  {
+    "word": "entstehen",
+    "meaning": "ينشأ / يتكون",
+    "pronunciation": "إينْتْشْتِيهِن"
+  },
+  {
+    "word": "erhalten",
+    "meaning": "يحصل على / يحافظ",
+    "pronunciation": "إيرْهَالْتِن"
+  },
+  {
+    "word": "lesen",
+    "meaning": "يقرأ",
+    "pronunciation": "لِيزِن"
+  },
+  {
+    "word": "verlieren",
+    "meaning": "يخسر",
+    "pronunciation": "فِيرْلِيرِن"
+  },
+  {
+    "word": "darstellen",
+    "meaning": "يمثل / يعرض",
+    "pronunciation": "دَارْشْتِلِن"
+  },
+  {
+    "word": "erkennen",
+    "meaning": "يتعرف على",
+    "pronunciation": "إيرْكِينِن"
+  },
+  {
+    "word": "entwickeln",
+    "meaning": "يطور",
+    "pronunciation": "إينْتْفِيكِلْن"
+  },
+  {
+    "word": "reden",
+    "meaning": "يتحدث",
+    "pronunciation": "رِيدِن"
+  },
+  {
+    "word": "aussehen",
+    "meaning": "يبدو (مظهرًا)",
+    "pronunciation": "أَوْسْزِيهِن"
+  },
+  {
+    "word": "ausgehen",
+    "meaning": "يخرج (للترفيه)",
+    "pronunciation": "أَوْسْغِيهِن"
+  },
+  {
+    "word": "bieten",
+    "meaning": "يعرض / يقدم",
+    "pronunciation": "بِيتِن"
+  },
+  {
+    "word": "erreichen",
+    "meaning": "يصل إلى / يحقق",
+    "pronunciation": "إيرْآيْشِن"
+  },
+  {
+    "word": "tragen",
+    "meaning": "يحمل / يلبس",
+    "pronunciation": "تْرَاجِن"
+  },
+  {
+    "word": "vergessen",
+    "meaning": "ينسى",
+    "pronunciation": "فِيرْغِيسِن"
+  },
+  {
+    "word": "erinnern",
+    "meaning": "يذكر",
+    "pronunciation": "إيرْإِينِرْن"
+  },
+  {
+    "word": "anbieten",
+    "meaning": "يعرض",
+    "pronunciation": "آنْبِيتِن"
+  },
+  {
+    "word": "wohnen",
+    "meaning": "يسكن",
+    "pronunciation": "فُوْنِن"
+  },
+  {
+    "word": "ändern",
+    "meaning": "يغير",
+    "pronunciation": "إِينْدِرْن"
+  },
+  {
+    "word": "studieren",
+    "meaning": "يدرس (في الجامعة)",
+    "pronunciation": "شْتُودِيرِن"
+  },
+  {
+    "word": "schließen",
+    "meaning": "يغلق",
+    "pronunciation": "شْلِيسِن"
+  },
+  {
+    "word": "fühlen",
+    "meaning": "يشعر",
+    "pronunciation": "فُوْلِن"
+  },
+  {
+    "word": "anfangen",
+    "meaning": "يبدأ",
+    "pronunciation": "آنْفَانْجِن"
+  },
+  {
+    "word": "erwarten",
+    "meaning": "يتوقع",
+    "pronunciation": "إيرْفَارْتِن"
+  },
+  {
+    "word": "kosten",
+    "meaning": "يكلف",
+    "pronunciation": "كُوسْتِن"
+  },
+  {
+    "word": "beziehen",
+    "meaning": "يشير إلى / يحصل على",
+    "pronunciation": "بِتسِيهِن"
+  },
+  {
+    "word": "verbinden",
+    "meaning": "يربط / يتصل",
+    "pronunciation": "فِيرْبِينْدِن"
+  },
+  {
+    "word": "enthalten",
+    "meaning": "يحتوي",
+    "pronunciation": "إينْتْهَالْتِن"
+  },
+  {
+    "word": "zeichnen",
+    "meaning": "يرسم",
+    "pronunciation": "تسَايْشْنِن"
+  },
+  {
+    "word": "entsprechen",
+    "meaning": "يتوافق",
+    "pronunciation": "إينْتْشْبْرِيشِن"
+  },
+  {
+    "word": "bewirken",
+    "meaning": "يسبب",
+    "pronunciation": "بِفِيرْكِن"
+  },
+  {
+    "word": "wachsen",
+    "meaning": "ينمو",
+    "pronunciation": "فَاكْسِن"
+  },
+  {
+    "word": "verlängern",
+    "meaning": "يُطيل",
+    "pronunciation": "فِيرْلِينْجِرْن"
+  },
+  {
+    "word": "trinken",
+    "meaning": "يشرب",
+    "pronunciation": "تْرِينْكِن"
+  },
+  {
+    "word": "senden",
+    "meaning": "يرسل",
+    "pronunciation": "زِينْدِن"
+  },
+  {
+    "word": "füllen",
+    "meaning": "يملأ",
+    "pronunciation": "فُولِن"
+  },
+  {
+    "word": "schlagen",
+    "meaning": "يضرب",
+    "pronunciation": "شْلَاجِن"
+  },
+  {
+    "word": "helfen",
+    "meaning": "يساعد",
+    "pronunciation": "هِيلْفِن"
+  },
+  {
+    "word": "öffnen",
+    "meaning": "يفتح",
+    "pronunciation": "أُوفْنِن"
+  },
+  {
+    "word": "binden",
+    "meaning": "يربط",
+    "pronunciation": "بِينْدِن"
+  },
+  {
+    "word": "brechen",
+    "meaning": "يكسر",
+    "pronunciation": "بْرِيشِن"
+  },
+  {
+    "word": "gelingen",
+    "meaning": "ينجح",
+    "pronunciation": "غِلِينْجِن"
+  },
+  {
+    "word": "leiden",
+    "meaning": "يعاني",
+    "pronunciation": "لَايْدِن"
+  },
+  {
+    "word": "sterben",
+    "meaning": "يموت",
+    "pronunciation": "شْتِيرْبِن"
+  },
+  {
+    "word": "wählen",
+    "meaning": "يختار",
+    "pronunciation": "فِيلِن"
+  },
+  {
+    "word": "bezahlen",
+    "meaning": "يدفع",
+    "pronunciation": "بِتسَالِن"
+  },
+  {
+    "word": "besuchen",
+    "meaning": "يزور",
+    "pronunciation": "بِزُوخِن"
+  },
+  {
+    "word": "fordern",
+    "meaning": "يطالب",
+    "pronunciation": "فُورْدِرْن"
+  },
+  {
+    "word": "schaffen",
+    "meaning": "يخلق / ينشئ",
+    "pronunciation": "شَافِن"
+  },
+  {
+    "word": "bedeuten",
+    "meaning": "يعني",
+    "pronunciation": "بِدُويْتِن"
+  },
+  {
+    "word": "schneiden",
+    "meaning": "يقطع",
+    "pronunciation": "شْنَايْدِن"
+  },
+  {
+    "word": "empfehlen",
+    "meaning": "يوصي",
+    "pronunciation": "إيمْبْفِيهْلِن"
+  },
+  {
+    "word": "unterstützen",
+    "meaning": "يدعم",
+    "pronunciation": "أُونْتِيرْشْتُوتْسِن"
+  },
+  {
+    "word": "verbringen",
+    "meaning": "يقضي (وقتًا)",
+    "pronunciation": "فِيرْبْرِينْجِن"
+  },
+  {
+    "word": "vergleichen",
+    "meaning": "يقارن",
+    "pronunciation": "فِيرْغْلَايْشِن"
+  },
+  {
+    "word": "bewegen",
+    "meaning": "يحرك",
+    "pronunciation": "بِفِيجِن"
+  },
+  {
+    "word": "hören",
+    "meaning": "يسمع",
+    "pronunciation": "هُورِن"
+  }
+]

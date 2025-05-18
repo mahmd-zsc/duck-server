@@ -1,0 +1,727 @@
+[
+  {
+    "word": "Haus",
+    "meaning": "منزل",
+    "pronunciation": "هاوس"
+  },
+  {
+    "word": "Mann",
+    "meaning": "رجل",
+    "pronunciation": "مان"
+  },
+  {
+    "word": "Frau",
+    "meaning": "امرأة",
+    "pronunciation": "فراو"
+  },
+  {
+    "word": "Kind",
+    "meaning": "طفل",
+    "pronunciation": "كِنت"
+  },
+  {
+    "word": "Auto",
+    "meaning": "سيارة",
+    "pronunciation": "أوتو"
+  },
+  {
+    "word": "Baum",
+    "meaning": "شجرة",
+    "pronunciation": "باوم"
+  },
+  {
+    "word": "Stadt",
+    "meaning": "مدينة",
+    "pronunciation": "شتات"
+  },
+  {
+    "word": "Buch",
+    "meaning": "كتاب",
+    "pronunciation": "بوخ"
+  },
+  {
+    "word": "Tisch",
+    "meaning": "طاولة",
+    "pronunciation": "تيش"
+  },
+  {
+    "word": "Stuhl",
+    "meaning": "كرسي",
+    "pronunciation": "شتول"
+  },
+  {
+    "word": "Fenster",
+    "meaning": "نافذة",
+    "pronunciation": "فينستر"
+  },
+  {
+    "word": "Tür",
+    "meaning": "باب",
+    "pronunciation": "تور"
+  },
+  {
+    "word": "Schule",
+    "meaning": "مدرسة",
+    "pronunciation": "شوله"
+  },
+  {
+    "word": "Freund",
+    "meaning": "صديق (ذكر)",
+    "pronunciation": "فروند"
+  },
+  {
+    "word": "Arbeit",
+    "meaning": "عمل",
+    "pronunciation": "أربايت"
+  },
+  {
+    "word": "Wasser",
+    "meaning": "ماء",
+    "pronunciation": "فاسر"
+  },
+  {
+    "word": "Tag",
+    "meaning": "يوم",
+    "pronunciation": "تاك"
+  },
+  {
+    "word": "Nacht",
+    "meaning": "ليل",
+    "pronunciation": "ناخت"
+  },
+  {
+    "word": "Straße",
+    "meaning": "شارع",
+    "pronunciation": "شتْراسه"
+  },
+  {
+    "word": "Zeit",
+    "meaning": "وقت",
+    "pronunciation": "تسايت"
+  },
+  {
+    "word": "Name",
+    "meaning": "اسم",
+    "pronunciation": "ناميه"
+  },
+  {
+    "word": "Hand",
+    "meaning": "يد",
+    "pronunciation": "هانت"
+  },
+  {
+    "word": "Herz",
+    "meaning": "قلب",
+    "pronunciation": "هيرتس"
+  },
+  {
+    "word": "Weg",
+    "meaning": "طريق",
+    "pronunciation": "فيك"
+  },
+  {
+    "word": "Land",
+    "meaning": "بلاد / أرض",
+    "pronunciation": "لانت"
+  },
+  {
+    "word": "Bild",
+    "meaning": "صورة",
+    "pronunciation": "بيلت"
+  },
+  {
+    "word": "Licht",
+    "meaning": "ضوء",
+    "pronunciation": "ليشت"
+  },
+  {
+    "word": "Kopf",
+    "meaning": "رأس",
+    "pronunciation": "كوبف"
+  },
+  {
+    "word": "Spiel",
+    "meaning": "لعبة",
+    "pronunciation": "شبيل"
+  },
+  {
+    "word": "Familie",
+    "meaning": "عائلة",
+    "pronunciation": "فاميليه"
+  },
+  {
+    "word": "Küche",
+    "meaning": "مطبخ",
+    "pronunciation": "كوشه"
+  },
+  {
+    "word": "Zimmer",
+    "meaning": "غرفة",
+    "pronunciation": "تسيمر"
+  },
+  {
+    "word": "Hund",
+    "meaning": "كلب",
+    "pronunciation": "هونت"
+  },
+  {
+    "word": "Katze",
+    "meaning": "قطة",
+    "pronunciation": "كاتسه"
+  },
+  {
+    "word": "Vogel",
+    "meaning": "طائر",
+    "pronunciation": "فوجل"
+  },
+  {
+    "word": "Blume",
+    "meaning": "زهرة",
+    "pronunciation": "بلومه"
+  },
+  {
+    "word": "Berg",
+    "meaning": "جبل",
+    "pronunciation": "بيرك"
+  },
+  {
+    "word": "Meer",
+    "meaning": "بحر",
+    "pronunciation": "مير"
+  },
+  {
+    "word": "Himmel",
+    "meaning": "سماء",
+    "pronunciation": "هيمل"
+  },
+  {
+    "word": "Sonne",
+    "meaning": "شمس",
+    "pronunciation": "زونه"
+  },
+  {
+    "word": "Mond",
+    "meaning": "قمر",
+    "pronunciation": "مونت"
+  },
+  {
+    "word": "Stern",
+    "meaning": "نجمة",
+    "pronunciation": "شترن"
+  },
+  {
+    "word": "Glas",
+    "meaning": "زجاج",
+    "pronunciation": "جلاس"
+  },
+  {
+    "word": "Schloss",
+    "meaning": "قفل / قلعة",
+    "pronunciation": "شلوس"
+  },
+  {
+    "word": "Boden",
+    "meaning": "أرضية",
+    "pronunciation": "بودن"
+  },
+  {
+    "word": "Fisch",
+    "meaning": "سمك",
+    "pronunciation": "فيش"
+  },
+  {
+    "word": "Brücke",
+    "meaning": "جسر",
+    "pronunciation": "بروكه"
+  },
+  {
+    "word": "Garten",
+    "meaning": "حديقة",
+    "pronunciation": "جارتن"
+  },
+  {
+    "word": "Mutter",
+    "meaning": "أم",
+    "pronunciation": "موتر"
+  },
+  {
+    "word": "Vater",
+    "meaning": "أب",
+    "pronunciation": "فاتر"
+  },
+  {
+    "word": "Bruder",
+    "meaning": "أخ",
+    "pronunciation": "برودر"
+  },
+  {
+    "word": "Schwester",
+    "meaning": "أخت",
+    "pronunciation": "شفستر"
+  },
+  {
+    "word": "Freundin",
+    "meaning": "صديقة (أنثى)",
+    "pronunciation": "فروندين"
+  },
+  {
+    "word": "Markt",
+    "meaning": "سوق",
+    "pronunciation": "ماركت"
+  },
+  {
+    "word": "Bäckerei",
+    "meaning": "مخبز",
+    "pronunciation": "بيكراي"
+  },
+  {
+    "word": "Kino",
+    "meaning": "سينما",
+    "pronunciation": "كينو"
+  },
+  {
+    "word": "Bahnhof",
+    "meaning": "محطة قطار",
+    "pronunciation": "بان هوف"
+  },
+  {
+    "word": "Flughafen",
+    "meaning": "مطار",
+    "pronunciation": "فلوج هافن"
+  },
+  {
+    "word": "Krankenhaus",
+    "meaning": "مستشفى",
+    "pronunciation": "كرانكن هاوس"
+  },
+  {
+    "word": "Apotheke",
+    "meaning": "صيدلية",
+    "pronunciation": "ابوتيكه"
+  },
+  {
+    "word": "Supermarkt",
+    "meaning": "سوبر ماركت",
+    "pronunciation": "زوبر ماركت"
+  },
+  {
+    "word": "Bibliothek",
+    "meaning": "مكتبة",
+    "pronunciation": "بيبليوتيك"
+  },
+  {
+    "word": "Museum",
+    "meaning": "متحف",
+    "pronunciation": "موزيم"
+  },
+  {
+    "word": "Restaurant",
+    "meaning": "مطعم",
+    "pronunciation": "ريستوران"
+  },
+  {
+    "word": "Hotel",
+    "meaning": "فندق",
+    "pronunciation": "هوتيل"
+  },
+  {
+    "word": "Park",
+    "meaning": "حديقة عامة",
+    "pronunciation": "بارك"
+  },
+  {
+    "word": "Schwimmbad",
+    "meaning": "مسبح",
+    "pronunciation": "شفيم باد"
+  },
+  {
+    "word": "Theater",
+    "meaning": "مسرح",
+    "pronunciation": "تيئاتر"
+  },
+  {
+    "word": "Klasse",
+    "meaning": "صف دراسي",
+    "pronunciation": "كلاسه"
+  },
+  {
+    "word": "Lehrer",
+    "meaning": "معلّم",
+    "pronunciation": "ليرر"
+  },
+  {
+    "word": "Schüler",
+    "meaning": "تلميذ",
+    "pronunciation": "شولر"
+  },
+  {
+    "word": "Student",
+    "meaning": "طالب جامعي",
+    "pronunciation": "شتودنت"
+  },
+  {
+    "word": "Universität",
+    "meaning": "جامعة",
+    "pronunciation": "أونيفيرزيتيت"
+  },
+  {
+    "word": "Firma",
+    "meaning": "شركة",
+    "pronunciation": "فيرما"
+  },
+  {
+    "word": "Chef",
+    "meaning": "رئيس / مدير",
+    "pronunciation": "شيف"
+  },
+  {
+    "word": "Kollege",
+    "meaning": "زميل عمل",
+    "pronunciation": "كوليجيه"
+  },
+  {
+    "word": "Telefon",
+    "meaning": "هاتف",
+    "pronunciation": "تليفون"
+  },
+  {
+    "word": "Computer",
+    "meaning": "حاسوب",
+    "pronunciation": "كومبيوتر"
+  },
+  {
+    "word": "Laptop",
+    "meaning": "حاسوب محمول",
+    "pronunciation": "لاب توب"
+  },
+  {
+    "word": "Handy",
+    "meaning": "هاتف محمول",
+    "pronunciation": "هاندي"
+  },
+  {
+    "word": "Foto",
+    "meaning": "صورة فوتوغرافية",
+    "pronunciation": "فوتو"
+  },
+  {
+    "word": "Brief",
+    "meaning": "رسالة",
+    "pronunciation": "بريف"
+  },
+  {
+    "word": "Zeitung",
+    "meaning": "جريدة",
+    "pronunciation": "تسايتونج"
+  },
+  {
+    "word": "Radio",
+    "meaning": "راديو",
+    "pronunciation": "راديو"
+  },
+  {
+    "word": "Fernseher",
+    "meaning": "تلفاز",
+    "pronunciation": "فيرنزيهر"
+  },
+  {
+    "word": "Film",
+    "meaning": "فيلم",
+    "pronunciation": "فيلْم"
+  },
+  {
+    "word": "Musik",
+    "meaning": "موسيقى",
+    "pronunciation": "موزيك"
+  },
+  {
+    "word": "Sport",
+    "meaning": "رياضة",
+    "pronunciation": "شبورت"
+  },
+  {
+    "word": "Fahrrad",
+    "meaning": "دراجة هوائية",
+    "pronunciation": "فار راد"
+  },
+  {
+    "word": "Bus",
+    "meaning": "حافلة",
+    "pronunciation": "بوس"
+  },
+  {
+    "word": "Zug",
+    "meaning": "قطار",
+    "pronunciation": "تسوغ"
+  },
+  {
+    "word": "Flugzeug",
+    "meaning": "طائرة",
+    "pronunciation": "فلوجتسوغ"
+  },
+  {
+    "word": "Schiff",
+    "meaning": "سفينة",
+    "pronunciation": "شيف"
+  },
+  {
+    "word": "Boot",
+    "meaning": "قارب",
+    "pronunciation": "بوت"
+  },
+  {
+    "word": "Tunnel",
+    "meaning": "نفق",
+    "pronunciation": "تونل"
+  },
+  {
+    "word": "Ampel",
+    "meaning": "إشارة مرور",
+    "pronunciation": "أمبل"
+  },
+  {
+    "word": "Parkplatz",
+    "meaning": "موقف سيارات",
+    "pronunciation": "بارك بلاتس"
+  },
+  {
+    "word": "Wohnung",
+    "meaning": "شقة",
+    "pronunciation": "فونونج"
+  },
+  {
+    "word": "Bad",
+    "meaning": "حمام",
+    "pronunciation": "باد"
+  },
+  {
+    "word": "Bett",
+    "meaning": "سرير",
+    "pronunciation": "بيت"
+  },
+  {
+    "word": "Lampe",
+    "meaning": "مصباح",
+    "pronunciation": "لامبه"
+  },
+  {
+    "word": "Uhr",
+    "meaning": "ساعة",
+    "pronunciation": "أور"
+  },
+  {
+    "word": "Decke",
+    "meaning": "سقف / بطانية",
+    "pronunciation": "ديكه"
+  },
+  {
+    "word": "Wand",
+    "meaning": "حائط",
+    "pronunciation": "فاند"
+  },
+  {
+    "word": "Koffer",
+    "meaning": "حقيبة سفر",
+    "pronunciation": "كوفّر"
+  },
+  {
+    "word": "Schrank",
+    "meaning": "خزانة",
+    "pronunciation": "شرانك"
+  },
+  {
+    "word": "Regal",
+    "meaning": "رف",
+    "pronunciation": "ريجال"
+  },
+  {
+    "word": "Zeitschrift",
+    "meaning": "مجلة",
+    "pronunciation": "تسايت شريفت"
+  },
+  {
+    "word": "Karte",
+    "meaning": "خريطة / بطاقة",
+    "pronunciation": "كارتّه"
+  },
+  {
+    "word": "Geld",
+    "meaning": "مال",
+    "pronunciation": "جلت"
+  },
+  {
+    "word": "Schlüssel",
+    "meaning": "مفتاح",
+    "pronunciation": "شلوسل"
+  },
+  {
+    "word": "Tasche",
+    "meaning": "حقيبة",
+    "pronunciation": "تاشه"
+  },
+  {
+    "word": "Brille",
+    "meaning": "نظارة",
+    "pronunciation": "بريله"
+  },
+  {
+    "word": "Schuhe",
+    "meaning": "أحذية",
+    "pronunciation": "شويه"
+  },
+  {
+    "word": "Hut",
+    "meaning": "قبعة",
+    "pronunciation": "هوت"
+  },
+  {
+    "word": "Jacke",
+    "meaning": "جاكيت",
+    "pronunciation": "ياكه"
+  },
+  {
+    "word": "Hemd",
+    "meaning": "قميص",
+    "pronunciation": "همت"
+  },
+  {
+    "word": "Hose",
+    "meaning": "بنطال",
+    "pronunciation": "هوزه"
+  },
+  {
+    "word": "Rock",
+    "meaning": "تنورة",
+    "pronunciation": "روك"
+  },
+  {
+    "word": "Kleid",
+    "meaning": "فستان",
+    "pronunciation": "كلايد"
+  },
+  {
+    "word": "Pullover",
+    "meaning": "سترة صوفية",
+    "pronunciation": "بولوفّر"
+  },
+  {
+    "word": "Mantel",
+    "meaning": "معطف",
+    "pronunciation": "مانتل"
+  },
+  {
+    "word": "Socken",
+    "meaning": "جوارب",
+    "pronunciation": "زوكِن"
+  },
+  {
+    "word": "Handschuhe",
+    "meaning": "قفازات",
+    "pronunciation": "هاند شويه"
+  },
+  {
+    "word": "Schmuck",
+    "meaning": "مجوهرات",
+    "pronunciation": "شموك"
+  },
+  {
+    "word": "Ring",
+    "meaning": "خاتم",
+    "pronunciation": "رينج"
+  },
+  {
+    "word": "Kette",
+    "meaning": "سلسلة / قلادة",
+    "pronunciation": "كيّته"
+  },
+  {
+    "word": "Ohrringe",
+    "meaning": "أقراط",
+    "pronunciation": "أور رينجه"
+  },
+  {
+    "word": "Kamera",
+    "meaning": "كاميرا",
+    "pronunciation": "كاميرا"
+  },
+  {
+    "word": "Mikrofon",
+    "meaning": "ميكروفون",
+    "pronunciation": "ميكروفون"
+  },
+  {
+    "word": "Lautsprecher",
+    "meaning": "مكبر صوت",
+    "pronunciation": "لاوت شبرشر"
+  },
+  {
+    "word": "Kopfhörer",
+    "meaning": "سماعات رأس",
+    "pronunciation": "كوبف هورر"
+  },
+  {
+    "word": "Kerze",
+    "meaning": "شمعة",
+    "pronunciation": "كيرتسه"
+  },
+  {
+    "word": "Feuer",
+    "meaning": "نار",
+    "pronunciation": "فوير"
+  },
+  {
+    "word": "Feuerzeug",
+    "meaning": "ولاعة",
+    "pronunciation": "فويرتسوغ"
+  },
+  {
+    "word": "Stift",
+    "meaning": "قلم",
+    "pronunciation": "شتيفت"
+  },
+  {
+    "word": "Heft",
+    "meaning": "دفتر",
+    "pronunciation": "هيفت"
+  },
+  {
+    "word": "Papier",
+    "meaning": "ورق",
+    "pronunciation": "بابير"
+  },
+  {
+    "word": "Bleistift",
+    "meaning": "قلم رصاص",
+    "pronunciation": "بلاي شتيفت"
+  },
+  {
+    "word": "Radiergummi",
+    "meaning": "ممحاة",
+    "pronunciation": "رادير غومي"
+  },
+  {
+    "word": "Lineal",
+    "meaning": "مسطرة",
+    "pronunciation": "لينيال"
+  },
+  {
+    "word": "Schere",
+    "meaning": "مقص",
+    "pronunciation": "شيره"
+  },
+  {
+    "word": "Kleber",
+    "meaning": "صمغ",
+    "pronunciation": "كليبر"
+  },
+  {
+    "word": "Rucksack",
+    "meaning": "حقيبة ظهر",
+    "pronunciation": "روك زاك"
+  },
+  {
+    "word": "Schultasche",
+    "meaning": "حقيبة مدرسية",
+    "pronunciation": "شول تاشه"
+  }
+]
