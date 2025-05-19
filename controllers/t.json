@@ -1136,3 +1136,435 @@
     "antonyms": [{ "word": "doch", "meaning": "بلى" }]
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
+  {
+      "_id": "6828a0f2e814dde29d556c3f",
+      "pronunciation": "غروس",
+      "type": "reviewReminder",
+      "question": "الكلمة: \"Grüß\"\nمعناها: \"تحية\"\nالنطق: غروس",
+      "answer": null
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c3f",
+      "pronunciation": "غروس",
+      "type": "writeWord",
+      "question": "اكتب الكلمة الألمانية التي معناها \"تحية\"",
+      "answer": "Grüß"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c3f",
+      "pronunciation": "غروس",
+      "type": "pronunciation",
+      "question": "استمع إلى النطق واختر الكلمة الصحيحة:",
+      "options": [
+          {
+              "word": "Meer",
+              "meaning": "بحر",
+              "pronunciation": "مير"
+          },
+          {
+              "word": "Kamera",
+              "meaning": "كاميرا",
+              "pronunciation": "كاميرا"
+          },
+          {
+              "word": "Schule",
+              "meaning": "مدرسة",
+              "pronunciation": "شوله"
+          }
+      ],
+      "answer": "Grüß",
+      "meaning": "تحية"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c3f",
+      "pronunciation": "غروس",
+      "type": "writeSentence",
+      "question": "اكتب الجملة الألمانية التي معناها: \"مرحبا!\"",
+      "answer": "Grüß Gott!"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c3f",
+      "pronunciation": "غروس",
+      "type": "translation",
+      "question": "ما هي الترجمة الألمانية لكلمة \"تحية\"؟",
+      "options": [
+          "Grüß",
+          {
+              "word": "Musik",
+              "meaning": "موسيقى",
+              "pronunciation": "موزيك"
+          },
+          {
+              "word": "Tunnel",
+              "meaning": "نفق",
+              "pronunciation": "تونل"
+          },
+          {
+              "word": "Uhr",
+              "meaning": "ساعة",
+              "pronunciation": "أور"
+          }
+      ],
+      "answer": "Grüß",
+      "meaning": "تحية"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "pronunciation": "سالّي",
+      "type": "reviewReminder",
+      "question": "الكلمة: \"Sali\"\nمعناها: \"مرحبا\"\nالنطق: سالّي",
+      "answer": null
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "pronunciation": "سالّي",
+      "type": "writeSentence",
+      "question": "اكتب الجملة الألمانية التي معناها: \"مرحبا، كيف الحال؟\"",
+      "answer": "Sali, wie geit's?"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "type": "sentenceOrder",
+      "words": [
+          "miteinander!",
+          "Sali"
+      ],
+      "answer": "Sali miteinander!",
+      "meaning": "مرحبا جميعا!"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "pronunciation": "سالّي",
+      "type": "writeWord",
+      "question": "اكتب الكلمة الألمانية التي معناها \"مرحبا\"",
+      "answer": "Sali"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "pronunciation": "سالّي",
+      "type": "translation",
+      "question": "ما هي الترجمة الألمانية لكلمة \"مرحبا\"؟",
+      "options": [
+          "Sali",
+          {
+              "word": "Boden",
+              "meaning": "أرضية",
+              "pronunciation": "بودن"
+          },
+          {
+              "word": "Decke",
+              "meaning": "سقف / بطانية",
+              "pronunciation": "ديكه"
+          },
+          {
+              "word": "Stern",
+              "meaning": "نجمة",
+              "pronunciation": "شترن"
+          }
+      ],
+      "answer": "Sali",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c4d",
+      "pronunciation": "سالّي",
+      "type": "pronunciation",
+      "question": "استمع إلى النطق واختر الكلمة الصحيحة:",
+      "options": [
+          {
+              "word": "Stadt",
+              "meaning": "مدينة",
+              "pronunciation": "شتات"
+          },
+          {
+              "word": "Küche",
+              "meaning": "مطبخ",
+              "pronunciation": "كوشه"
+          },
+          {
+              "word": "Kind",
+              "meaning": "طفل",
+              "pronunciation": "كِنت"
+          }
+      ],
+      "answer": "Sali",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "pronunciation": "هوي",
+      "type": "reviewReminder",
+      "question": "الكلمة: \"Hoi\"\nمعناها: \"مرحبا\"\nالنطق: هوي",
+      "answer": null
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "pronunciation": "هوي",
+      "type": "writeWord",
+      "question": "اكتب الكلمة الألمانية التي معناها \"مرحبا\"",
+      "answer": "Hoi"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "pronunciation": "هوي",
+      "type": "writeSentence",
+      "question": "اكتب الجملة الألمانية التي معناها: \"مرحبا جميعا!\"",
+      "answer": "Hoi zäme!"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "type": "sentenceOrder",
+      "words": [
+          "zäme!",
+          "Hoi"
+      ],
+      "answer": "Hoi zäme!",
+      "meaning": "مرحبا جميعا!"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "pronunciation": "هوي",
+      "type": "translation",
+      "question": "ما معنى الكلمة \"Hoi\"؟",
+      "options": [
+          {
+              "word": "Meer",
+              "meaning": "بحر",
+              "pronunciation": "مير"
+          },
+          {
+              "word": "Schule",
+              "meaning": "مدرسة",
+              "pronunciation": "شوله"
+          },
+          "مرحبا",
+          {
+              "word": "Laptop",
+              "meaning": "حاسوب محمول",
+              "pronunciation": "لاب توب"
+          }
+      ],
+      "answer": "مرحبا",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c46",
+      "pronunciation": "هوي",
+      "type": "pronunciation",
+      "question": "استمع إلى النطق واختر الكلمة الصحيحة:",
+      "options": [
+          {
+              "word": "Apotheke",
+              "meaning": "صيدلية",
+              "pronunciation": "ابوتيكه"
+          },
+          {
+              "word": "Familie",
+              "meaning": "عائلة",
+              "pronunciation": "فاميليه"
+          },
+          {
+              "word": "Rock",
+              "meaning": "تنورة",
+              "pronunciation": "روك"
+          }
+      ],
+      "answer": "Hoi",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "pronunciation": "زيرفوس",
+      "type": "reviewReminder",
+      "question": "الكلمة: \"Servus\"\nمعناها: \"مرحبا أو مع السلامة\"\nالنطق: زيرفوس",
+      "answer": null
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "pronunciation": "زيرفوس",
+      "type": "writeSentence",
+      "question": "اكتب الجملة الألمانية التي معناها: \"مرحبا، كيف حالك؟\"",
+      "answer": "Servus, wie geht's?"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "pronunciation": "زيرفوس",
+      "type": "writeWord",
+      "question": "اكتب الكلمة الألمانية التي معناها \"مرحبا أو مع السلامة\"",
+      "answer": "Servus"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "type": "sentenceOrder",
+      "words": [
+          "Servus,",
+          "bis",
+          "morgen"
+      ],
+      "answer": "Servus, bis morgen",
+      "meaning": "مع السلامة، إلى الغد!"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "pronunciation": "زيرفوس",
+      "type": "translation",
+      "question": "ما معنى الكلمة \"Servus\"؟",
+      "options": [
+          "مرحبا أو مع السلامة",
+          {
+              "word": "Glas",
+              "meaning": "زجاج",
+              "pronunciation": "جلاس"
+          },
+          {
+              "word": "Lineal",
+              "meaning": "مسطرة",
+              "pronunciation": "لينيال"
+          },
+          {
+              "word": "Freundin",
+              "meaning": "صديقة (أنثى)",
+              "pronunciation": "فروندين"
+          }
+      ],
+      "answer": "مرحبا أو مع السلامة",
+      "meaning": "مرحبا أو مع السلامة"
+  },
+  {
+      "_id": "6828a0f2e814dde29d556c38",
+      "pronunciation": "زيرفوس",
+      "type": "pronunciation",
+      "question": "استمع إلى النطق واختر الكلمة الصحيحة:",
+      "options": [
+          {
+              "word": "Socken",
+              "meaning": "جوارب",
+              "pronunciation": "زوكِن"
+          },
+          {
+              "word": "Sonne",
+              "meaning": "شمس",
+              "pronunciation": "زونه"
+          },
+          {
+              "word": "Kino",
+              "meaning": "سينما",
+              "pronunciation": "كينو"
+          }
+      ],
+      "answer": "Servus",
+      "meaning": "مرحبا أو مع السلامة"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "pronunciation": "سالو",
+      "type": "reviewReminder",
+      "question": "الكلمة: \"Salü\"\nمعناها: \"مرحبا\"\nالنطق: سالو",
+      "answer": null
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "type": "sentenceOrder",
+      "words": [
+          "zäme!",
+          "Salü"
+      ],
+      "answer": "Salü zäme!",
+      "meaning": "مرحبا جميعا!"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "pronunciation": "سالو",
+      "type": "pronunciation",
+      "question": "استمع إلى النطق واختر الكلمة الصحيحة:",
+      "options": [
+          {
+              "word": "Zimmer",
+              "meaning": "غرفة",
+              "pronunciation": "تسيمر"
+          },
+          {
+              "word": "Krankenhaus",
+              "meaning": "مستشفى",
+              "pronunciation": "كرانكن هاوس"
+          },
+          {
+              "word": "Haus",
+              "meaning": "منزل",
+              "pronunciation": "هاوس"
+          }
+      ],
+      "answer": "Salü",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "pronunciation": "سالو",
+      "type": "translation",
+      "question": "ما معنى الكلمة \"Salü\"؟",
+      "options": [
+          "مرحبا",
+          {
+              "word": "Foto",
+              "meaning": "صورة فوتوغرافية",
+              "pronunciation": "فوتو"
+          },
+          {
+              "word": "Garten",
+              "meaning": "حديقة",
+              "pronunciation": "جارتن"
+          },
+          {
+              "word": "Bild",
+              "meaning": "صورة",
+              "pronunciation": "بيلت"
+          }
+      ],
+      "answer": "مرحبا",
+      "meaning": "مرحبا"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "pronunciation": "سالو",
+      "type": "writeWord",
+      "question": "اكتب الكلمة الألمانية التي معناها \"مرحبا\"",
+      "answer": "Salü"
+  },
+  {
+      "_id": "6828a0f3e814dde29d556c54",
+      "pronunciation": "سالو",
+      "type": "writeSentence",
+      "question": "اكتب الجملة الألمانية التي معناها: \"مرحبا، كيف الحال؟\"",
+      "answer": "Salü, wie gaats?"
+  }
+]
