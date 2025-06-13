@@ -1,92 +1,53 @@
-/* ---------- Imports ---------- */
 const { Lesson } = require("../models/lessonModel");
 
-const verbs = require("../words/verbs.json");
-const adjectives = require("../words/adjectives.json");
-const adverbs = require("../words/adverbs.json");
-const nouns = require("../words/nouns.json");
-const prepositions = require("../words/prepositions.json");
-const Konjunktion = require("../words/Konjunktion.json");
-const pronouns = require("../words/pronouns.json");
+const {
+  generateIntroQuestion,
+  generateFillInTheBlanksQuestion,
+  generateTranslationQuestion,
+  generateArticleQuestion,
+  generatePluralQuestion,
+  generatePronunciationQuestion,
+  generateSynonymQuestion,
+  generateAntonymQuestion,
+  generateSentenceOrderQuestion,
+  generateWriteTheWordQuestion,
+  generateWriteSentenceQuestion,
+} = require("../utils/questionGenerators");
+const {
+  getWordsNeedingReviewData,
+  getHardWords,
+} = require("../utils/wordHelpers");
+const { getWordsNeedingReview } = require("./wordController");
 
-/* ---------- Helpers ---------- */
-function getWordPool(type) {
-  switch (type) {
-    case "verb":
-      return verbs;
-    case "adjective":
-      return adjectives;
-    case "adverb":
-      return adverbs;
-    case "noun":
-      return nouns;
-    case "preposition":
-      return prepositions;
-    case "konjunktion":
-      return Konjunktion;
-    case "pronouns":
-      return pronouns;
-    default:
-      return [];
-  }
-}
+function calculateLevel(word) {
+  let score = 0;
 
-function getRandomElements(arr, count, exclude) {
-  const filtered = arr.filter(
-    (item) => item.meaning !== exclude && item.word !== exclude
-  );
-  const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
+  // عوامل صعوبة
+  if (word.isHard) score += 2;
+  if (word.synonyms?.length) score += 1;
+  if (word.antonyms?.length) score += 1;
+  if (word.conjugation?.present) score += 1;
 
-/* ---------- Question Generators ---------- */
-function generateReviewReminderQuestion(word) {
-  return {
-    _id: word._id,
-    pronunciation: word.pronunciation,
-    type: "reviewReminder",
-    question: `\n"${word.word}" = "${word.meaning}"`,
-    answer: word.word,
-  };
+  // عوامل تسهيل
+  if (word.reviewCount >= 5) score -= 2;
+  if (word.examples?.length >= 2) score -= 1;
+
+  if (score <= 0) return "beginner";
+  if (score <= 2) return "intermediate";
+  return "advanced";
 }
 
-function generateTranslationQuestion(word) {
-  /* … نفس الكود السابق … */
-}
-function generateArticleQuestion(word) {
-  /* … */
-}
-function generatePluralQuestion(word) {
-  /* … */
-}
-function generatePronunciationQuestion(word) {
-  /* … */
-}
-function generateWriteTheWordQuestion(word) {
-  /* … */
-}
-function generateSynonymQuestion(word) {
-  /* … */
-}
-function generateAntonymQuestion(word) {
-  /* … */
-}
-function generateSentenceOrderQuestion(word) {
-  /* … */
-}
-function generateWriteSentenceQuestion(word) {
-  /* … */
-}
-
-/* ---------- Utilities ---------- */
 function getNumQuestionsByLevel(level) {
   if (level === "beginner") return 6;
   if (level === "intermediate") return 4;
   if (level === "advanced") return 3;
-  return 2;
+  return 4;
 }
 
-const generators = [
+// 🧰 قائمة دوال توليد الأسئلة
+const questionGenerators = [
+  generateIntroQuestion,
+  generateFillInTheBlanksQuestion,
   generateTranslationQuestion,
   generateArticleQuestion,
   generatePluralQuestion,
@@ -98,120 +59,194 @@ const generators = [
   generateWriteSentenceQuestion,
 ];
 
-function canGenerate(word, name) {
-  switch (name) {
+const multipleChoiceGenerators = [
+  generateTranslationQuestion,
+  generateArticleQuestion,
+  generatePluralQuestion,
+  generateSynonymQuestion,
+  generateAntonymQuestion,
+];
+
+// ✅ تحقق من إمكانية توليد نوع سؤال معين لكلمة
+function canGenerateQuestion(word, generatorName) {
+  switch (generatorName) {
     case "generateArticleQuestion":
       return word.type !== "verb" && !!word.article;
     case "generatePluralQuestion":
       return !!word.plural;
     case "generateSynonymQuestion":
-      return word.synonyms?.length;
+      return word.synonyms && word.synonyms.length > 0;
     case "generateAntonymQuestion":
-      return word.antonyms?.length;
+      return word.antonyms && word.antonyms.length > 0;
     case "generateWriteSentenceQuestion":
-      return word.examples?.length;
+      return word.examples && word.examples.length > 0;
+    case "generateFillInTheBlanksQuestion":
+      return (
+        word.type?.toLowerCase() === "verb" &&
+        word.conjugation &&
+        word.conjugation.present
+      );
     default:
       return true;
   }
 }
 
-function generateQuestionsForWord(word) {
-  const list = [];
+// 🧠 توليد الأسئلة لكلمة واحدة بناءً على مستواها
+function generateQuestionsForWord(word, mode) {
+  let numQuestions;
 
-  if (!word.isReviewed) list.push(generateReviewReminderQuestion(word));
+  switch (mode) {
+    case "learn":
+      numQuestions = 4;
+      break;
+    case "review":
+      numQuestions = 2;
+      break;
+    case "hard-review":
+      numQuestions = 4;
+      break;
+    case "quick-review":
+      numQuestions = 1;
+      break;
+    default:
+      numQuestions = 4;
+  }
 
-  const needed = getNumQuestionsByLevel(word.level);
-  const used = new Set();
-  let tries = 0;
+  const usedTypes = new Set();
+  const questions = [];
+  let attempts = 0;
+  const MAX_ATTEMPTS = 50;
 
-  while (list.length < needed + (!word.isReviewed ? 1 : 0) && tries < 30) {
-    tries++;
-    const gen = generators[Math.floor(Math.random() * generators.length)];
-    if (used.has(gen.name)) continue;
-    if (!canGenerate(word, gen.name)) continue;
+  if (mode === "learn") {
+    const introQuestion = generateIntroQuestion(word);
+    if (introQuestion) questions.push(introQuestion);
+  }
 
-    const q = gen(word);
-    if (q) {
-      list.push(q);
-      used.add(gen.name);
+  while (questions.length < numQuestions && attempts < MAX_ATTEMPTS) {
+    attempts++;
+
+    // ✅ في حالة quick-review هنستخدم فقط multipleChoiceGenerators
+    const generatorList =
+      mode === "quick-review" ? multipleChoiceGenerators : questionGenerators;
+
+    const randomIndex = Math.floor(Math.random() * generatorList.length);
+    const generator = generatorList[randomIndex];
+
+    if (!canGenerateQuestion(word, generator.name)) continue;
+
+    const question = generator(word);
+
+    if (question && !usedTypes.has(generator.name)) {
+      questions.push(question);
+      usedTypes.add(generator.name);
     }
   }
 
-  return list;
+  return questions;
 }
 
-function shuffleArray(a) {
-  for (let i = a.length - 1; i > 0; i--) {
+// ترتيب الأسئلة بحيث يظهر intro أولًا
+const organizeQuizzes = (quizzes) => {
+  const introQuizzesMap = new Map();
+  const result = [];
+  const usedIntroIds = new Set();
+
+  const regularQuizzes = quizzes.filter((quiz) => {
+    if (quiz.type === "intro") {
+      introQuizzesMap.set(quiz._id, quiz);
+      return false;
+    }
+    return true;
+  });
+
+  regularQuizzes.forEach((quiz) => {
+    if (introQuizzesMap.has(quiz._id) && !usedIntroIds.has(quiz._id)) {
+      result.push(introQuizzesMap.get(quiz._id));
+      usedIntroIds.add(quiz._id);
+    }
+    result.push(quiz);
+  });
+
+  return result;
+};
+
+// 🔀 خلط المصفوفة عشوائيًا
+function shuffleArray(array) {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
   }
-  return a;
+  return newArray;
 }
 
-/* ---------- الجديد: نفصل reviewReminder عن الباقي ونلخبط الباقي ---------- */
-function separateReviewReminders(questions) {
-  const reminders = questions.filter((q) => q.type === "reviewReminder");
-  const others = questions.filter((q) => q.type !== "reviewReminder");
-  return { reminders, others };
-}
+//--------- Controller ---------
 
-function insertRemindersBeforeFirstQuestion(reminders, others) {
-  reminders.forEach((reminder) => {
-    const firstIdx = others.findIndex((q) => q._id === reminder._id);
-    if (firstIdx === -1) {
-      others.unshift(reminder);
-    } else {
-      others.splice(firstIdx, 0, reminder);
-    }
-  });
-  return others;
-}
-
-/* ---------- Utilities ---------- */
-function separateReviewReminders(questions) {
-  const reminders = questions.filter((q) => q.type === "reviewReminder");
-  const others = questions.filter((q) => q.type !== "reviewReminder");
-  return { reminders, others };
-}
-
-function insertRemindersRandomly(reminders, others) {
-  // نسخ المصفوفة الأصلية لتجنب التعديل عليها مباشرة
-  const shuffledOthers = [...others];
-
-  // إدراج التذكيرات في مواقع عشوائية
-  reminders.forEach((reminder) => {
-    const randomPosition = Math.floor(
-      Math.random() * (shuffledOthers.length + 1)
-    );
-    shuffledOthers.splice(randomPosition, 0, reminder);
-  });
-
-  return shuffledOthers;
-}
-
-/* ---------- Controller ---------- */
 async function GenerateQuizzes(req, res) {
   try {
-    // ... الكود السابق بدون تغيير حتى توليد الأسئلة ...
+    const { lessonId, groupSize, groupNumber, mode = "learn" } = req.query;
+    if (!groupSize || !groupNumber || !mode) {
+      return res.status(400).json({ message: "كل البراميترز مطلوبة" });
+    }
 
-    /* توليد الأسئلة */
-    const allQuestions = [];
-    groups[number - 1].forEach((w) =>
-      allQuestions.push(...generateQuestionsForWord(w))
-    );
+    let words;
+    let titleOfLesson;
+    switch (mode) {
+      case "learn":
+        const lesson = await Lesson.findById(lessonId).populate("words");
+        words = lesson.words;
+        titleOfLesson = lesson.title;
+        break;
+      case "review":
+        words = await getWordsNeedingReviewData();
+        titleOfLesson = "مراجعة الكلمات السابقة";
+        break;
+      case "quick-review":
+        words = await getWordsNeedingReviewData();
+        titleOfLesson = "مراجعة سريعة";
 
-    /* نفصل reviewReminder ونلخبط الباقي */
-    const { reminders, others } = separateReviewReminders(allQuestions);
-    const shuffledOthers = shuffleArray(others);
+        break;
+      case "hard-review":
+        words = await getHardWords();
+        titleOfLesson = "تحدي الكلمات الصعبة";
 
-    /* نحط reminders في أماكن عشوائية */
-    const finalQuestions = insertRemindersRandomly(reminders, shuffledOthers);
+        break;
+      default:
+        return res.status(400).json({ message: "mode مش معروف" });
+    }
+    if (!words.length) {
+      return res.status(404).json({ message: "لا توجد كلمات مناسبة" });
+    }
 
-    res.status(200).json(finalQuestions);
+    const size = parseInt(groupSize);
+    const number = parseInt(groupNumber);
+
+    const groupedWords = [];
+    for (let i = 0; i < words.length; i += size) {
+      groupedWords.push(words.slice(i, i + size));
+    }
+
+    if (number < 1 || number > groupedWords.length) {
+      return res.status(400).json({ message: "رقم المجموعة غير صالح" });
+    }
+
+    const selectedGroup = groupedWords[number - 1];
+    const quizzes = [];
+
+    selectedGroup.forEach((word) => {
+      quizzes.push(...generateQuestionsForWord(word, mode));
+    });
+
+    const shuffledQuizzes = shuffleArray(quizzes);
+    res.status(200).json({
+      quizzes: organizeQuizzes(shuffledQuizzes),
+      countOfQuizzes: organizeQuizzes(shuffledQuizzes).length,
+      titleOfLesson,
+      mode,
+    });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "حدثت مشكلة في السيرفر" });
+    res.status(500).json({ message: "حصلت مشكلة في السيرفر" });
   }
 }
-
 module.exports = GenerateQuizzes;
