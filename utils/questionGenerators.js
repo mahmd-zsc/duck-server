@@ -28,7 +28,6 @@ function generateTranslationQuestion(word) {
 
   const correctAnswer = fromLanguage === "german" ? word.meaning : word.word;
   const questionWord = fromLanguage === "german" ? word.word : word.meaning;
-
   const filteredPool = wordPool.filter((item) =>
     typeof item === "string"
       ? item !== correctAnswer
@@ -126,6 +125,7 @@ function generateSynonymQuestion(word) {
   const correctObj =
     word.synonyms[Math.floor(Math.random() * word.synonyms.length)];
   const correctAnswer = correctObj.word;
+  const pronunciation = correctObj.pronunciation;
 
   const wordPool = getWordPool(word.type);
 
@@ -139,7 +139,7 @@ function generateSynonymQuestion(word) {
 
   return {
     _id: word._id,
-    pronunciation: word.pronunciation,
+    pronunciation,
     type: "synonym",
     question: `ما هو مرادف الكلمة "${word.word}"؟`,
     options,
@@ -155,6 +155,7 @@ function generateAntonymQuestion(word) {
     word.antonyms[Math.floor(Math.random() * word.antonyms.length)];
   const correctAnswer = correctObj.word;
   const correctAnswerMeaning = correctObj.meaning;
+  const pronunciation = correctObj.pronunciation;
 
   const wordPool = getWordPool(word.type);
 
@@ -168,7 +169,7 @@ function generateAntonymQuestion(word) {
 
   return {
     _id: word._id,
-    pronunciation: word.pronunciation,
+    pronunciation,
     type: "antonym",
     question: `ما هو عكس الكلمة "${word.word}"؟`,
     options,
@@ -194,6 +195,7 @@ function generateSentenceOrderQuestion(word) {
     words: shuffledWords,
     answer: words.join(" "),
     meaning: example.meaning,
+    pronunciation: example.pronunciation,
   };
 }
 
@@ -207,7 +209,7 @@ function generateWriteSentenceQuestion(word) {
 
   return {
     _id: word._id,
-    pronunciation: word.pronunciation,
+    pronunciation: example.pronunciation,
     type: "writeSentence",
     question: `اكتب الجملة الألمانية التي معناها: "${example.meaning}"`,
     answer: example.sentence.trim(),
