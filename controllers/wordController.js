@@ -312,7 +312,7 @@ const getWordsNeedingReview = asyncHandler(async (req, res) => {
 
   const words = await Word.find({
     $or: [
-      { isReviewed: false },
+      { isReviewed: true },
       { reviewCount: { $lt: 3 } },
       {
         lastReviewed: { $exists: true, $lt: new Date(now - THREE_DAYS_MS) },
