@@ -36,6 +36,19 @@ function calculateLevel(word) {
   return "advanced";
 }
 
+const preferredQuestionOrder = [
+  generateWriteTheWordQuestion,
+  generateWriteSentenceQuestion,
+  generateArticleQuestion,
+  generateFillInTheBlanksQuestion,
+  generateTranslationQuestion,
+  generatePluralQuestion,
+  generatePronunciationQuestion,
+  generateSynonymQuestion,
+  generateAntonymQuestion,
+  generateSentenceOrderQuestion,
+];
+
 function getNumQuestionsByLevel(level) {
   if (level === "beginner") return 6;
   if (level === "intermediate") return 4;
@@ -113,24 +126,20 @@ function generateQuestionsForWord(word, mode) {
   let attempts = 0;
   const MAX_ATTEMPTS = 50;
 
+  // سؤال المقدمة في حالة التعلم لأول مرة
   if (mode === "learn" && !word.isReviewed) {
     const introQuestion = generateIntroQuestion(word);
     if (introQuestion) questions.push(introQuestion);
   }
 
-  while (questions.length < numQuestions && attempts < MAX_ATTEMPTS) {
-    attempts++;
+  const generatorList =
+    mode === "quick-review" ? multipleChoiceGenerators : preferredQuestionOrder;
 
-    const generatorList =
-      mode === "quick-review" ? multipleChoiceGenerators : questionGenerators;
-
-    const randomIndex = Math.floor(Math.random() * generatorList.length);
-    const generator = generatorList[randomIndex];
-
+  for (let generator of generatorList) {
+    if (questions.length >= numQuestions) break;
     if (!canGenerateQuestion(word, generator.name)) continue;
 
     const question = generator(word);
-
     if (question && !usedTypes.has(generator.name)) {
       questions.push(question);
       usedTypes.add(generator.name);
