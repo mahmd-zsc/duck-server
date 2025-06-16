@@ -37,11 +37,11 @@ function calculateLevel(word) {
 }
 
 const preferredQuestionOrder = [
+  generateFillInTheBlanksQuestion,
   generateWriteTheWordQuestion,
   generateArticleQuestion,
   generateSentenceOrderQuestion,
   generateWriteSentenceQuestion,
-  generateFillInTheBlanksQuestion,
   generateTranslationQuestion,
   generatePluralQuestion,
   generatePronunciationQuestion,
