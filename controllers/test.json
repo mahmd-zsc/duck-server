@@ -1,6 +1,138 @@
 
 
-
+    const wordSchema = new mongoose.Schema({
+        word: {
+          type: String,
+          required: [true, "الكلمة مطلوبة"],
+          unique: true,
+          maxlength: [30, "الكلمة لازم تكون أقل من 30 حرف"],
+        },
+        meaning: {
+          type: String,
+          required: [true, "المعنى مطلوب"],
+        },
+        pronunciation: {
+          type: String,
+          required: false,
+          trim: true,
+        },
+        plural: {
+          type: String,
+          required: false,
+          trim: true,
+        },
+        pluralPronunciation: {
+          type: String,
+          required: false,
+          trim: true,
+        },
+        incorrectPlurals: {
+          type: [String],
+          required: false,
+        },
+        article: {
+          type: String,
+          required: false,
+          enum: ["der", "die", "das"],
+        },
+        examples: {
+          type: [
+            {
+              sentence: { type: String, required: true },
+              meaning: { type: String, required: true },
+              pronunciation: { type: String, required: false },
+            },
+          ],
+          required: [true, "أمثلة مطلوبة"],
+          validate: {
+            validator: function (v) {
+              return Array.isArray(v) && v.length > 0;
+            },
+            message: "لازم يكون في أمثلة للكلمة",
+          },
+        },
+        type: {
+          type: String,
+          enum: [
+            "noun",
+            "verb",
+            "adjective",
+            "pronoun",
+            "adverb",
+            "pronouns",
+            "konjunktion",
+          ],
+          required: [true, "نوع الكلمة مطلوب"],
+        },
+        isReviewed: {
+          type: Boolean,
+          default: false,
+        },
+        reviewCount: {
+          type: Number,
+          default: 0,
+        },
+        isHard: {
+          type: Boolean,
+          default: false,
+        },
+        lastReviewed: {
+          type: Date,
+          required: false,
+        },
+        synonyms: {
+          type: [
+            {
+              word: { type: String, required: true },
+              meaning: { type: String, required: true },
+              pronunciation: { type: String, required: false },
+            },
+          ],
+          required: false,
+        },
+        antonyms: {
+          type: [
+            {
+              word: { type: String, required: true },
+              meaning: { type: String, required: true },
+              pronunciation: { type: String, required: false },
+            },
+          ],
+          required: false,
+        },
+        conjugation: {
+          type: {
+            infinitive: { type: String, required: false },
+            present: {
+              ich: { type: String, required: false },
+              du: { type: String, required: false },
+              er: { type: String, required: false },
+              sieShe: { type: String, required: false },
+              es: { type: String, required: false },
+              wir: { type: String, required: false },
+              ihr: { type: String, required: false },
+              sieThey: { type: String, required: false },
+              Sie: { type: String, required: false },
+            },
+            past: {
+              ich: { type: String, required: false },
+              du: { type: String, required: false },
+              er: { type: String, required: false },
+              sieShe: { type: String, required: false },
+              es: { type: String, required: false },
+              wir: { type: String, required: false },
+              ihr: { type: String, required: false },
+              sieThey: { type: String, required: false },
+              Sie: { type: String, required: false },
+            },
+          },
+          required: false,
+        },
+      });
+      
+      اعمل json file علي الكلمات دي 
+ "geben", "Abenteuer", "als", "Geschenk", "annehmen",
 
 واعمل دول كمان واوعي تنسي examples (2) , incorrectPlurals , pluralPronunciation , plural , antonyms , article , synonyms
 conjugation لو الكلمة فعل
+النطق يكون بالعربي 

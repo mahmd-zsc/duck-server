@@ -1,1252 +1,282 @@
 [
   {
-    "word": "Arbeitsplatz",
-    "meaning": "مكان العمل",
-    "pronunciation": "آربايتس-بلاتس",
-    "article": "der",
-    "plural": "Arbeitsplätze",
-    "pluralPronunciation": "آربايتس-بليت-سه",
-    "incorrectPlurals": ["Arbeitsplatzs", "Arbeitsplatzen", "Arbeitsplatzies"],
+    "word": "Coiffeur",
+    "meaning": "مصفف شعر (رجالي)",
+    "pronunciation": "كوا-فور",
     "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
+    "article": "der",
+    "plural": "Coiffeure",
+    "pluralPronunciation": "كوا-فور-ه",
+    "incorrectPlurals": ["Coiffeurs", "Coiffeurien", "Coiffeurin"],
     "examples": [
       {
-        "sentence": "Mein Arbeitsplatz ist sehr organisiert.",
-        "meaning": "مكان عملي منظم جدًا",
-        "pronunciation": "ماين آربايتس-بلاتس إيست زيهر أورجانيزيرت"
-      },
-      {
-        "sentence": "Wir haben neue Arbeitsplätze geschaffen.",
-        "meaning": "لقد أنشأنا أماكن عمل جديدة",
-        "pronunciation": "فير هابن نويه آربايتس-بليت-سه جيشافن"
+        "sentence": "Der Coiffeur schneidet mir die Haare.",
+        "meaning": "مصفف الشعر يقص شعري",
+        "pronunciation": "دير كوا-فور شنايدت مير دي هاريه"
       }
     ],
     "synonyms": [
       {
-        "word": "Büro",
-        "meaning": "مكتب",
-        "pronunciation": "بورو"
+        "word": "Friseur",
+        "meaning": "مصفف شعر",
+        "pronunciation": "فري-زور"
+      },
+      {
+        "word": "Haarstylist",
+        "meaning": "خبير تصفيف شعر",
+        "pronunciation": "هار-شتاي-ليست"
       }
     ],
     "antonyms": [
       {
-        "word": "Arbeitslosigkeit",
-        "meaning": "بطالة",
-        "pronunciation": "آربايتس-لوزيكهايت"
+        "word": "Kunde",
+        "meaning": "زبون",
+        "pronunciation": "كون-ده"
       }
     ]
   },
   {
-    "word": "Bildschirm",
-    "meaning": "شاشة",
-    "pronunciation": "بيلت-شيرم",
-    "article": "der",
-    "plural": "Bildschirme",
-    "pluralPronunciation": "بيلت-شير-مه",
-    "incorrectPlurals": ["Bildschirms", "Bildschirmen", "Bildschirmies"],
+    "word": "Lehrer",
+    "meaning": "مدرس",
+    "pronunciation": "ليه-رر",
     "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Der Bildschirm ist zu hell.",
-        "meaning": "الشاشة ساطعة جدًا",
-        "pronunciation": "دير بيلت-شيرم إيست تسو هيل"
-      },
-      {
-        "sentence": "Wir brauchen neue Bildschirme für das Büro.",
-        "meaning": "نحتاج شاشات جديدة للمكتب",
-        "pronunciation": "فير براوخن نويه بيلت-شير-مه فيور داس بورو"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Monitor",
-        "meaning": "شاشة عرض",
-        "pronunciation": "مو-ني-تور"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Computer",
-    "meaning": "حاسوب",
-    "pronunciation": "كوم-بيو-تر",
     "article": "der",
-    "plural": "Computer",
-    "pluralPronunciation": "كوم-بيو-تر",
-    "incorrectPlurals": ["Computers", "Computeren", "Computern"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
+    "plural": "Lehrer",
+    "pluralPronunciation": "ليه-رر",
     "examples": [
       {
-        "sentence": "Mein Computer ist langsam.",
-        "meaning": "حاسوبي بطيء",
-        "pronunciation": "ماين كوم-بيو-تر إيست لانج-زام"
-      },
-      {
-        "sentence": "Die Computer in unserem Büro sind neu.",
-        "meaning": "أجهزة الكمبيوتر في مكتبنا جديدة",
-        "pronunciation": "دي كوم-بيو-تر إن أونزيرم بورو زينت نوي"
+        "sentence": "Der Lehrer erklärt die Grammatik.",
+        "meaning": "المدرس يشرح القواعد",
+        "pronunciation": "دير ليه-رر إركيلرت دي جراماتيك"
       }
     ],
     "synonyms": [
       {
-        "word": "PC",
-        "meaning": "حاسوب شخصي",
-        "pronunciation": "بي-تسي"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Drucker",
-    "meaning": "طابعة",
-    "pronunciation": "درو-كر",
-    "article": "der",
-    "plural": "Drucker",
-    "pluralPronunciation": "درو-كر",
-    "incorrectPlurals": ["Druckers", "Druckeren", "Druckern"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Der Drucker funktioniert nicht.",
-        "meaning": "الطابعة لا تعمل",
-        "pronunciation": "دير درو-كر فونك-تسي-ونيرت نيت"
-      },
-      {
-        "sentence": "Wir haben drei Drucker im Büro.",
-        "meaning": "لدينا ثلاث طابعات في المكتب",
-        "pronunciation": "فير هابن دراي درو-كر إيم بورو"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Printer",
-        "meaning": "طابعة",
-        "pronunciation": "برين-تر"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "gehen",
-    "meaning": "يذهب",
-    "pronunciation": "جي-هن",
-    "type": "verb",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich gehe jetzt nach Hause.",
-        "meaning": "سأذهب الآن إلى المنزل",
-        "pronunciation": "إيش جي-هه يتست ناخ هاوزه"
-      },
-      {
-        "sentence": "Wann gehst du zur Arbeit?",
-        "meaning": "متى تذهب إلى العمل؟",
-        "pronunciation": "فان جيهست دو تسور آربايت؟"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "laufen",
-        "meaning": "يمشي",
-        "pronunciation": "لاو-فن"
+        "word": "Pädagoge",
+        "meaning": "تربوي",
+        "pronunciation": "بيدا-غوغه"
       }
     ],
     "antonyms": [
       {
-        "word": "kommen",
-        "meaning": "يأتي",
-        "pronunciation": "كو-من"
+        "word": "Schüler",
+        "meaning": "تلميذ",
+        "pronunciation": "شولر"
       }
-    ],
+    ]
+  },
+  {
+    "word": "wohnen",
+    "meaning": "يسكن",
+    "pronunciation": "فو-نن",
+    "type": "verb",
     "conjugation": {
-      "infinitive": "gehen",
+      "infinitive": "wohnen",
       "present": {
-        "ich": "gehe",
-        "du": "gehst",
-        "er": "geht",
-        "sieShe": "geht",
-        "es": "geht",
-        "wir": "gehen",
-        "ihr": "geht",
-        "sieThey": "gehen",
-        "Sie": "gehen"
+        "ich": "wohne",
+        "du": "wohnst",
+        "er": "wohnt",
+        "sieShe": "wohnt",
+        "es": "wohnt",
+        "wir": "wohnen",
+        "ihr": "wohnt",
+        "sieThey": "wohnen",
+        "Sie": "wohnen"
       },
       "past": {
-        "ich": "ging",
-        "du": "gingst",
-        "er": "ging",
-        "sieShe": "ging",
-        "es": "ging",
-        "wir": "gingen",
-        "ihr": "gingt",
-        "sieThey": "gingen",
-        "Sie": "gingen"
+        "ich": "wohnte",
+        "du": "wohntest",
+        "er": "wohnte",
+        "sieShe": "wohnte",
+        "es": "wohnte",
+        "wir": "wohnten",
+        "ihr": "wohntet",
+        "sieThey": "wohnten",
+        "Sie": "wohnten"
       }
-    }
-  },
-  {
-    "word": "suchen",
-    "meaning": "يبحث",
-    "pronunciation": "زو-خن",
-    "type": "verb",
-    "isReviewed": false,
-    "reviewCount": 0,
+    },
     "examples": [
       {
-        "sentence": "Ich suche meinen Stift.",
-        "meaning": "أنا أبحث عن قلمي",
-        "pronunciation": "إيش زو-خه ماينن شتيفت"
+        "sentence": "Ich wohne in Berlin.",
+        "meaning": "أنا أسكن في برلين",
+        "pronunciation": "إيش فو-نه إن برلين"
       },
       {
-        "sentence": "Er sucht eine neue Stelle.",
-        "meaning": "هو يبحث عن وظيفة جديدة",
-        "pronunciation": "إير زوخت آينه نويه شتيله"
+        "sentence": "Wo wohnst du?",
+        "meaning": "أين تسكن؟",
+        "pronunciation": "فو فو-نست دو؟"
       }
     ],
     "synonyms": [
       {
-        "word": "finden",
-        "meaning": "يجد",
-        "pronunciation": "فين-دن"
+        "word": "leben",
+        "meaning": "يعيش",
+        "pronunciation": "ليه-بن"
       }
     ],
     "antonyms": [
       {
-        "word": "verlieren",
-        "meaning": "يفقد",
-        "pronunciation": "فر-لي-رن"
-      }
-    ],
-    "conjugation": {
-      "infinitive": "suchen",
-      "present": {
-        "ich": "suche",
-        "du": "suchst",
-        "er": "sucht",
-        "sieShe": "sucht",
-        "es": "sucht",
-        "wir": "suchen",
-        "ihr": "sucht",
-        "sieThey": "suchen",
-        "Sie": "suchen"
-      },
-      "past": {
-        "ich": "suchte",
-        "du": "suchtest",
-        "er": "suchte",
-        "sieShe": "suchte",
-        "es": "suchte",
-        "wir": "suchten",
-        "ihr": "suchtet",
-        "sieThey": "suchten",
-        "Sie": "suchten"
-      }
-    }
-  },
-  {
-    "word": "heute",
-    "meaning": "اليوم",
-    "pronunciation": "هوي-ته",
-    "type": "adverb",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Heute ist Montag.",
-        "meaning": "اليوم هو الاثنين",
-        "pronunciation": "هوي-ته إيست مون-تاك"
-      },
-      {
-        "sentence": "Was machen wir heute?",
-        "meaning": "ماذا سنفعل اليوم؟",
-        "pronunciation": "فاس ما-خن فير هوي-ته؟"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "an diesem Tag",
-        "meaning": "في هذا اليوم",
-        "pronunciation": "آن دي-زم تاك"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "gestern",
-        "meaning": "بالأمس",
-        "pronunciation": "جس-تيرن"
+        "word": "ausziehen",
+        "meaning": "يغادر/يترك السكن",
+        "pronunciation": "أوس-تسي-هن"
       }
     ]
   },
   {
-    "word": "wieder",
-    "meaning": "مرة أخرى",
-    "pronunciation": "في-در",
-    "type": "adverb",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Komm wieder!",
-        "meaning": "تعال مرة أخرى!",
-        "pronunciation": "كوم في-در!"
-      },
-      {
-        "sentence": "Ich habe ihn wieder gesehen.",
-        "meaning": "رأيته مرة أخرى",
-        "pronunciation": "إيش ها-به إين في-در جي-زه-هن"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "noch einmal",
-        "meaning": "مرة أخرى",
-        "pronunciation": "نوخ آين-مال"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "nie",
-        "meaning": "أبدًا",
-        "pronunciation": "ني"
-      }
-    ]
-  },
-  {
-    "word": "Briefmarke",
-    "meaning": "طابع بريدي",
-    "pronunciation": "بريف-مار-كه",
-    "article": "die",
-    "plural": "Briefmarken",
-    "pluralPronunciation": "بريف-مار-كن",
-    "incorrectPlurals": ["Briefmarkes", "Briefmarker", "Briefmarkien"],
+    "word": "in",
+    "meaning": "في",
+    "pronunciation": "إن",
     "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
     "examples": [
       {
-        "sentence": "Ich sammle Briefmarken.",
-        "meaning": "أنا أجمع الطوابع البريدية",
-        "pronunciation": "إيش زام-له بريف-مار-كن"
-      },
-      {
-        "sentence": "Diese Briefmarke ist selten.",
-        "meaning": "هذا الطابع البريدي نادر",
-        "pronunciation": "دي-زه بريف-مار-كه إيست زيل-تن"
+        "sentence": "Das Buch ist in der Tasche.",
+        "meaning": "الكتاب في الحقيبة",
+        "pronunciation": "داس بوخ إست إن دير تاشه"
       }
     ],
     "synonyms": [
       {
-        "word": "Postwertzeichen",
-        "meaning": "طابع بريدي",
-        "pronunciation": "بوست-فيرت-تساي-شن"
+        "word": "innerhalb",
+        "meaning": "داخل",
+        "pronunciation": "إنر-هالب"
       }
     ],
-    "antonyms": []
+    "antonyms": [
+      {
+        "word": "außerhalb",
+        "meaning": "خارج",
+        "pronunciation": "أوسر-هالب"
+      }
+    ]
   },
   {
-    "word": "Büro",
-    "meaning": "مكتب",
-    "pronunciation": "بورو",
+    "word": "Was",
+    "meaning": "ماذا",
+    "pronunciation": "فاس",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Was machst du?",
+        "meaning": "ماذا تفعل؟",
+        "pronunciation": "فاس ماخست دو؟"
+      },
+      {
+        "sentence": "Was ist das?",
+        "meaning": "ما هذا؟",
+        "pronunciation": "فاس إست داس؟"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "welches",
+        "meaning": "أي",
+        "pronunciation": "فيلشيس"
+      },
+      {
+        "word": "welche",
+        "meaning": "أي (للجمع والمؤنث)",
+        "pronunciation": "فيلشه"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "nichts",
+        "meaning": "لا شيء",
+        "pronunciation": "نichts"
+      },
+      {
+        "word": "alles",
+        "meaning": "كل شيء",
+        "pronunciation": "آليس"
+      }
+    ]
+  },
+  {
+    "word": "Jahr",
+    "meaning": "سنة",
+    "pronunciation": "يا-ر",
+    "type": "noun",
     "article": "das",
-    "plural": "Büros",
-    "pluralPronunciation": "بوروس",
-    "incorrectPlurals": ["Büroen", "Büren", "Bürer"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
+    "plural": "Jahre",
+    "pluralPronunciation": "يا-ره",
+    "incorrectPlurals": ["Jahren", "Jahres", "Jahrs"],
     "examples": [
       {
-        "sentence": "Unser Büro ist im dritten Stock.",
-        "meaning": "مكتبنا في الطابق الثالث",
-        "pronunciation": "أون-زر بورو إيست إيم دريت-ن شتوك"
+        "sentence": "Ich bin 30 Jahre alt.",
+        "meaning": "عمري 30 سنة",
+        "pronunciation": "إيش بن دراي-سيش يا-ره آلت"
       },
       {
-        "sentence": "Die Büros sind modern eingerichtet.",
-        "meaning": "المكاتب مجهزة بشكل عصري",
-        "pronunciation": "دي بوروس زينت مو-درن آين-جير-شيت-ت"
+        "sentence": "Ein Jahr hat 12 Monate.",
+        "meaning": "السنة فيها 12 شهرًا",
+        "pronunciation": "آين يا-ر هات تسفولف مو-نا-ته"
       }
     ],
     "synonyms": [
       {
-        "word": "Arbeitszimmer",
-        "meaning": "غرفة العمل",
-        "pronunciation": "آربايتس-تسي-مر"
+        "word": "Jahreszeit",
+        "meaning": "فصل من السنة",
+        "pronunciation": "يا-رس-تسايت"
+      },
+      {
+        "word": "Zeitraum",
+        "meaning": "فترة زمنية",
+        "pronunciation": "تسايت-راوم"
       }
     ],
     "antonyms": [
       {
-        "word": "Zuhause",
-        "meaning": "المنزل",
-        "pronunciation": "تسو-هاو-زه"
+        "word": "Monat",
+        "meaning": "شهر",
+        "pronunciation": "مو-نات"
+      },
+      {
+        "word": "Tag",
+        "meaning": "يوم",
+        "pronunciation": "تاك"
       }
     ]
   },
   {
-    "word": "Chef",
-    "meaning": "رئيس/مدير",
-    "pronunciation": "شيف",
-    "article": "der",
-    "plural": "Chefs",
-    "pluralPronunciation": "شيفس",
-    "incorrectPlurals": ["Chefen", "Chefes", "Chefies"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Der Chef ist in einer Besprechung.",
-        "meaning": "الرئيس في اجتماع",
-        "pronunciation": "دير شيف إيست إين آين-ر بي-شبر-شونج"
-      },
-      {
-        "sentence": "Die Chefs treffen sich um 10 Uhr.",
-        "meaning": "المدراء يجتمعون في الساعة العاشرة",
-        "pronunciation": "دي شيفس تريف-ن زيش أوم تسين أور"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Vorgesetzter",
-        "meaning": "رئيس",
-        "pronunciation": "فور-جيه-زيت-تر"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Angestellter",
-        "meaning": "موظف",
-        "pronunciation": "آن-جيه-شتيل-تر"
-      }
-    ]
-  },
-  {
-    "word": "Firma",
-    "meaning": "شركة",
-    "pronunciation": "فير-ما",
-    "article": "die",
-    "plural": "Firmen",
-    "pluralPronunciation": "فير-من",
-    "incorrectPlurals": ["Firmas", "Firmien", "Firmes"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Die Firma hat 100 Mitarbeiter.",
-        "meaning": "الشركة لديها 100 موظف",
-        "pronunciation": "دي فير-ما هات هون-درت ميت-آربايت-ر"
-      },
-      {
-        "sentence": "Wir arbeiten mit verschiedenen Firmen zusammen.",
-        "meaning": "نحن نعمل مع شركات مختلفة",
-        "pronunciation": "فير آربايت-ن ميت فر-شيد-ن-ن فير-من تسو-زام-ن"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Unternehmen",
-        "meaning": "مؤسسة",
-        "pronunciation": "أون-تر-نيه-من"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Formular",
-    "meaning": "نموذج",
-    "pronunciation": "فور-مو-لار",
-    "article": "das",
-    "plural": "Formulare",
-    "pluralPronunciation": "فور-مو-لا-ره",
-    "incorrectPlurals": ["Formulars", "Formularen", "Formularies"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Bitte füllen Sie dieses Formular aus.",
-        "meaning": "من فضلك املأ هذا النموذج",
-        "pronunciation": "بي-ته فيول-ن زي دي-زس فور-مو-لار آوس"
-      },
-      {
-        "sentence": "Die Formulare liegen auf dem Tisch.",
-        "meaning": "النماذج موجودة على الطاولة",
-        "pronunciation": "دي فور-مو-لا-ره لي-جن آوف ديم تيش"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Antragsformular",
-        "meaning": "نموذج طلب",
-        "pronunciation": "آن-تراكس-فور-مو-لار"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Handy",
-    "meaning": "هاتف محمول",
-    "pronunciation": "هان-دي",
-    "article": "das",
-    "plural": "Handys",
-    "pluralPronunciation": "هان-ديس",
-    "incorrectPlurals": ["Handien", "Handyes", "Handyer"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Mein Handy ist kaputt.",
-        "meaning": "هاتفي المحمول معطل",
-        "pronunciation": "ماين هان-دي إيست كا-بوت"
-      },
-      {
-        "sentence": "Die Handys müssen ausgeschaltet bleiben.",
-        "meaning": "يجب أن تبقى الهواتف المحمولة مغلقة",
-        "pronunciation": "دي هان-ديس مو-سن آوس-جيه-شالت-ت بلاي-بن"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Mobiltelefon",
-        "meaning": "هاتف محمول",
-        "pronunciation": "مو-بيل-تي-لي-فون"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Festnetztelefon",
-        "meaning": "هاتف أرضي",
-        "pronunciation": "فست-نيتس-تي-لي-فون"
-      }
-    ]
-  },
-  {
-    "word": "Kalender",
-    "meaning": "تقويم",
-    "pronunciation": "كا-لين-در",
-    "article": "der",
-    "plural": "Kalender",
-    "pluralPronunciation": "كا-لين-در",
-    "incorrectPlurals": ["Kalenders", "Kalenderen", "Kalenderies"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich trage den Termin in den Kalender ein.",
-        "meaning": "أدخل الموعد في التقويم",
-        "pronunciation": "إيش ترا-جه دين تر-مين إن دين كا-لين-در آين"
-      },
-      {
-        "sentence": "Die Kalender hängen an der Wand.",
-        "meaning": "التقاويم معلقة على الحائط",
-        "pronunciation": "دي كا-لين-در هن-جن آن دير فانت"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Terminkalender",
-        "meaning": "مفكرة مواعيد",
-        "pronunciation": "تر-مين-كا-لين-در"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Laptop",
-    "meaning": "حاسوب محمول",
-    "pronunciation": "لاب-توب",
-    "article": "der",
-    "plural": "Laptops",
-    "pluralPronunciation": "لاب-توبس",
-    "incorrectPlurals": ["Laptopen", "Laptopien", "Laptoper"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Mein Laptop ist neu.",
-        "meaning": "حاسوبي المحمول جديد",
-        "pronunciation": "ماين لاب-توب إيست نوي"
-      },
-      {
-        "sentence": "Die Laptops sind alle angeschlossen.",
-        "meaning": "جميع أجهزة الكمبيوتر المحمولة متصلة",
-        "pronunciation": "دي لاب-توبس زيند آل-ه آن-جيه-شلوس-ن"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Notebook",
-        "meaning": "دفتر ملاحظات إلكتروني",
-        "pronunciation": "نوت-بوك"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Desktop-Computer",
-        "meaning": "حاسوب مكتبي",
-        "pronunciation": "ديسكتوب-كومبيوتر"
-      }
-    ]
-  },
+    "word": "kein",
+    "meaning": "لا/ليس (نفي)",
+    "pronunciation": "كاين",
+    "type": "pronoun",
 
-  {
-    "word": "Maus",
-    "meaning": "فأرة حاسوب",
-    "pronunciation": "ماوس",
-    "article": "die",
-    "plural": "Mäuse",
-    "pluralPronunciation": "موي-زه",
-    "incorrectPlurals": ["Mauses", "Mausien", "Mauser"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
     "examples": [
       {
-        "sentence": "Die Maus funktioniert nicht richtig.",
-        "meaning": "الفأرة لا تعمل بشكل صحيح",
-        "pronunciation": "دي ماوس فونكتسيونيرت نيشت ريشتيش"
+        "sentence": "Ich habe kein Geld.",
+        "meaning": "ليس لدي مال",
+        "pronunciation": "إيش ها-به كاين جيلت"
       },
       {
-        "sentence": "Wir brauchen neue Mäuse für die Computer.",
-        "meaning": "نحتاج فئران جديدة لأجهزة الكمبيوتر",
-        "pronunciation": "فير براوخن نويه موي-زه فيور دي كومبيوتر"
+        "sentence": "Das ist keine gute Idee.",
+        "meaning": "هذه ليست فكرة جيدة",
+        "pronunciation": "داس إست كاي-نه غو-ته إي-دي"
       }
     ],
     "synonyms": [
       {
-        "word": "Computermaus",
-        "meaning": "فأرة حاسوب",
-        "pronunciation": "كومبيوتر-ماوس"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Notizbuch",
-    "meaning": "دفتر ملاحظات",
-    "pronunciation": "نو-تيتس-بووخ",
-    "article": "das",
-    "plural": "Notizbücher",
-    "pluralPronunciation": "نو-تيتس-بوو-شر",
-    "incorrectPlurals": ["Notizbuchs", "Notizbuchen", "Notizbuchies"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich schreibe alles in mein Notizbuch.",
-        "meaning": "أكتب كل شيء في دفتر ملاحظاتي",
-        "pronunciation": "إيش شرايبيه آل-ز إين ماين نو-تيتس-بووخ"
+        "word": "nicht",
+        "meaning": "ليس",
+        "pronunciation": "نيتشت"
       },
       {
-        "sentence": "Die Notizbücher liegen auf dem Schreibtisch.",
-        "meaning": "دفاتر الملاحظات موجودة على المكتب",
-        "pronunciation": "دي نو-تيتس-بوو-شر لي-جن آوف ديم شرايب-تيش"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Tagebuch",
-        "meaning": "يوميات",
-        "pronunciation": "تا-جه-بووخ"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Rechnung",
-    "meaning": "فاتورة",
-    "pronunciation": "ريش-نونج",
-    "article": "die",
-    "plural": "Rechnungen",
-    "pluralPronunciation": "ريش-نونج-ن",
-    "incorrectPlurals": ["Rechnungs", "Rechnunger", "Rechnungien"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Die Rechnung ist noch nicht bezahlt.",
-        "meaning": "الفاتورة لم تدفع بعد",
-        "pronunciation": "دي ريش-نونج إيست نوخ نيشت بي-تساهلت"
-      },
-      {
-        "sentence": "Können Sie mir die Rechnungen schicken?",
-        "meaning": "هل يمكنك إرسال الفواتير لي؟",
-        "pronunciation": "كيونن زي مير دي ريش-نونج-ن شيكن؟"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Invoice",
-        "meaning": "فاتورة (إنجليزية)",
-        "pronunciation": "إن-فوايس"
+        "word": "niemand",
+        "meaning": "لا أحد",
+        "pronunciation": "ني-مانت"
       }
     ],
     "antonyms": [
       {
-        "word": "Quittung",
-        "meaning": "إيصال دفع",
-        "pronunciation": "كفي-تونج"
-      }
-    ]
-  },
-  {
-    "word": "SMS",
-    "meaning": "رسالة نصية",
-    "pronunciation": "إس-إم-إس",
-    "article": "die",
-    "plural": "SMS",
-    "pluralPronunciation": "إس-إم-إس",
-    "incorrectPlurals": ["SMSen", "SMSes", "SMSer"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich habe dir eine SMS geschickt.",
-        "meaning": "أرسلت لك رسالة نصية",
-        "pronunciation": "إيش هابه دير آي-نه إس-إم-إس جي-شيكت"
+        "word": "ein",
+        "meaning": "واحد/بعض",
+        "pronunciation": "آين"
       },
       {
-        "sentence": "Die SMS sind alle angekommen.",
-        "meaning": "جميع الرسائل النصية وصلت",
-        "pronunciation": "دي إس-إم-إس زيند آل-ه آن-جي-كو-من"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Textnachricht",
-        "meaning": "رسالة نصية",
-        "pronunciation": "تيكست-نا-خريشت"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Anruf",
-        "meaning": "مكالمة هاتفية",
-        "pronunciation": "آن-روف"
-      }
-    ]
-  },
-  {
-    "word": "Stift",
-    "meaning": "قلم",
-    "pronunciation": "شتيفت",
-    "article": "der",
-    "plural": "Stifte",
-    "pluralPronunciation": "شتيف-ته",
-    "incorrectPlurals": ["Stifts", "Stiften", "Stifter"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Kann ich deinen Stift borgen?",
-        "meaning": "هل يمكنني استعارة قلمك؟",
-        "pronunciation": "كان إيش داينن شتيفت بور-جن؟"
-      },
-      {
-        "sentence": "Die Stifte liegen in der Schublade.",
-        "meaning": "الأقلام موجودة في الدرج",
-        "pronunciation": "دي شتيف-ته لي-جن إين دير شو-بلا-ده"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Kugelschreiber",
-        "meaning": "قلم حبر جاف",
-        "pronunciation": "كو-جل-شراي-بر"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Termin",
-    "meaning": "موعد",
-    "pronunciation": "تر-مين",
-    "article": "der",
-    "plural": "Termine",
-    "pluralPronunciation": "تر-مي-نه",
-    "incorrectPlurals": ["Termins", "Terminen", "Terminer"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich habe einen Termin beim Arzt.",
-        "meaning": "لدي موعد عند الطبيب",
-        "pronunciation": "إيش هابه آي-نن تر-مين بايم آرتست"
-      },
-      {
-        "sentence": "Die Termine für nächste Woche sind voll.",
-        "meaning": "مواعيد الأسبوع القادم ممتلئة",
-        "pronunciation": "دي تر-مي-نه فيور نيك-سته فو-خه زينت فول"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Verabredung",
-        "meaning": "موعد/اتفاق",
-        "pronunciation": "فر-آب-ريه-دونج"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Absage",
-        "meaning": "إلغاء",
-        "pronunciation": "آب-زا-جه"
-      }
-    ]
-  },
-  {
-    "word": "Achtung",
-    "meaning": "انتباه/تحذير",
-    "pronunciation": "آخ-تونج",
-    "article": "die",
-    "plural": "Achtungen",
-    "pluralPronunciation": "آخ-تونج-ن",
-    "incorrectPlurals": ["Achtungs", "Achtunger", "Achtungien"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Achtung! Gefahr!",
-        "meaning": "انتبه! خطر!",
-        "pronunciation": "آخ-تونج! جي-فار!"
-      },
-      {
-        "sentence": "Die Achtungen der Kunden sind uns wichtig.",
-        "meaning": "انتباهات العملاء مهمة لنا",
-        "pronunciation": "دي آخ-تونج-ن دير كون-دن زينت أونز فيش-تيش"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Vorsicht",
-        "meaning": "حذر",
-        "pronunciation": "فور-زيتشت"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Unachtsamkeit",
-        "meaning": "إهمال",
-        "pronunciation": "أون-آخت-زام-كايت"
-      }
-    ]
-  },
-  {
-    "word": "Auf Wiedersehen",
-    "meaning": "إلى اللقاء",
-    "pronunciation": "آوف في-در-زه-ن",
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Auf Wiedersehen! Bis morgen!",
-        "meaning": "إلى اللقاء! حتى الغد!",
-        "pronunciation": "آوف في-در-زه-ن! بيس مور-جن!"
-      },
-      {
-        "sentence": "Sie sagte nur 'Auf Wiedersehen' und ging.",
-        "meaning": "قالت فقط 'إلى اللقاء' وذهبت",
-        "pronunciation": "زي زاك-ته نور 'آوف في-در-زه-ن' أونت جينج"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Tschüss",
-        "meaning": "وداعًا",
-        "pronunciation": "تشوس"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Hallo",
-        "meaning": "مرحبًا",
-        "pronunciation": "ها-لو"
-      }
-    ]
-  },
-  {
-    "word": "Foto",
-    "meaning": "صورة",
-    "pronunciation": "فو-تو",
-    "article": "das",
-    "plural": "Fotos",
-    "pluralPronunciation": "فو-توس",
-    "incorrectPlurals": ["Foten", "Fotoen", "Foties"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Kannst du ein Foto machen?",
-        "meaning": "هل يمكنك التقاط صورة؟",
-        "pronunciation": "كانست دو آين فو-تو ما-خن؟"
-      },
-      {
-        "sentence": "Die Fotos sind in der Kamera.",
-        "meaning": "الصور موجودة في الكاميرا",
-        "pronunciation": "دي فو-توس زينت إين دير كا-مي-را"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Bild",
-        "meaning": "صورة",
-        "pronunciation": "بيلت"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Gruß",
-    "meaning": "تحية",
-    "pronunciation": "جروس",
-    "article": "der",
-    "plural": "Grüße",
-    "pluralPronunciation": "جرو-سه",
-    "incorrectPlurals": ["Gruss", "Grüssen", "Grusser"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Mit freundlichen Grüßen",
-        "meaning": "مع أطيب التحيات",
-        "pronunciation": "ميت فرويند-لي-شن جرو-سن"
-      },
-      {
-        "sentence": "Die Grüße an deine Familie!",
-        "meaning": "أبلغ التحيات لعائلتك!",
-        "pronunciation": "دي جرو-سه آن داين-ه فا-مي-لي-ه!"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Begrüßung",
-        "meaning": "ترحيب",
-        "pronunciation": "بي-جرو-سونج"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Abschied",
-        "meaning": "وداع",
-        "pronunciation": "آب-شيت"
-      }
-    ]
-  },
-  {
-    "word": "schöne",
-    "meaning": "جميل / جميلة",
-    "pronunciation": "شو-نه",
-    "type": "adjective",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Das ist ein schönes Haus.",
-        "meaning": "هذا منزل جميل.",
-        "pronunciation": "داس إست آين شو-نيس هاوس."
-      },
-      {
-        "sentence": "Sie hat eine schöne Stimme.",
-        "meaning": "لديها صوت جميل.",
-        "pronunciation": "زي هات آي-نه شو-نه شتي-مه."
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "hübsch",
-        "meaning": "جميل / أنيق",
-        "pronunciation": "هوبش"
-      },
-      {
-        "word": "attraktiv",
-        "meaning": "جذاب",
-        "pronunciation": "آت-تراك-تيف"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "hässlich",
-        "meaning": "قبيح",
-        "pronunciation": "هيس-ليش"
-      },
-      {
-        "word": "unschön",
-        "meaning": "غير جميل",
-        "pronunciation": "أون-شون"
-      }
-    ]
-  },
-  {
-    "word": "See",
-    "meaning": "بحيرة",
-    "pronunciation": "زيه",
-    "article": "der",
-    "plural": "Seen",
-    "pluralPronunciation": "زيه-ن",
-    "incorrectPlurals": ["Sees", "Seer", "Seeien"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Der See ist sehr ruhig heute.",
-        "meaning": "البحيرة هادئة جدًا اليوم",
-        "pronunciation": "دير زيه إيست زيهر رو-هيخ هوي-ته"
-      },
-      {
-        "sentence": "Die Seen in dieser Region sind wunderschön.",
-        "meaning": "البحيرات في هذه المنطقة جميلة جدًا",
-        "pronunciation": "دي زيه-ن إين دي-زر ري-جي-ون زينت فون-در-شون"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Binnensee",
-        "meaning": "بحيرة داخلية",
-        "pronunciation": "بين-نن-زيه"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Meer",
-        "meaning": "بحر",
-        "pronunciation": "ميهر"
-      }
-    ]
-  },
-  {
-    "word": "Stress",
-    "meaning": "توتر",
-    "pronunciation": "شتريس",
-    "article": "der",
-    "plural": "Stresse",
-    "pluralPronunciation": "شتريس-ه",
-    "incorrectPlurals": ["Stressen", "Stresser", "Stressies"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich habe viel Stress bei der Arbeit.",
-        "meaning": "لدي الكثير من التوتر في العمل",
-        "pronunciation": "إيش هابه فيل شتريس باي دير آربايت"
-      },
-      {
-        "sentence": "Die Stresse im Büro sind manchmal zu viel.",
-        "meaning": "الضغوط في المكتب تكون أحيانًا كثيرة جدًا",
-        "pronunciation": "دي شتريس-ه إيم بورو زيند مانخ-مال تسو فيل"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Druck",
-        "meaning": "ضغط",
-        "pronunciation": "دروك"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Entspannung",
-        "meaning": "استرخاء",
-        "pronunciation": "إينت-شبان-نونج"
-      }
-    ]
-  },
-  {
-    "word": "Telefonnummer",
-    "meaning": "رقم الهاتف",
-    "pronunciation": "تي-لي-فون-نو-مر",
-    "article": "die",
-    "plural": "Telefonnummern",
-    "pluralPronunciation": "تي-لي-فون-نو-مرن",
-    "incorrectPlurals": [
-      "Telefonnummers",
-      "Telefonnummerien",
-      "Telefonnummeres"
-    ],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Wie ist Ihre Telefonnummer?",
-        "meaning": "ما هو رقم هاتفك؟",
-        "pronunciation": "في إيست إي-ره تي-لي-فون-نو-مر؟"
-      },
-      {
-        "sentence": "Die Telefonnummern sind im Adressbuch.",
-        "meaning": "أرقام الهاتف موجودة في دفتر العناوين",
-        "pronunciation": "دي تي-لي-فون-نو-مرن زينت إيم آد-ريس-بووخ"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Rufnummer",
-        "meaning": "رقم الاتصال",
-        "pronunciation": "روف-نو-مر"
-      }
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "Zeit",
-    "meaning": "وقت",
-    "pronunciation": "تسايت",
-    "article": "die",
-    "plural": "Zeiten",
-    "pluralPronunciation": "تساي-تن",
-    "incorrectPlurals": ["Zeits", "Zeiter", "Zeitien"],
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich habe keine Zeit.",
-        "meaning": "ليس لدي وقت",
-        "pronunciation": "إيش هابه كاي-نه تسايت"
-      },
-      {
-        "sentence": "In alten Zeiten war das Leben schwerer.",
-        "meaning": "في الأزمنة القديمة كانت الحياة أصعب",
-        "pronunciation": "إين آل-تن تساي-تن فار داس لي-بن شفي-رر"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "Dauer",
-        "meaning": "مدة",
-        "pronunciation": "داو-ر"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "Ewigkeit",
-        "meaning": "أبدية",
-        "pronunciation": "إي-فيك-كايت"
-      }
-    ]
-  },
- 
-  {
-    "word": "hier",
-    "meaning": "هنا",
-    "pronunciation": "هير",
-    "type": "adverb",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Komm bitte hierher!",
-        "meaning": "تعال إلى هنا من فضلك!",
-        "pronunciation": "كوم بي-ته هير-هير!"
-      },
-      {
-        "sentence": "Hier ist mein Büro.",
-        "meaning": "هنا مكتبي",
-        "pronunciation": "هير إيست ماين بورو"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "an diesem Ort",
-        "meaning": "في هذا المكان",
-        "pronunciation": "آن دي-زم أورت"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "dort",
-        "meaning": "هناك",
-        "pronunciation": "دورت"
-      }
-    ]
-  },
-
-  {
-    "word": "mit",
-    "meaning": "مع",
-    "pronunciation": "ميت",
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Ich gehe mit dir.",
-        "meaning": "أذهب معك",
-        "pronunciation": "إيش جي-هه ميت دير"
-      },
-      {
-        "sentence": "Der Kaffee mit Milch, bitte.",
-        "meaning": "القهوة مع الحليب، من فضلك",
-        "pronunciation": "دير كا-فه ميت ميلش، بي-ته"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "zusammen mit",
-        "meaning": "معًا مع",
-        "pronunciation": "تسو-زامن ميت"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "ohne",
-        "meaning": "بدون",
-        "pronunciation": "أو-نه"
-      }
-    ]
-  },
-  {
-    "word": "oder",
-    "meaning": "أو",
-    "pronunciation": "أو-در",
-    "type": "noun",
-    "isReviewed": false,
-    "reviewCount": 0,
-    "examples": [
-      {
-        "sentence": "Kaffee oder Tee?",
-        "meaning": "قهوة أم شاي؟",
-        "pronunciation": "كا-فه أو-در تاي؟"
-      },
-      {
-        "sentence": "Gehen wir heute oder morgen?",
-        "meaning": "هل نذهب اليوم أم غدًا؟",
-        "pronunciation": "جي-هن فير هوي-ته أو-در مور-جن؟"
-      }
-    ],
-    "synonyms": [
-      {
-        "word": "beziehungsweise",
-        "meaning": "أو بالترتيب",
-        "pronunciation": "بي-تسي-هونكس-فايزه"
-      }
-    ],
-    "antonyms": [
-      {
-        "word": "und",
-        "meaning": "و",
-        "pronunciation": "أونت"
+        "word": "jeder",
+        "meaning": "كل",
+        "pronunciation": "يه-در"
       }
     ]
   }

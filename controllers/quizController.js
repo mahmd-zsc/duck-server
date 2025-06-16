@@ -1,4 +1,5 @@
 const { Lesson } = require("../models/lessonModel");
+const { Word } = require("../models/wordModel");
 
 const {
   generateIntroQuestion,
@@ -13,22 +14,20 @@ const {
   generateWriteTheWordQuestion,
   generateWriteSentenceQuestion,
 } = require("../utils/questionGenerators");
+
 const {
   getWordsNeedingReviewData,
   getHardWords,
 } = require("../utils/wordHelpers");
-const { getWordsNeedingReview } = require("./wordController");
 
 function calculateLevel(word) {
   let score = 0;
 
-  // عوامل صعوبة
   if (word.isHard) score += 2;
   if (word.synonyms?.length) score += 1;
   if (word.antonyms?.length) score += 1;
   if (word.conjugation?.present) score += 1;
 
-  // عوامل تسهيل
   if (word.reviewCount >= 5) score -= 2;
   if (word.examples?.length >= 2) score -= 1;
 
@@ -44,10 +43,11 @@ function getNumQuestionsByLevel(level) {
   return 4;
 }
 
-// 🧰 قائمة دوال توليد الأسئلة
 const questionGenerators = [
   generateIntroQuestion,
   generateFillInTheBlanksQuestion,
+  generateWriteTheWordQuestion,
+  generateWriteSentenceQuestion,
   generateTranslationQuestion,
   generateArticleQuestion,
   generatePluralQuestion,
@@ -55,8 +55,6 @@ const questionGenerators = [
   generateSynonymQuestion,
   generateAntonymQuestion,
   generateSentenceOrderQuestion,
-  generateWriteTheWordQuestion,
-  generateWriteSentenceQuestion,
 ];
 
 const multipleChoiceGenerators = [
@@ -67,7 +65,6 @@ const multipleChoiceGenerators = [
   generateAntonymQuestion,
 ];
 
-// ✅ تحقق من إمكانية توليد نوع سؤال معين لكلمة
 function canGenerateQuestion(word, generatorName) {
   switch (generatorName) {
     case "generateArticleQuestion":
@@ -91,25 +88,24 @@ function canGenerateQuestion(word, generatorName) {
   }
 }
 
-// 🧠 توليد الأسئلة لكلمة واحدة بناءً على مستواها
 function generateQuestionsForWord(word, mode) {
   let numQuestions;
 
   switch (mode) {
     case "learn":
-      numQuestions = 4;
+      numQuestions = 3;
       break;
     case "review":
       numQuestions = 2;
       break;
     case "hard-review":
-      numQuestions = 4;
+      numQuestions = 3;
       break;
     case "quick-review":
       numQuestions = 1;
       break;
     default:
-      numQuestions = 4;
+      numQuestions = 1;
   }
 
   const usedTypes = new Set();
@@ -117,7 +113,7 @@ function generateQuestionsForWord(word, mode) {
   let attempts = 0;
   const MAX_ATTEMPTS = 50;
 
-  if (mode === "learn") {
+  if (mode === "learn" && !word.isReviewed) {
     const introQuestion = generateIntroQuestion(word);
     if (introQuestion) questions.push(introQuestion);
   }
@@ -125,7 +121,6 @@ function generateQuestionsForWord(word, mode) {
   while (questions.length < numQuestions && attempts < MAX_ATTEMPTS) {
     attempts++;
 
-    // ✅ في حالة quick-review هنستخدم فقط multipleChoiceGenerators
     const generatorList =
       mode === "quick-review" ? multipleChoiceGenerators : questionGenerators;
 
@@ -145,7 +140,6 @@ function generateQuestionsForWord(word, mode) {
   return questions;
 }
 
-// ترتيب الأسئلة بحيث يظهر intro أولًا
 const organizeQuizzes = (quizzes) => {
   const introQuizzesMap = new Map();
   const result = [];
@@ -170,7 +164,6 @@ const organizeQuizzes = (quizzes) => {
   return result;
 };
 
-// 🔀 خلط المصفوفة عشوائيًا
 function shuffleArray(array) {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -180,40 +173,66 @@ function shuffleArray(array) {
   return newArray;
 }
 
-//--------- Controller ---------
-
+// ✅ الكود النهائي بعد تعديل POST واستخدام body
 async function GenerateQuizzes(req, res) {
   try {
-    const { lessonId, groupSize, groupNumber, mode = "learn" } = req.query;
+    const { lessonId, mode = "learn" } = req.query;
+    let { groupSize, groupNumber } = req.query;
+    const { wordIds = [] } = req.body || {};
+
+    // تعيين القيم الافتراضية لو مش متحددة
+    if (!groupSize) {
+      if (Array.isArray(wordIds) && wordIds.length > 0) {
+        groupSize = wordIds.length;
+      } else {
+        groupSize = 10;
+      }
+    }
+    if (!groupNumber) {
+      groupNumber = 1;
+    }
+
     if (!groupSize || !groupNumber || !mode) {
       return res.status(400).json({ message: "كل البراميترز مطلوبة" });
     }
 
-    let words;
-    let titleOfLesson;
-    switch (mode) {
-      case "learn":
-        const lesson = await Lesson.findById(lessonId).populate("words");
-        words = lesson.words;
-        titleOfLesson = lesson.title;
-        break;
-      case "review":
-        words = await getWordsNeedingReviewData();
-        titleOfLesson = "مراجعة الكلمات السابقة";
-        break;
-      case "quick-review":
-        words = await getWordsNeedingReviewData();
-        titleOfLesson = "مراجعة سريعة";
+    let words = [];
+    let titleOfLesson = "";
 
-        break;
-      case "hard-review":
-        words = await getHardWords();
-        titleOfLesson = "تحدي الكلمات الصعبة";
+    // Debug logs (remove in production)
+    console.log("req.body:", req.body);
+    console.log("wordIds:", wordIds);
 
-        break;
-      default:
-        return res.status(400).json({ message: "mode مش معروف" });
+    if (Array.isArray(wordIds) && wordIds.length > 0) {
+      words = await Word.find({ _id: { $in: wordIds } });
+      titleOfLesson = "أسئلة مخصصة";
+    } else {
+      switch (mode) {
+        case "learn":
+          const lesson = await Lesson.findById(lessonId).populate("words");
+          if (!lesson) {
+            return res.status(404).json({ message: "الدرس مش موجود" });
+          }
+          words = lesson.words;
+          titleOfLesson = lesson.title;
+          break;
+        case "review":
+          words = await getWordsNeedingReviewData();
+          titleOfLesson = "مراجعة الكلمات السابقة";
+          break;
+        case "quick-review":
+          words = await getWordsNeedingReviewData();
+          titleOfLesson = "مراجعة سريعة";
+          break;
+        case "hard-review":
+          words = await getHardWords();
+          titleOfLesson = "تحدي الكلمات الصعبة";
+          break;
+        default:
+          return res.status(400).json({ message: "mode مش معروف" });
+      }
     }
+
     if (!words.length) {
       return res.status(404).json({ message: "لا توجد كلمات مناسبة" });
     }
@@ -238,9 +257,11 @@ async function GenerateQuizzes(req, res) {
     });
 
     const shuffledQuizzes = shuffleArray(quizzes);
+    const finalQuizzes = organizeQuizzes(shuffledQuizzes);
+
     res.status(200).json({
-      quizzes: organizeQuizzes(shuffledQuizzes),
-      countOfQuizzes: organizeQuizzes(shuffledQuizzes).length,
+      quizzes: finalQuizzes,
+      countOfQuizzes: finalQuizzes.length,
       titleOfLesson,
       mode,
     });
@@ -249,4 +270,5 @@ async function GenerateQuizzes(req, res) {
     res.status(500).json({ message: "حصلت مشكلة في السيرفر" });
   }
 }
+
 module.exports = GenerateQuizzes;

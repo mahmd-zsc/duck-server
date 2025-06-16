@@ -18,33 +18,31 @@ function generateIntroQuestion(word) {
 }
 
 function generateTranslationQuestion(word) {
-  const directions = ["german", "arabic"];
-  const fromLanguage =
-    directions[Math.floor(Math.random() * directions.length)];
-  const toLanguage = fromLanguage === "german" ? "arabic" : "german";
+  const fromLanguage = "arabic";
+  const toLanguage = "german";
 
   const wordType = word.type;
   const wordPool = getWordPool(wordType);
 
-  const correctAnswer = fromLanguage === "german" ? word.meaning : word.word;
-  const questionWord = fromLanguage === "german" ? word.word : word.meaning;
+  const correctAnswer = word.word; // الترجمة الألمانية
+  const questionWord = word.meaning; // الكلمة بالعربي
+
   const filteredPool = wordPool.filter((item) =>
     typeof item === "string"
       ? item !== correctAnswer
-      : item.meaning !== correctAnswer
+      : item.word !== correctAnswer
   );
 
   const shuffled = [...filteredPool].sort(() => 0.5 - Math.random());
-  const wrongOptions = shuffled.slice(0, 3);
+  const wrongOptions = shuffled
+    .slice(0, 3)
+    .map((item) => (typeof item === "string" ? item : item.word));
 
   const options = [...wrongOptions, correctAnswer].sort(
     () => 0.5 - Math.random()
   );
 
-  const questionText =
-    fromLanguage === "german"
-      ? `ما معنى الكلمة "${questionWord}"؟`
-      : `ما هي الترجمة الألمانية لكلمة "${questionWord}"؟`;
+  const questionText = `ما هي الترجمة الألمانية لكلمة "${questionWord}"؟`;
 
   return {
     _id: word._id,
