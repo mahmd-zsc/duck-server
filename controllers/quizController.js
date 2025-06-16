@@ -38,15 +38,15 @@ function calculateLevel(word) {
 
 const preferredQuestionOrder = [
   generateWriteTheWordQuestion,
-  generateWriteSentenceQuestion,
   generateArticleQuestion,
+  generateSentenceOrderQuestion,
+  generateWriteSentenceQuestion,
   generateFillInTheBlanksQuestion,
   generateTranslationQuestion,
   generatePluralQuestion,
   generatePronunciationQuestion,
   generateSynonymQuestion,
   generateAntonymQuestion,
-  generateSentenceOrderQuestion,
 ];
 
 function getNumQuestionsByLevel(level) {
