@@ -208,10 +208,7 @@ async function GenerateQuizzes(req, res) {
     let words = [];
     let titleOfLesson = "";
 
-    // Debug logs (remove in production)
-    console.log("req.body:", req.body);
-    console.log("wordIds:", wordIds);
-
+console.log(req.body)
     if (Array.isArray(wordIds) && wordIds.length > 0) {
       words = await Word.find({ _id: { $in: wordIds } });
       titleOfLesson = "أسئلة مخصصة";
