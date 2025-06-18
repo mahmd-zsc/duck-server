@@ -40,8 +40,8 @@ const preferredQuestionOrder = [
   generateFillInTheBlanksQuestion,
   generateWriteTheWordQuestion,
   generateArticleQuestion,
-  generateSentenceOrderQuestion,
   generateWriteSentenceQuestion,
+  generateSentenceOrderQuestion,
   generateTranslationQuestion,
   generatePluralQuestion,
   generatePronunciationQuestion,
@@ -208,7 +208,7 @@ async function GenerateQuizzes(req, res) {
     let words = [];
     let titleOfLesson = "";
 
-console.log(req.body)
+    console.log(req.body);
     if (Array.isArray(wordIds) && wordIds.length > 0) {
       words = await Word.find({ _id: { $in: wordIds } });
       titleOfLesson = "أسئلة مخصصة";

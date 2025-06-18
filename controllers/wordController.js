@@ -307,28 +307,48 @@ const getHardWordsCount = asyncHandler(async (req, res) => {
  * @access Public
  */
 const getWordsNeedingReview = asyncHandler(async (req, res) => {
-  const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
   const now = Date.now();
 
-  const words = await Word.find({
-    $or: [
-      { isReviewed: true },
-      { reviewCount: { $lt: 3 } },
-      {
-        lastReviewed: { $exists: true, $lt: new Date(now - THREE_DAYS_MS) },
-      },
-      {
-        lastReviewed: { $exists: false },
-      },
-    ],
-  });
+  // هات بس الكلمات اللي اتراجعت قبل كده
+  const words = await Word.find({ isReviewed: true });
+
+  const reviewIntervals = [0, 1, 3, 7, 14, 30]; // الأيام بين كل مراجعة
+
+  const filteredWords = words
+    .map((word) => {
+      const { reviewCount = 0, lastReviewed } = word;
+
+      if (!lastReviewed) return null;
+
+      const daysToWait = reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
+      const waitMs = daysToWait * 24 * 60 * 60 * 1000;
+
+      const nextReviewTime = new Date(lastReviewed).getTime() + waitMs;
+      const overdueTime = now - nextReviewTime;
+
+      if (overdueTime >= 0) {
+        return {
+          ...word.toObject(),
+          urgencyScore: overdueTime, // اتأخرت قد إيه
+        };
+      }
+
+      // لسه معادها مجاش → متدخلش في الجدول
+      return null;
+    })
+    .filter(Boolean) // شيل الـ null
+    .sort((a, b) => b.urgencyScore - a.urgencyScore); // ترتيب حسب الأهمية
 
   res.status(200).json({
-    count: words.length,
-    message: "تم جلب الكلمات اللي محتاجة مراجعة",
-    words,
+    count: filteredWords.length,
+    message: "تم جلب الكلمات اللي فعلاً محتاجة مراجعة",
+    words: filteredWords,
   });
 });
+
+
+
+
 
 module.exports = {
   createWord,
