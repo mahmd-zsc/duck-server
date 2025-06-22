@@ -1,138 +1,74 @@
 
 
-    const wordSchema = new mongoose.Schema({
-        word: {
-          type: String,
-          required: [true, "الكلمة مطلوبة"],
-          unique: true,
-          maxlength: [30, "الكلمة لازم تكون أقل من 30 حرف"],
-        },
-        meaning: {
-          type: String,
-          required: [true, "المعنى مطلوب"],
-        },
-        pronunciation: {
-          type: String,
-          required: false,
-          trim: true,
-        },
-        plural: {
-          type: String,
-          required: false,
-          trim: true,
-        },
-        pluralPronunciation: {
-          type: String,
-          required: false,
-          trim: true,
-        },
-        incorrectPlurals: {
-          type: [String],
-          required: false,
-        },
-        article: {
-          type: String,
-          required: false,
-          enum: ["der", "die", "das"],
-        },
-        examples: {
-          type: [
-            {
-              sentence: { type: String, required: true },
-              meaning: { type: String, required: true },
-              pronunciation: { type: String, required: false },
-            },
-          ],
-          required: [true, "أمثلة مطلوبة"],
-          validate: {
-            validator: function (v) {
-              return Array.isArray(v) && v.length > 0;
-            },
-            message: "لازم يكون في أمثلة للكلمة",
-          },
-        },
-        type: {
-          type: String,
-          enum: [
-            "noun",
-            "verb",
-            "adjective",
-            "pronoun",
-            "adverb",
-            "pronouns",
-            "konjunktion",
-          ],
-          required: [true, "نوع الكلمة مطلوب"],
-        },
-        isReviewed: {
-          type: Boolean,
-          default: false,
-        },
-        reviewCount: {
-          type: Number,
-          default: 0,
-        },
-        isHard: {
-          type: Boolean,
-          default: false,
-        },
-        lastReviewed: {
-          type: Date,
-          required: false,
-        },
-        synonyms: {
-          type: [
-            {
-              word: { type: String, required: true },
-              meaning: { type: String, required: true },
-              pronunciation: { type: String, required: false },
-            },
-          ],
-          required: false,
-        },
-        antonyms: {
-          type: [
-            {
-              word: { type: String, required: true },
-              meaning: { type: String, required: true },
-              pronunciation: { type: String, required: false },
-            },
-          ],
-          required: false,
-        },
-        conjugation: {
-          type: {
-            infinitive: { type: String, required: false },
-            present: {
-              ich: { type: String, required: false },
-              du: { type: String, required: false },
-              er: { type: String, required: false },
-              sieShe: { type: String, required: false },
-              es: { type: String, required: false },
-              wir: { type: String, required: false },
-              ihr: { type: String, required: false },
-              sieThey: { type: String, required: false },
-              Sie: { type: String, required: false },
-            },
-            past: {
-              ich: { type: String, required: false },
-              du: { type: String, required: false },
-              er: { type: String, required: false },
-              sieShe: { type: String, required: false },
-              es: { type: String, required: false },
-              wir: { type: String, required: false },
-              ihr: { type: String, required: false },
-              sieThey: { type: String, required: false },
-              Sie: { type: String, required: false },
-            },
-          },
-          required: false,
-        },
-      });
-      
-      اعمل json file علي الكلمات دي 
- "geben", "Abenteuer", "als", "Geschenk", "annehmen",
+🔧 مطلوب منك تولدلي ملف JSON يحتوي على كلمات ألمانية بصيغة Array of Objects، بحيث كل عنصر يمثل كلمة واحدة، ويكون متوافق مع الـ schema التالي:
 
-واعمل دول كمان واوعي تنسي examples (2) , incorrectPlurals , pluralPronunciation , plural , antonyms , article , synonyms
-conjugation لو الكلمة فعل
-النطق يكون بالعربي 
+🔹 الخصائص المطلوبة في كل كلمة:
+word: الكلمة الألمانية (مثال: "bald")
+
+meaning: معناها بالعربي
+
+pronunciation: النطق بالعربي (مثال: "بالد")
+
+article: أداة التعريف لو الكلمة اسم (اختياري: "der" أو "die" أو "das")
+
+plural: الجمع الصحيح (لو الكلمة اسم)
+
+pluralPronunciation: نطق الجمع بالعربي
+
+incorrectPlurals: Array فيها جمع خاطئ أو شائع خطأ
+
+examples: Array فيها مثالين على الأقل، وكل مثال يحتوي على:
+
+sentence: جملة فيها الكلمة
+
+meaning: معناها
+
+pronunciation: نطق الجملة بالعربي
+
+type: نوع الكلمة (واحدة من القيم: "noun", "verb", "adjective", "adverb", "pronoun", "konjunktion")
+
+conjugation: فقط لو الكلمة فعل (type: "verb")، ويحتوي على:
+
+infinitive
+
+present: التصريف في زمن الحاضر (مع الضمائر: ich, du, er, sieShe, es, wir, ihr, sieThey, Sie)
+
+past: التصريف في الماضي (نفس الضمائر)
+
+✅ الشروط:
+لو أي قيمة null أو غير موجودة → ما تضيفهاش نهائيًا في JSON
+
+التأكد إن الأمثلة منطقية ومناسبة للكلمة
+الامثلة تكون من الحياة اليومية والمحادثة اليومية
+صيغة الملف تكون JSON Array فقط بدون أي كلام توضيحي أو شرح خارجي
+
+النطق دايمًا بالعربي
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+🔧 مطلوب منك تولدلي ملف JSON يحتوي على Array من الأسئلة بصيغة Quiz.
+كل عنصر (كائن) يحتوي على الحقول التالية:
+question: نص السؤال، مثال: "Ich gehe ---- der Bank"
+pronunciation: نطق الجملة بالعربي (مثال: "إش جيهى دير بانك") — اختياري
+type: نوع السؤال، وثابت دايمًا يكون "translation"
+rule: القاعدة النحوية الألمانية اللي السؤال مبني عليها، مثل "Präpositionen" — لازم تكون موحدة بالتهجئة الألمانية
+options: مصفوفة مكوّنة من 4 كلمات (Strings فقط) — كلها مختلفة
+answer: الكلمة الصحيحة (String فقط)، ولازم تكون واحدة من ضمن الـ options
+meaning: المعنى العربي الكامل للسؤال بالإجابة الصحيحة (مثال: "أنا ذاهب إلى البنك")
+timesAnswered: عدد المرات اللي اتجاوب فيها السؤال — دايمًا تبدأ بـ 0
+
+✅ الشروط المهمة:
+لازم يكون عدد الـ options = 4 بالضبط
+كل كلمة في الـ options مختلفة عن التانية
+لازم تكون قيمة answer من ضمن الكلمات الموجودة في options
+ترتيب الكلمات في options عشوائي
+قيمة rule تكون موحدة بالحروف الألمانية فقط (زي "Präpositionen")
+رجّع الملف بصيغة JSON Array فقط بدون شرح أو تعليق خارجي
+افكار الاسئلة تكون منوعة وبتلعب علي حاجه معينة والتركيب كمان بتاع الجملة ميكنشي موحد ومتكونشي جمل معقدة
+اعملي 20 سؤال علي حرف الجر في الالماني
+
+
+
+
+ضيف صفحة quiz
+وضيف صفحة notes

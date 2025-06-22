@@ -1,280 +1,200 @@
-const { Lesson } = require("../models/lessonModel");
-const { Word } = require("../models/wordModel");
-
 const {
-  generateIntroQuestion,
-  generateFillInTheBlanksQuestion,
-  generateTranslationQuestion,
-  generateArticleQuestion,
-  generatePluralQuestion,
-  generatePronunciationQuestion,
-  generateSynonymQuestion,
-  generateAntonymQuestion,
-  generateSentenceOrderQuestion,
-  generateWriteTheWordQuestion,
-  generateWriteSentenceQuestion,
-} = require("../utils/questionGenerators");
+  Quiz,
+  createQuizValidation,
+  updateQuizValidation,
+} = require("../models/quizModel");
+const asyncHandler = require("express-async-handler");
 
-const {
-  getWordsNeedingReviewData,
-  getHardWords,
-} = require("../utils/wordHelpers");
+/**
+ * @desc Get all quizzes
+ * @route GET /api/quizzes
+ * @access Private
+ */
+const getAllQuizzes = asyncHandler(async (req, res) => {
+  const { rule, limit, leastAnswered } = req.query;
 
-function calculateLevel(word) {
-  let score = 0;
-
-  if (word.isHard) score += 2;
-  if (word.synonyms?.length) score += 1;
-  if (word.antonyms?.length) score += 1;
-  if (word.conjugation?.present) score += 1;
-
-  if (word.reviewCount >= 5) score -= 2;
-  if (word.examples?.length >= 2) score -= 1;
-
-  if (score <= 0) return "beginner";
-  if (score <= 2) return "intermediate";
-  return "advanced";
-}
-
-const preferredQuestionOrder = [
-  generateFillInTheBlanksQuestion,
-  generateWriteTheWordQuestion,
-  generateArticleQuestion,
-  generateWriteSentenceQuestion,
-  generateSentenceOrderQuestion,
-  generateTranslationQuestion,
-  generatePluralQuestion,
-  generatePronunciationQuestion,
-  generateSynonymQuestion,
-  generateAntonymQuestion,
-];
-
-function getNumQuestionsByLevel(level) {
-  if (level === "beginner") return 6;
-  if (level === "intermediate") return 4;
-  if (level === "advanced") return 3;
-  return 4;
-}
-
-const questionGenerators = [
-  generateIntroQuestion,
-  generateFillInTheBlanksQuestion,
-  generateWriteTheWordQuestion,
-  generateWriteSentenceQuestion,
-  generateTranslationQuestion,
-  generateArticleQuestion,
-  generatePluralQuestion,
-  generatePronunciationQuestion,
-  generateSynonymQuestion,
-  generateAntonymQuestion,
-  generateSentenceOrderQuestion,
-];
-
-const multipleChoiceGenerators = [
-  generateTranslationQuestion,
-  generateArticleQuestion,
-  generatePluralQuestion,
-  generateSynonymQuestion,
-  generateAntonymQuestion,
-];
-
-function canGenerateQuestion(word, generatorName) {
-  switch (generatorName) {
-    case "generateArticleQuestion":
-      return word.type !== "verb" && !!word.article;
-    case "generatePluralQuestion":
-      return !!word.plural;
-    case "generateSynonymQuestion":
-      return word.synonyms && word.synonyms.length > 0;
-    case "generateAntonymQuestion":
-      return word.antonyms && word.antonyms.length > 0;
-    case "generateWriteSentenceQuestion":
-      return word.examples && word.examples.length > 0;
-    case "generateFillInTheBlanksQuestion":
-      return (
-        word.type?.toLowerCase() === "verb" &&
-        word.conjugation &&
-        word.conjugation.present
-      );
-    default:
-      return true;
-  }
-}
-
-function generateQuestionsForWord(word, mode) {
-  let numQuestions;
-
-  switch (mode) {
-    case "learn":
-      numQuestions = 3;
-      break;
-    case "review":
-      numQuestions = 2;
-      break;
-    case "hard-review":
-      numQuestions = 3;
-      break;
-    case "quick-review":
-      numQuestions = 1;
-      break;
-    default:
-      numQuestions = 1;
+  const filter = {};
+  if (rule) {
+    filter.rule = rule;
   }
 
-  const usedTypes = new Set();
-  const questions = [];
-  let attempts = 0;
-  const MAX_ATTEMPTS = 50;
+  let query = Quiz.find(filter);
 
-  // سؤال المقدمة في حالة التعلم لأول مرة
-  if (mode === "learn" && !word.isReviewed) {
-    const introQuestion = generateIntroQuestion(word);
-    if (introQuestion) questions.push(introQuestion);
+  // ترتيب تلقائي من الأقل حلًا للأكثر
+  query = query.sort({ timesAnswered: 1 });
+
+  // تحديد عدد النتائج لو المستخدم بعت limit
+  if (limit) {
+    query = query.limit(Number(limit));
   }
 
-  const generatorList =
-    mode === "quick-review" ? multipleChoiceGenerators : preferredQuestionOrder;
+  const quizzes = await query.exec();
 
-  for (let generator of generatorList) {
-    if (questions.length >= numQuestions) break;
-    if (!canGenerateQuestion(word, generator.name)) continue;
+  res.status(200).json(quizzes);
+});
 
-    const question = generator(word);
-    if (question && !usedTypes.has(generator.name)) {
-      questions.push(question);
-      usedTypes.add(generator.name);
+/**
+ * @desc Get a quiz by ID
+ * @route GET /api/quizzes/:id
+ * @access Private
+ */
+const getQuizById = asyncHandler(async (req, res) => {
+  const quiz = await Quiz.findById(req.params.id);
+  if (!quiz) {
+    return res.status(404).json({ message: "الكويز غير موجود" });
+  }
+  res.status(200).json(quiz);
+});
+
+/**
+ * @desc Create a new quiz
+ * @route POST /api/quizzes
+ * @access Private
+ */
+const createQuiz = asyncHandler(async (req, res) => {
+  const { error } = createQuizValidation(req.body);
+  if (error) {
+    return res.status(400).json({ message: error.details[0].message });
+  }
+
+  // التأكد لو فيه كويز بنفس السؤال
+  let quiz = await Quiz.findOne({ question: req.body.question });
+
+  if (!quiz) {
+    quiz = new Quiz({
+      ...req.body,
+      timesAnswered: req.body.timesAnswered || 0,
+      lastAnsweredAt: req.body.lastAnsweredAt || null,
+    });
+
+    await quiz.save();
+  }
+
+  res.status(201).json(quiz);
+});
+
+/**
+ * @desc    Create multiple quizzes at once (bulk insert)
+ * @route   POST /api/quizzes/bulk
+ * @access  Private
+ */
+
+const createManyQuizzes = asyncHandler(async (req, res) => {
+  const quizzes = req.body;
+
+  if (!Array.isArray(quizzes) || quizzes.length === 0) {
+    return res.status(400).json({ message: "لازم تبعت مصفوفة فيها كويزات" });
+  }
+
+  const inserted = [];
+  const skipped = [];
+
+  for (const quizData of quizzes) {
+    const { error } = createQuizValidation(quizData);
+    if (error) {
+      skipped.push({
+        question: quizData.question,
+        reason: error.details[0].message,
+      });
+      continue;
     }
+
+    const exists = await Quiz.findOne({ question: quizData.question });
+    if (exists) {
+      skipped.push({
+        question: quizData.question,
+        reason: "الكويز موجود بالفعل",
+      });
+      continue;
+    }
+
+    const quiz = new Quiz({
+      ...quizData,
+      timesAnswered: quizData.timesAnswered || 0,
+      lastAnsweredAt: quizData.lastAnsweredAt || null,
+    });
+
+    await quiz.save();
+    inserted.push(quiz);
   }
 
-  return questions;
-}
-
-const organizeQuizzes = (quizzes) => {
-  const introQuizzesMap = new Map();
-  const result = [];
-  const usedIntroIds = new Set();
-
-  const regularQuizzes = quizzes.filter((quiz) => {
-    if (quiz.type === "intro") {
-      introQuizzesMap.set(quiz._id, quiz);
-      return false;
-    }
-    return true;
+  res.status(201).json({
+    message: "تمت المعالجة",
+    addedCount: inserted.length,
+    skippedCount: skipped.length,
+    skipped,
   });
+});
 
-  regularQuizzes.forEach((quiz) => {
-    if (introQuizzesMap.has(quiz._id) && !usedIntroIds.has(quiz._id)) {
-      result.push(introQuizzesMap.get(quiz._id));
-      usedIntroIds.add(quiz._id);
-    }
-    result.push(quiz);
-  });
 
-  return result;
+/**
+ * @desc Update a quiz
+ * @route PUT /api/quizzes/:id
+ * @access Private
+ */
+const updateQuiz = asyncHandler(async (req, res) => {
+  const { error } = updateQuizValidation(req.body);
+  if (error) return res.status(400).json({ message: error.details[0].message });
+
+  const quiz = await Quiz.findById(req.params.id);
+  if (!quiz) {
+    return res.status(404).json({ message: "الكويز غير موجود" });
+  }
+
+  // التحديث بناءً على القيم اللي جاية من الـ body
+  Object.assign(quiz, req.body);
+
+  const updatedQuiz = await quiz.save();
+  res.status(200).json(updatedQuiz);
+});
+
+/**
+ * @desc Delete a quiz
+ * @route DELETE /api/quizzes/:id
+ * @access Private
+ */
+const deleteQuiz = asyncHandler(async (req, res) => {
+  const quiz = await Quiz.findByIdAndDelete(req.params.id);
+  if (!quiz) {
+    return res.status(404).json({ message: "الكويز غير موجود" });
+  }
+  res.status(200).json({ message: "تم حذف الكويز بنجاح" });
+});
+
+/**
+ * @desc Get all unique quiz rules with question count
+ * @route GET /api/quizzes/rules
+ * @access Private
+ */
+const getAllRules = asyncHandler(async (req, res) => {
+  const rules = await Quiz.aggregate([
+    {
+      $group: {
+        _id: "$rule",
+        count: { $sum: 1 },
+      },
+    },
+    {
+      $project: {
+        rule: "$_id",
+        count: 1,
+        _id: 0,
+      },
+    },
+    {
+      $sort: { count: -1 }, // ✅ ترتيب تنازلي حسب عدد الأسئلة
+    },
+  ]);
+
+  res.status(200).json(rules);
+});
+
+module.exports = {
+  getAllQuizzes,
+  getQuizById,
+  createQuiz,
+  createManyQuizzes,
+  updateQuiz,
+  deleteQuiz,
+  getAllRules,
 };
-
-function shuffleArray(array) {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
-
-// ✅ الكود النهائي بعد تعديل POST واستخدام body
-async function GenerateQuizzes(req, res) {
-  try {
-    const { lessonId, mode = "learn" } = req.query;
-    let { groupSize, groupNumber } = req.query;
-    const { wordIds = [] } = req.body || {};
-
-    // تعيين القيم الافتراضية لو مش متحددة
-    if (!groupSize) {
-      if (Array.isArray(wordIds) && wordIds.length > 0) {
-        groupSize = wordIds.length;
-      } else {
-        groupSize = 10;
-      }
-    }
-    if (!groupNumber) {
-      groupNumber = 1;
-    }
-
-    if (!groupSize || !groupNumber || !mode) {
-      return res.status(400).json({ message: "كل البراميترز مطلوبة" });
-    }
-
-    let words = [];
-    let titleOfLesson = "";
-
-    console.log(req.body);
-    if (Array.isArray(wordIds) && wordIds.length > 0) {
-      words = await Word.find({ _id: { $in: wordIds } });
-      titleOfLesson = "أسئلة مخصصة";
-    } else {
-      switch (mode) {
-        case "learn":
-          const lesson = await Lesson.findById(lessonId).populate("words");
-          if (!lesson) {
-            return res.status(404).json({ message: "الدرس مش موجود" });
-          }
-          words = lesson.words;
-          titleOfLesson = lesson.title;
-          break;
-        case "review":
-          words = await getWordsNeedingReviewData();
-          titleOfLesson = "مراجعة الكلمات السابقة";
-          break;
-        case "quick-review":
-          words = await getWordsNeedingReviewData();
-          titleOfLesson = "مراجعة سريعة";
-          break;
-        case "hard-review":
-          words = await getHardWords();
-          titleOfLesson = "تحدي الكلمات الصعبة";
-          break;
-        default:
-          return res.status(400).json({ message: "mode مش معروف" });
-      }
-    }
-
-    if (!words.length) {
-      return res.status(404).json({ message: "لا توجد كلمات مناسبة" });
-    }
-
-    const size = parseInt(groupSize);
-    const number = parseInt(groupNumber);
-
-    const groupedWords = [];
-    for (let i = 0; i < words.length; i += size) {
-      groupedWords.push(words.slice(i, i + size));
-    }
-
-    if (number < 1 || number > groupedWords.length) {
-      return res.status(400).json({ message: "رقم المجموعة غير صالح" });
-    }
-
-    const selectedGroup = groupedWords[number - 1];
-    const quizzes = [];
-
-    selectedGroup.forEach((word) => {
-      quizzes.push(...generateQuestionsForWord(word, mode));
-    });
-
-    const shuffledQuizzes = shuffleArray(quizzes);
-    const finalQuizzes = organizeQuizzes(shuffledQuizzes);
-
-    res.status(200).json({
-      quizzes: finalQuizzes,
-      countOfQuizzes: finalQuizzes.length,
-      titleOfLesson,
-      mode,
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "حصلت مشكلة في السيرفر" });
-  }
-}
-
-module.exports = GenerateQuizzes;
