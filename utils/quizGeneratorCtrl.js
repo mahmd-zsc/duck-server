@@ -15,10 +15,7 @@ const {
   generateWriteSentenceQuestion,
 } = require("./questionGenerators");
 
-const {
-  getWordsNeedingReviewData,
-  getHardWords,
-} = require("./wordHelpers");
+const { getWordsNeedingReviewData, getHardWords } = require("./wordHelpers");
 
 function calculateLevel(word) {
   let score = 0;
@@ -37,13 +34,13 @@ function calculateLevel(word) {
 }
 
 const preferredQuestionOrder = [
-  generateFillInTheBlanksQuestion,
-  generateWriteTheWordQuestion,
-  generateArticleQuestion,
   generateWriteSentenceQuestion,
+  generateFillInTheBlanksQuestion,
+  generateArticleQuestion,
+  generateWriteTheWordQuestion,
+  generatePluralQuestion,
   generateSentenceOrderQuestion,
   generateTranslationQuestion,
-  generatePluralQuestion,
   generatePronunciationQuestion,
   generateSynonymQuestion,
   generateAntonymQuestion,
@@ -71,9 +68,10 @@ const questionGenerators = [
 ];
 
 const multipleChoiceGenerators = [
-  generateTranslationQuestion,
-  generateArticleQuestion,
+  generateWriteTheWordQuestion,
   generatePluralQuestion,
+  generateArticleQuestion,
+  generateTranslationQuestion,
   generateSynonymQuestion,
   generateAntonymQuestion,
 ];
@@ -106,7 +104,7 @@ function generateQuestionsForWord(word, mode) {
 
   switch (mode) {
     case "learn":
-      numQuestions = 3;
+      numQuestions = 4;
       break;
     case "review":
       numQuestions = 2;
@@ -275,7 +273,5 @@ async function GenerateQuizzes(req, res) {
     res.status(500).json({ message: "حصلت مشكلة في السيرفر" });
   }
 }
-
-
 
 module.exports = GenerateQuizzes;
