@@ -69,8 +69,8 @@ const questionGenerators = [
 
 const multipleChoiceGenerators = [
   generateWriteTheWordQuestion,
-  generatePluralQuestion,
   generateArticleQuestion,
+  generatePluralQuestion,
   generateTranslationQuestion,
   generateSynonymQuestion,
   generateAntonymQuestion,
@@ -113,7 +113,7 @@ function generateQuestionsForWord(word, mode) {
       numQuestions = 2;
       break;
     case "quick-review":
-      numQuestions = 1;
+      numQuestions = 2;
       break;
     default:
       numQuestions = 1;
