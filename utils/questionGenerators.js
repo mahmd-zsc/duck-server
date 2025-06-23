@@ -200,8 +200,7 @@ function generateSentenceOrderQuestion(word) {
 function generateWriteSentenceQuestion(word) {
   if (!word.examples || word.examples.length === 0) return null;
 
-  const example =
-    word.examples[Math.floor(Math.random() * word.examples.length)];
+  const example = word.examples[0];
 
   if (!example.sentence || !example.meaning) return null;
 
