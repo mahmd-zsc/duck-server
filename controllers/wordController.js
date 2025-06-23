@@ -18,7 +18,7 @@ const createWord = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: error.details[0].message });
   }
 
-  let word = await Word.findOne({ word: wordData.word });
+  let word = await Word.findOne({ word: wordData.word, meaning: wordData.meaning });
 
   if (!word) {
     word = new Word({
