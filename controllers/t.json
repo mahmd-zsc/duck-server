@@ -1,302 +1,164 @@
 [
   {
-    "question": "Ich gehe ---- der Bank",
-    "pronunciation": "إش جيهى دير بانك",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "zu", "meaning": "إلى"},
-      {"word": "von", "meaning": "من"},
-      {"word": "bei", "meaning": "عند"},
-      {"word": "mit", "meaning": "مع"}
-    ],
-    "answer": "zu",
-    "meaning": "أنا ذاهب إلى البنك",
-    "timesAnswered": 0
+    "word": "ihr",
+    "meaning": "ملكها/خاصتها",
+    "pronunciation": "إير",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Ihr Name ist Maria.",
+        "meaning": "اسمها ماريا.",
+        "pronunciation": "إير نامه إست ماريا"
+      },
+      {
+        "sentence": "Das ist ihr Lieblingsbuch.",
+        "meaning": "هذا كتابها المفضل.",
+        "pronunciation": "داس إست إير ليبلينغس بوخ"
+      }
+    ]
   },
   {
-    "question": "Das Buch liegt ---- dem Tisch",
-    "pronunciation": "داس بوخ ليجت دميم تيش",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "auf", "meaning": "على"},
-      {"word": "unter", "meaning": "تحت"},
-      {"word": "neben", "meaning": "بجانب"},
-      {"word": "über", "meaning": "فوق"}
-    ],
-    "answer": "auf",
-    "meaning": "الكتاب موضوع على الطاولة",
-    "timesAnswered": 0
+    "word": "unser",
+    "meaning": "ملكنا/خاصتنا",
+    "pronunciation": "أونزر",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Unser Lehrer ist sehr nett.",
+        "meaning": "معلمنا لطيف جداً.",
+        "pronunciation": "أونزر لير إست زير نت"
+      },
+      {
+        "sentence": "Das ist unser gemeinsames Projekt.",
+        "meaning": "هذا مشروعنا المشترك.",
+        "pronunciation": "داس إست أونزر غه مين زامس بروييكت"
+      }
+    ]
   },
   {
-    "question": "Wir fahren ---- Deutschland",
-    "pronunciation": "فير فارن ناخ دويتشلاند",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "nach", "meaning": "إلى"},
-      {"word": "aus", "meaning": "من"},
-      {"word": "in", "meaning": "في"},
-      {"word": "durch", "meaning": "عبر"}
-    ],
-    "answer": "nach",
-    "meaning": "نحن نسافر إلى ألمانيا",
-    "timesAnswered": 0
+    "word": "euer",
+    "meaning": "ملككم/خاصتكم",
+    "pronunciation": "أوير",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Wo ist euer Auto?",
+        "meaning": "أين سيارتكم؟",
+        "pronunciation": "فو إست أوير أوتو"
+      },
+      {
+        "sentence": "Euer Garten ist wirklich schön.",
+        "meaning": "حديقتكم جميلة حقاً.",
+        "pronunciation": "أوير غارتن إست فيركليش شون"
+      }
+    ]
   },
   {
-    "question": "Er kommt ---- der Schule",
-    "pronunciation": "إير كومت فون دير شولى",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "von", "meaning": "من"},
-      {"word": "zu", "meaning": "إلى"},
-      {"word": "bei", "meaning": "عند"},
-      {"word": "für", "meaning": "لأجل"}
-    ],
-    "answer": "von",
-    "meaning": "إنه آت من المدرسة",
-    "timesAnswered": 0
+    "word": "ihr",
+    "meaning": "ملكهم/خاصتهم",
+    "pronunciation": "إير",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Ihr Haus ist sehr groß.",
+        "meaning": "بيتهم كبير جداً.",
+        "pronunciation": "إير هاوس إست زير غروس"
+      },
+      {
+        "sentence": "Das sind ihre Kinder.",
+        "meaning": "هؤلاء أطفالهم.",
+        "pronunciation": "داس زيند إيره كيندر"
+      }
+    ]
   },
   {
-    "question": "Die Katze schläft ---- dem Bett",
-    "pronunciation": "دي كاتسى شليفت أونتر ديم بيت",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "unter", "meaning": "تحت"},
-      {"word": "auf", "meaning": "على"},
-      {"word": "vor", "meaning": "أمام"},
-      {"word": "hinter", "meaning": "خلف"}
-    ],
-    "answer": "unter",
-    "meaning": "القطة تنام تحت السرير",
-    "timesAnswered": 0
+    "word": "Ihr",
+    "meaning": "حضرتك/حضرتكم (مهذب)",
+    "pronunciation": "إير",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Ist das Ihr Koffee, Herr Schmidt?",
+        "meaning": "هل هذا قهوتكم، سيد شميت؟",
+        "pronunciation": "إست داس إير كوفر، هير شميت"
+      },
+      {
+        "sentence": "Ihre Präsentation war ausgezeichnet.",
+        "meaning": "عرضكم كان ممتازاً.",
+        "pronunciation": "إيره بريزنتاتسيون فار أوس غه تسايشنت"
+      }
+    ]
   },
   {
-    "question": "Ich kaufe ein Geschenk ---- meine Mutter",
-    "pronunciation": "إش كاوفى أين جيشينك فور مايني موتر",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "für", "meaning": "لأجل"},
-      {"word": "gegen", "meaning": "ضد"},
-      {"word": "ohne", "meaning": "بدون"},
-      {"word": "um", "meaning": "حول"}
-    ],
-    "answer": "für",
-    "meaning": "أشتري هدية لأمي",
-    "timesAnswered": 0
+    "word": "seine",
+    "meaning": "خاصته (مؤنث)",
+    "pronunciation": "زاينه",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Seine Mutter kocht sehr gut.",
+        "meaning": "والدته تطبخ جيداً جداً.",
+        "pronunciation": "زاينه موتر كوخت زير غوت"
+      },
+      {
+        "sentence": "Das ist seine neue Freundin.",
+        "meaning": "هذه صديقته الجديدة.",
+        "pronunciation": "داس إست زاينه نويه فروندين"
+      }
+    ]
   },
   {
-    "question": "Das Auto steht ---- dem Haus",
-    "pronunciation": "داس أوتو شتيت فور ديم هاوس",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "vor", "meaning": "أمام"},
-      {"word": "hinter", "meaning": "خلف"},
-      {"word": "neben", "meaning": "بجانب"},
-      {"word": "zwischen", "meaning": "بين"}
-    ],
-    "answer": "vor",
-    "meaning": "السيارة واقفة أمام البيت",
-    "timesAnswered": 0
+    "word": "ihre",
+    "meaning": "خاصتها (مؤنث)",
+    "pronunciation": "إيره",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Ihre Schwester studiert Medizin.",
+        "meaning": "أختها تدرس الطب.",
+        "pronunciation": "إيره شفستر شتوديرت مديتسين"
+      },
+      {
+        "sentence": "Das ist ihre alte Schule.",
+        "meaning": "هذه مدرستها القديمة.",
+        "pronunciation": "داس إست إيره ألته شوله"
+      }
+    ]
   },
   {
-    "question": "Wir gehen ---- den Park",
-    "pronunciation": "فير جين إن دين بارك",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "in", "meaning": "في/إلى"},
-      {"word": "an", "meaning": "على/عند"},
-      {"word": "auf", "meaning": "على"},
-      {"word": "über", "meaning": "فوق/عبر"}
-    ],
-    "answer": "in",
-    "meaning": "نحن نذهب إلى الحديقة",
-    "timesAnswered": 0
+    "word": "meine",
+    "meaning": "ملكي (مؤنث)",
+    "pronunciation": "مايه",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Meine Katze ist sehr verspielt.",
+        "meaning": "قطتي مرحة جداً.",
+        "pronunciation": "مايه كاتسه إست زير فر شبيلت"
+      },
+      {
+        "sentence": "Das ist meine beste Freundin.",
+        "meaning": "هذه أفضل صديقة لي.",
+        "pronunciation": "داس إست مايه بسته فروندين"
+      }
+    ]
   },
   {
-    "question": "Er arbeitet ---- einem Krankenhaus",
-    "pronunciation": "إير آربايتيت إن أينم كرانكين هاوس",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "in", "meaning": "في"},
-      {"word": "bei", "meaning": "عند"},
-      {"word": "zu", "meaning": "إلى"},
-      {"word": "von", "meaning": "من"}
-    ],
-    "answer": "in",
-    "meaning": "إنه يعمل في مستشفى",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Sie sitzt ---- mir ---- dem Kino",
-    "pronunciation": "زي زيتست نيبين مير إن ديم كينو",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "neben", "meaning": "بجانب"},
-      {"word": "vor", "meaning": "أمام"},
-      {"word": "hinter", "meaning": "خلف"},
-      {"word": "über", "meaning": "فوق"}
-    ],
-    "answer": "neben",
-    "meaning": "إنها تجلس بجانبي في السينما",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Der Vogel fliegt ---- das Haus",
-    "pronunciation": "دير فوجيل فليجت أوبير داس هاوس",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "über", "meaning": "فوق/عبر"},
-      {"word": "unter", "meaning": "تحت"},
-      {"word": "durch", "meaning": "عبر"},
-      {"word": "um", "meaning": "حول"}
-    ],
-    "answer": "über",
-    "meaning": "الطائر يطير فوق البيت",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Ich gehe ---- dir",
-    "pronunciation": "إش جيهى ميت دير",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "mit", "meaning": "مع"},
-      {"word": "ohne", "meaning": "بدون"},
-      {"word": "gegen", "meaning": "ضد"},
-      {"word": "für", "meaning": "لأجل"}
-    ],
-    "answer": "mit",
-    "meaning": "أنا ذاهب معك",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Das Kind läuft ---- die Straße",
-    "pronunciation": "داس كيند لاوفت دورش دي شتراسى",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "durch", "meaning": "عبر"},
-      {"word": "über", "meaning": "فوق"},
-      {"word": "um", "meaning": "حول"},
-      {"word": "an", "meaning": "على/عند"}
-    ],
-    "answer": "durch",
-    "meaning": "الطفل يجري عبر الشارع",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Er kommt ---- Italien",
-    "pronunciation": "إير كومت أوس إيتاليين",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "aus", "meaning": "من"},
-      {"word": "nach", "meaning": "إلى"},
-      {"word": "in", "meaning": "في"},
-      {"word": "von", "meaning": "من"}
-    ],
-    "answer": "aus",
-    "meaning": "إنه من إيطاليا",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Die Blumen stehen ---- der Vase",
-    "pronunciation": "دي بلومين شتين إن دير فازى",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "in", "meaning": "في"},
-      {"word": "auf", "meaning": "على"},
-      {"word": "neben", "meaning": "بجانب"},
-      {"word": "vor", "meaning": "أمام"}
-    ],
-    "answer": "in",
-    "meaning": "الزهور في المزهرية",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Wir treffen uns ---- 8 Uhr",
-    "pronunciation": "فير تريفين أونس أوم آخت أور",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "um", "meaning": "في (الوقت)"},
-      {"word": "vor", "meaning": "قبل"},
-      {"word": "nach", "meaning": "بعد"},
-      {"word": "seit", "meaning": "منذ"}
-    ],
-    "answer": "um",
-    "meaning": "نتقابل في الساعة الثامنة",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Der Hund liegt ---- dem Sofa",
-    "pronunciation": "دير هوند ليجت هينتر ديم زوفا",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "hinter", "meaning": "خلف"},
-      {"word": "vor", "meaning": "أمام"},
-      {"word": "auf", "meaning": "على"},
-      {"word": "unter", "meaning": "تحت"}
-    ],
-    "answer": "hinter",
-    "meaning": "الكلب مستلقٍ خلف الأريكة",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Sie geht ---- Geld einkaufen",
-    "pronunciation": "زي جيت أوني جيلد أينكاوفين",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "ohne", "meaning": "بدون"},
-      {"word": "mit", "meaning": "مع"},
-      {"word": "für", "meaning": "لأجل"},
-      {"word": "gegen", "meaning": "ضد"}
-    ],
-    "answer": "ohne",
-    "meaning": "إنها تذهب للتسوق بدون مال",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Der Ball rollt ---- den Stuhl und den Tisch",
-    "pronunciation": "دير بال رولت تسفيشين دين شتول أوند دين تيش",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "zwischen", "meaning": "بين"},
-      {"word": "neben", "meaning": "بجانب"},
-      {"word": "vor", "meaning": "أمام"},
-      {"word": "hinter", "meaning": "خلف"}
-    ],
-    "answer": "zwischen",
-    "meaning": "الكرة تتدحرج بين الكرسي والطاولة",
-    "timesAnswered": 0
-  },
-  {
-    "question": "Ich bin ---- einer Woche hier",
-    "pronunciation": "إش بين زايت أينر فوخى هير",
-    "type": "translation",
-    "rule": "Präpositionen",
-    "options": [
-      {"word": "seit", "meaning": "منذ"},
-      {"word": "vor", "meaning": "قبل"},
-      {"word": "nach", "meaning": "بعد"},
-      {"word": "um", "meaning": "في"}
-    ],
-    "answer": "seit",
-    "meaning": "أنا هنا منذ أسبوع",
-    "timesAnswered": 0
+    "word": "deine",
+    "meaning": "ملكك (مؤنث)",
+    "pronunciation": "داينه",
+    "type": "pronoun",
+    "examples": [
+      {
+        "sentence": "Deine Idee ist wirklich gut.",
+        "meaning": "فكرتك جيدة حقاً.",
+        "pronunciation": "داينه إيده إست فيركليش غوت"
+      },
+      {
+        "sentence": "Wo ist deine Tasche?",
+        "meaning": "أين حقيبتك؟",
+        "pronunciation": "فو إست داينه تاشه"
+      }
+    ]
   }
 ]

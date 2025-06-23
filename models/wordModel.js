@@ -6,7 +6,6 @@ const wordSchema = new mongoose.Schema({
   word: {
     type: String,
     required: [true, "الكلمة مطلوبة"],
-    unique: true,
     maxlength: [30, "الكلمة لازم تكون أقل من 30 حرف"],
   },
   meaning: {
