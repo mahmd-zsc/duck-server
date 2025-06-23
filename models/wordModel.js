@@ -131,7 +131,10 @@ const wordSchema = new mongoose.Schema({
   },
 });
 
-// تعريف الـ Joi validation
+// ✅ أضف الـ compound index على word + meaning
+wordSchema.index({ word: 1, meaning: 1 }, { unique: true });
+
+// Joi validation
 const createWordValidation = (word) => {
   const schema = joi.object({
     word: joi.string().required().trim().max(30),
