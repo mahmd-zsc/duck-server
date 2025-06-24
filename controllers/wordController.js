@@ -18,7 +18,10 @@ const createWord = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: error.details[0].message });
   }
 
-  let word = await Word.findOne({ word: wordData.word, meaning: wordData.meaning });
+  let word = await Word.findOne({
+    word: wordData.word,
+    meaning: wordData.meaning,
+  });
 
   if (!word) {
     word = new Word({
@@ -308,36 +311,38 @@ const getHardWordsCount = asyncHandler(async (req, res) => {
  */
 const getWordsNeedingReview = asyncHandler(async (req, res) => {
   const now = Date.now();
-
-  // هات بس الكلمات اللي اتراجعت قبل كده
-  const words = await Word.find({ isReviewed: true });
-
   const reviewIntervals = [0, 1, 3, 7, 14, 30]; // الأيام بين كل مراجعة
+
+  // هات الكلمات اللي احتمال تكون محتاجة مراجعة بناءً على أقدم تاريخ
+  const maxDays = Math.max(...reviewIntervals);
+  const cutoffDate = new Date(now - maxDays * 24 * 60 * 60 * 1000);
+
+  const words = await Word.find({
+    isReviewed: true,
+    lastReviewed: { $lte: new Date() },
+  });
 
   const filteredWords = words
     .map((word) => {
       const { reviewCount = 0, lastReviewed } = word;
-
       if (!lastReviewed) return null;
 
-      const daysToWait = reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
+      const daysToWait =
+        reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
       const waitMs = daysToWait * 24 * 60 * 60 * 1000;
-
       const nextReviewTime = new Date(lastReviewed).getTime() + waitMs;
-      const overdueTime = now - nextReviewTime;
 
-      if (overdueTime >= 0) {
+      if (now >= nextReviewTime) {
         return {
           ...word.toObject(),
-          urgencyScore: overdueTime, // اتأخرت قد إيه
+          urgencyScore: now - nextReviewTime,
         };
       }
 
-      // لسه معادها مجاش → متدخلش في الجدول
       return null;
     })
-    .filter(Boolean) // شيل الـ null
-    .sort((a, b) => b.urgencyScore - a.urgencyScore); // ترتيب حسب الأهمية
+    .filter(Boolean)
+    .sort((a, b) => b.urgencyScore - a.urgencyScore);
 
   res.status(200).json({
     count: filteredWords.length,
@@ -345,10 +350,6 @@ const getWordsNeedingReview = asyncHandler(async (req, res) => {
     words: filteredWords,
   });
 });
-
-
-
-
 
 module.exports = {
   createWord,
