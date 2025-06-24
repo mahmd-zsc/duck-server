@@ -110,10 +110,10 @@ function generateQuestionsForWord(word, mode) {
       numQuestions = 1;
       break;
     case "hard-review":
-      numQuestions = 2;
+      numQuestions = 1;
       break;
     case "quick-review":
-      numQuestions = 2;
+      numQuestions = 1;
       break;
     default:
       numQuestions = 1;

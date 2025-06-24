@@ -310,43 +310,39 @@ const getHardWordsCount = asyncHandler(async (req, res) => {
  * @access Public
  */
 const getWordsNeedingReview = asyncHandler(async (req, res) => {
-  const now = Date.now();
+  const now = new Date();
   const reviewIntervals = [0, 1, 3, 7, 14, 30]; // الأيام بين كل مراجعة
-
-  // هات الكلمات اللي احتمال تكون محتاجة مراجعة بناءً على أقدم تاريخ
+  
+  // احسب أقصى مدة زمنية ممكنة للبحث
   const maxDays = Math.max(...reviewIntervals);
-  const cutoffDate = new Date(now - maxDays * 24 * 60 * 60 * 1000);
+  const cutoffDate = new Date(now.getTime() - maxDays * 24 * 60 * 60 * 1000);
 
+  // جلب الكلمات التي تمت مراجعتها ولها تاريخ مراجعة
   const words = await Word.find({
     isReviewed: true,
-    lastReviewed: { $lte: new Date() },
+    lastReviewed: { $exists: true, $lte: now, $gte: cutoffDate }
   });
 
   const filteredWords = words
     .map((word) => {
       const { reviewCount = 0, lastReviewed } = word;
-      if (!lastReviewed) return null;
+      const daysToWait = reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
+      const nextReviewDate = new Date(lastReviewed.getTime() + daysToWait * 24 * 60 * 60 * 1000);
 
-      const daysToWait =
-        reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
-      const waitMs = daysToWait * 24 * 60 * 60 * 1000;
-      const nextReviewTime = new Date(lastReviewed).getTime() + waitMs;
-
-      if (now >= nextReviewTime) {
+      if (now >= nextReviewDate) {
         return {
           ...word.toObject(),
-          urgencyScore: now - nextReviewTime,
+          urgencyScore: (now - nextReviewDate) / (24 * 60 * 60 * 1000) // عدد الأيام المتأخرة
         };
       }
-
       return null;
     })
     .filter(Boolean)
-    .sort((a, b) => b.urgencyScore - a.urgencyScore);
+    .sort((a, b) => b.urgencyScore - a.urgencyScore); // ترتيب حسب الأكثر إلحاحاً
 
   res.status(200).json({
     count: filteredWords.length,
-    message: "تم جلب الكلمات اللي فعلاً محتاجة مراجعة",
+    message: "تم جلب الكلمات التي تحتاج إلى مراجعة",
     words: filteredWords,
   });
 });
