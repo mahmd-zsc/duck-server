@@ -1,164 +1,59 @@
-[
-  {
-    "word": "ihr",
-    "meaning": "ملكها/خاصتها",
-    "pronunciation": "إير",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Ihr Name ist Maria.",
-        "meaning": "اسمها ماريا.",
-        "pronunciation": "إير نامه إست ماريا"
-      },
-      {
-        "sentence": "Das ist ihr Lieblingsbuch.",
-        "meaning": "هذا كتابها المفضل.",
-        "pronunciation": "داس إست إير ليبلينغس بوخ"
-      }
-    ]
-  },
-  {
-    "word": "unser",
-    "meaning": "ملكنا/خاصتنا",
-    "pronunciation": "أونزر",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Unser Lehrer ist sehr nett.",
-        "meaning": "معلمنا لطيف جداً.",
-        "pronunciation": "أونزر لير إست زير نت"
-      },
-      {
-        "sentence": "Das ist unser gemeinsames Projekt.",
-        "meaning": "هذا مشروعنا المشترك.",
-        "pronunciation": "داس إست أونزر غه مين زامس بروييكت"
-      }
-    ]
-  },
-  {
-    "word": "euer",
-    "meaning": "ملككم/خاصتكم",
-    "pronunciation": "أوير",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Wo ist euer Auto?",
-        "meaning": "أين سيارتكم؟",
-        "pronunciation": "فو إست أوير أوتو"
-      },
-      {
-        "sentence": "Euer Garten ist wirklich schön.",
-        "meaning": "حديقتكم جميلة حقاً.",
-        "pronunciation": "أوير غارتن إست فيركليش شون"
-      }
-    ]
-  },
-  {
-    "word": "ihr",
-    "meaning": "ملكهم/خاصتهم",
-    "pronunciation": "إير",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Ihr Haus ist sehr groß.",
-        "meaning": "بيتهم كبير جداً.",
-        "pronunciation": "إير هاوس إست زير غروس"
-      },
-      {
-        "sentence": "Das sind ihre Kinder.",
-        "meaning": "هؤلاء أطفالهم.",
-        "pronunciation": "داس زيند إيره كيندر"
-      }
-    ]
-  },
-  {
-    "word": "Ihr",
-    "meaning": "حضرتك/حضرتكم (مهذب)",
-    "pronunciation": "إير",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Ist das Ihr Koffee, Herr Schmidt?",
-        "meaning": "هل هذا قهوتكم، سيد شميت؟",
-        "pronunciation": "إست داس إير كوفر، هير شميت"
-      },
-      {
-        "sentence": "Ihre Präsentation war ausgezeichnet.",
-        "meaning": "عرضكم كان ممتازاً.",
-        "pronunciation": "إيره بريزنتاتسيون فار أوس غه تسايشنت"
-      }
-    ]
-  },
-  {
-    "word": "seine",
-    "meaning": "خاصته (مؤنث)",
-    "pronunciation": "زاينه",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Seine Mutter kocht sehr gut.",
-        "meaning": "والدته تطبخ جيداً جداً.",
-        "pronunciation": "زاينه موتر كوخت زير غوت"
-      },
-      {
-        "sentence": "Das ist seine neue Freundin.",
-        "meaning": "هذه صديقته الجديدة.",
-        "pronunciation": "داس إست زاينه نويه فروندين"
-      }
-    ]
-  },
-  {
-    "word": "ihre",
-    "meaning": "خاصتها (مؤنث)",
-    "pronunciation": "إيره",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Ihre Schwester studiert Medizin.",
-        "meaning": "أختها تدرس الطب.",
-        "pronunciation": "إيره شفستر شتوديرت مديتسين"
-      },
-      {
-        "sentence": "Das ist ihre alte Schule.",
-        "meaning": "هذه مدرستها القديمة.",
-        "pronunciation": "داس إست إيره ألته شوله"
-      }
-    ]
-  },
-  {
-    "word": "meine",
-    "meaning": "ملكي (مؤنث)",
-    "pronunciation": "مايه",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Meine Katze ist sehr verspielt.",
-        "meaning": "قطتي مرحة جداً.",
-        "pronunciation": "مايه كاتسه إست زير فر شبيلت"
-      },
-      {
-        "sentence": "Das ist meine beste Freundin.",
-        "meaning": "هذه أفضل صديقة لي.",
-        "pronunciation": "داس إست مايه بسته فروندين"
-      }
-    ]
-  },
-  {
-    "word": "deine",
-    "meaning": "ملكك (مؤنث)",
-    "pronunciation": "داينه",
-    "type": "pronoun",
-    "examples": [
-      {
-        "sentence": "Deine Idee ist wirklich gut.",
-        "meaning": "فكرتك جيدة حقاً.",
-        "pronunciation": "داينه إيده إست فيركليش غوت"
-      },
-      {
-        "sentence": "Wo ist deine Tasche?",
-        "meaning": "أين حقيبتك؟",
-        "pronunciation": "فو إست داينه تاشه"
-      }
-    ]
-  }
-]
+
+### **المواضيع والهوايات (Freizeit und Hobbys)**
+- **الكلمات الأساسية:**
+  - der Ausflug, -e (الرحلة/النزهة)  
+  - der Film, -e (الفيلم)  
+  - die Freizeit (وقت الفراغ)  
+  - das Hobby, -s (الهواية)  
+  - das Kino, -s (السينما)  
+  - Lieblings- (المفضلة، مثل: der Lieblingsfilm, -e "الفيلم المفضل")  
+
+### **الأفعال (Verben)**
+- **الهوايات والأنشطة:**
+  - backen (يخبز)  
+  - besuchen (يزور)  
+  - treffen (يلتقي) – التصريف: du triffst, er trifft  
+  - fotografieren (يصور)  
+  - kochen (يطبخ)  
+  - lesen (يقرأ) – التصريف: du liest, er liest  
+  - lieben (يحب)  
+  - malen (يرسم)  
+  - Musik hören (يستمع إلى الموسيقى)  
+  - Rad fahren (يركب الدراجة) – التصريف: du fährst Rad, er fährt Rad  
+  - schwimmen (يسبح)  
+  - singen (يغني)  
+  - spazieren gehen (يتنزه)  
+  - spielen (يلعب) – مثل: Fußball/Tennis/Gitarre spielen (يلعب كرة القدم/التنس/الجيتار)  
+  - tanzen (يرقص)  
+
+### **كلمات للتكرار (Wie oft?)**
+- (fast) immer (دائماً/تقريباً دائماً)  
+- oft (غالباً)  
+- manchmal (أحياناً)  
+- nie (أبداً)  
+
+### **التعبيرات الاجتماعية**
+- **الشكر:**
+  - Vielen Dank / Herzlichen Dank! (شكراً جزيلاً)  
+- **الرد على الطلبات:**
+  - klar (بالطبع)  
+  - natürlich (طبعاً)  
+  - leider (للأسف)  
+  - Das geht leider nicht. (هذا غير ممكن للأسف)  
+  - Tut mir leid. (أنا آسف)  
+
+### **كلمات إضافية مهمة**
+- das Auto, -s (السيارة)  
+- das Gespräch, -e (المحادثة)  
+- das Internet (الإنترنت)  
+- im Internet surfen (يتصفح الإنترنت)  
+- die Natur (الطبيعة)  
+- Spaß machen (يكون ممتعاً)  
+- können (يستطيع)  
+- rauchen (يدخن)  
+- gern (بكل سرور)  
+- nicht so (gut) (ليس جيداً جداً)  
+
+### **ملاحظة أخيرة**
+- **تذكر:** تعلّم الأسماء مع الأفعال المرتبطة بها، مثل:  
+  - **"Spaß machen"** (يكون ممتعاً).  

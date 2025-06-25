@@ -18,17 +18,13 @@ const createWord = asyncHandler(async (req, res) => {
     return res.status(400).json({ message: error.details[0].message });
   }
 
-  let word = await Word.findOne({
-    word: wordData.word,
-    meaning: wordData.meaning,
-  });
+  let word = await Word.findOne({ word: wordData.word });
 
   if (!word) {
     word = new Word({
       ...wordData,
       isReviewed: wordData.isReviewed || false,
       reviewCount: wordData.reviewCount || 0,
-      isHard: wordData.isHard || false,
     });
     await word.save();
   }
@@ -312,7 +308,7 @@ const getHardWordsCount = asyncHandler(async (req, res) => {
 const getWordsNeedingReview = asyncHandler(async (req, res) => {
   const now = new Date();
   const reviewIntervals = [0, 1, 3, 7, 14, 30]; // الأيام بين كل مراجعة
-  
+
   // احسب أقصى مدة زمنية ممكنة للبحث
   const maxDays = Math.max(...reviewIntervals);
   const cutoffDate = new Date(now.getTime() - maxDays * 24 * 60 * 60 * 1000);
@@ -320,19 +316,22 @@ const getWordsNeedingReview = asyncHandler(async (req, res) => {
   // جلب الكلمات التي تمت مراجعتها ولها تاريخ مراجعة
   const words = await Word.find({
     isReviewed: true,
-    lastReviewed: { $exists: true, $lte: now, $gte: cutoffDate }
+    lastReviewed: { $exists: true, $lte: now, $gte: cutoffDate },
   });
 
   const filteredWords = words
     .map((word) => {
       const { reviewCount = 0, lastReviewed } = word;
-      const daysToWait = reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
-      const nextReviewDate = new Date(lastReviewed.getTime() + daysToWait * 24 * 60 * 60 * 1000);
+      const daysToWait =
+        reviewIntervals[Math.min(reviewCount, reviewIntervals.length - 1)];
+      const nextReviewDate = new Date(
+        lastReviewed.getTime() + daysToWait * 24 * 60 * 60 * 1000
+      );
 
       if (now >= nextReviewDate) {
         return {
           ...word.toObject(),
-          urgencyScore: (now - nextReviewDate) / (24 * 60 * 60 * 1000) // عدد الأيام المتأخرة
+          urgencyScore: (now - nextReviewDate) / (24 * 60 * 60 * 1000), // عدد الأيام المتأخرة
         };
       }
       return null;
