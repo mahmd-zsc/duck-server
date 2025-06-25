@@ -126,7 +126,6 @@ const createManyQuizzes = asyncHandler(async (req, res) => {
   });
 });
 
-
 /**
  * @desc Update a quiz
  * @route PUT /api/quizzes/:id
@@ -167,26 +166,88 @@ const deleteQuiz = asyncHandler(async (req, res) => {
  * @access Private
  */
 const getAllRules = asyncHandler(async (req, res) => {
-  const rules = await Quiz.aggregate([
-    {
-      $group: {
-        _id: "$rule",
-        count: { $sum: 1 },
+  try {
+    const rules = await Quiz.aggregate([
+      {
+        $match: { rule: { $exists: true, $ne: null } }, // التأكد من وجود قيمة للحقل
       },
-    },
-    {
-      $project: {
-        rule: "$_id",
-        count: 1,
-        _id: 0,
+      {
+        $group: {
+          _id: "$rule",
+          count: { $sum: 1 },
+        },
       },
-    },
-    {
-      $sort: { count: -1 }, // ✅ ترتيب تنازلي حسب عدد الأسئلة
-    },
-  ]);
+      {
+        $project: {
+          rule: "$_id",
+          count: 1,
+          _id: 0,
+        },
+      },
+      {
+        $sort: { count: -1 },
+      },
+    ]);
 
-  res.status(200).json(rules);
+    res.status(200).json(rules);
+  } catch (error) {
+    console.error("Error in getAllRules:", error);
+    res.status(500).json({
+      message: "حدث خطأ أثناء جلب قواعد الأسئلة",
+      error: process.env.NODE_ENV === "development" ? error.message : undefined,
+    });
+  }
+});
+
+/**
+ * @desc Get randomMixedRulesQuizzes by limit query
+ * @route GET /api/quizzes//random/mixed-rules
+ * @access Private
+ */
+const getRandomMixedRulesQuizzes = asyncHandler(async (req, res) => {
+  try {
+    const { limit = 10 } = req.query;
+
+    // جلب القواعد المختلفة المتاحة
+    const rules = await Quiz.distinct("rule");
+
+    if (!rules || rules.length === 0) {
+      return res.status(404).json({ message: "No rules found" });
+    }
+
+    // حساب عدد الأسئلة المطلوبة من كل قاعدة
+    const perRule = Math.ceil(limit / rules.length);
+
+    const quizzes = await Quiz.aggregate([
+      { $match: { rule: { $in: rules } } },
+      { $sample: { size: limit * 2 } }, // جلب عينة أكبر للتنويع
+      {
+        $group: {
+          _id: "$rule",
+          quizzes: { $push: "$$ROOT" },
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $project: {
+          rule: "$_id",
+          quizzes: { $slice: ["$quizzes", perRule] },
+          _id: 0,
+        },
+      },
+      { $unwind: "$quizzes" },
+      { $replaceRoot: { newRoot: "$quizzes" } },
+      { $sample: { size: parseInt(limit) } }, // اختيار عشوائي نهائي
+    ]);
+
+    res.status(200).json(quizzes);
+  } catch (error) {
+    console.error("Error in getRandomMixedRulesQuizzes:", error);
+    res.status(500).json({
+      message: "Failed to get random quizzes",
+      error: process.env.NODE_ENV === "development" ? error.message : undefined,
+    });
+  }
 });
 
 module.exports = {
@@ -197,4 +258,5 @@ module.exports = {
   updateQuiz,
   deleteQuiz,
   getAllRules,
+  getRandomMixedRulesQuizzes,
 };

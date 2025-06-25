@@ -1,59 +1,182 @@
-
-### **المواضيع والهوايات (Freizeit und Hobbys)**
-- **الكلمات الأساسية:**
-  - der Ausflug, -e (الرحلة/النزهة)  
-  - der Film, -e (الفيلم)  
-  - die Freizeit (وقت الفراغ)  
-  - das Hobby, -s (الهواية)  
-  - das Kino, -s (السينما)  
-  - Lieblings- (المفضلة، مثل: der Lieblingsfilm, -e "الفيلم المفضل")  
-
-### **الأفعال (Verben)**
-- **الهوايات والأنشطة:**
-  - backen (يخبز)  
-  - besuchen (يزور)  
-  - treffen (يلتقي) – التصريف: du triffst, er trifft  
-  - fotografieren (يصور)  
-  - kochen (يطبخ)  
-  - lesen (يقرأ) – التصريف: du liest, er liest  
-  - lieben (يحب)  
-  - malen (يرسم)  
-  - Musik hören (يستمع إلى الموسيقى)  
-  - Rad fahren (يركب الدراجة) – التصريف: du fährst Rad, er fährt Rad  
-  - schwimmen (يسبح)  
-  - singen (يغني)  
-  - spazieren gehen (يتنزه)  
-  - spielen (يلعب) – مثل: Fußball/Tennis/Gitarre spielen (يلعب كرة القدم/التنس/الجيتار)  
-  - tanzen (يرقص)  
-
-### **كلمات للتكرار (Wie oft?)**
-- (fast) immer (دائماً/تقريباً دائماً)  
-- oft (غالباً)  
-- manchmal (أحياناً)  
-- nie (أبداً)  
-
-### **التعبيرات الاجتماعية**
-- **الشكر:**
-  - Vielen Dank / Herzlichen Dank! (شكراً جزيلاً)  
-- **الرد على الطلبات:**
-  - klar (بالطبع)  
-  - natürlich (طبعاً)  
-  - leider (للأسف)  
-  - Das geht leider nicht. (هذا غير ممكن للأسف)  
-  - Tut mir leid. (أنا آسف)  
-
-### **كلمات إضافية مهمة**
-- das Auto, -s (السيارة)  
-- das Gespräch, -e (المحادثة)  
-- das Internet (الإنترنت)  
-- im Internet surfen (يتصفح الإنترنت)  
-- die Natur (الطبيعة)  
-- Spaß machen (يكون ممتعاً)  
-- können (يستطيع)  
-- rauchen (يدخن)  
-- gern (بكل سرور)  
-- nicht so (gut) (ليس جيداً جداً)  
-
-### **ملاحظة أخيرة**
-- **تذكر:** تعلّم الأسماء مع الأفعال المرتبطة بها، مثل:  
-  - **"Spaß machen"** (يكون ممتعاً).  
+[
+  {
+    "question": "Ich gehe ---- der Bank",
+    "pronunciation": "إش جيهى تسو دير بانك",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["zu", "in", "auf", "für"],
+    "answer": "zu",
+    "meaning": "أنا ذاهب إلى البنك"
+  },
+  {
+    "question": "Das Buch liegt ---- dem Tisch",
+    "pronunciation": "داس بوخ ليجت أوف ديم تيش",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["auf", "über", "unter", "neben"],
+    "answer": "auf",
+    "meaning": "الكتاب موضوع على الطاولة"
+  },
+  {
+    "question": "Sie kommt ---- dem Haus",
+    "pronunciation": "زي كومت أوس ديم هاوس",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["aus", "von", "mit", "bei"],
+    "answer": "aus",
+    "meaning": "هي تأتي من المنزل"
+  },
+  {
+    "question": "Wir fahren ---- dem Auto",
+    "pronunciation": "فير فارن ميت ديم أوتو",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["mit", "in", "an", "um"],
+    "answer": "mit",
+    "meaning": "نحن نسافر بالسيارة"
+  },
+  {
+    "question": "Der Hund läuft ---- mir",
+    "pronunciation": "دير هوند لويفت هينتر مير",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["hinter", "vor", "neben", "über"],
+    "answer": "hinter",
+    "meaning": "الكلب يركض خلفي"
+  },
+  {
+    "question": "Das Geschäft ist ---- der Post",
+    "pronunciation": "داس جيشافت إست جيجن أوبر دير بوست", 
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["gegenüber", "zwischen", "unter", "seit"],
+    "answer": "gegenüber",
+    "meaning": "المحل مقابل مكتب البريد"
+  },
+  {
+    "question": "Er arbeitet ---- einer Woche hier",
+    "pronunciation": "إير أربايتت زايت آينر فوخى هير",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["seit", "vor", "nach", "bei"],
+    "answer": "seit",
+    "meaning": "هو يعمل هنا منذ أسبوع"
+  },
+  {
+    "question": "Die Katze schläft ---- dem Sofa",
+    "pronunciation": "دي كاتسى شلافت أونتر ديم زوفا",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["unter", "auf", "neben", "vor"],
+    "answer": "unter",
+    "meaning": "القطة تنام تحت الأريكة"
+  },
+  {
+    "question": "Ich wohne ---- meinen Eltern",
+    "pronunciation": "إش فونى باي مآينن إلترن",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["bei", "mit", "zu", "von"],
+    "answer": "bei",
+    "meaning": "أنا أسكن عند والدي"
+  },
+  {
+    "question": "Nach ---- Schule gehe ich nach Hause",
+    "pronunciation": "ناخ دير شولى جيهى إش ناخ هاوزى",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["der", "die", "das", "den"],
+    "answer": "der",
+    "meaning": "بعد المدرسة أذهب إلى المنزل"
+  },
+  {
+    "question": "Sie sitzt ---- ihrem Bruder",
+    "pronunciation": "زي زيتست نيبن إيرم برودر",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["neben", "hinter", "vor", "über"],
+    "answer": "neben",
+    "meaning": "هي تجلس بجانب أخيها"
+  },
+  {
+    "question": "Das Flugzeug fliegt ---- der Stadt",
+    "pronunciation": "داس فلوجتسويج فليجت أوبر دير شتات",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["über", "unter", "durch", "gegen"],
+    "answer": "über",
+    "meaning": "الطائرة تطير فوق المدينة"
+  },
+  {
+    "question": "Ich komme ---- München",
+    "pronunciation": "إش كومى فون مونشن",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["von", "aus", "nach", "zu"],
+    "answer": "von",
+    "meaning": "أنا آتي من ميونخ"
+  },
+  {
+    "question": "Der Park liegt ---- dem Krankenhaus und der Schule",
+    "pronunciation": "دير بارك ليجت تسفيشن ديم كرانكنهاوس أوند دير شولى",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["zwischen", "neben", "hinter", "vor"],
+    "answer": "zwischen",
+    "meaning": "الحديقة تقع بين المستشفى والمدرسة"
+  },
+  {
+    "question": "Wir treffen uns ---- dem Restaurant",
+    "pronunciation": "فير تريفن أونس فور ديم ريستورانت",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["vor", "nach", "bei", "zu"],
+    "answer": "vor",
+    "meaning": "نحن نلتقي أمام المطعم"
+  },
+  {
+    "question": "Das Kind versteckt sich ---- den Bäumen",
+    "pronunciation": "داس كيند فيرشتيكت زيش هينتر دين بويمن",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["hinter", "vor", "zwischen", "neben"],
+    "answer": "hinter",
+    "meaning": "الطفل يختبئ خلف الأشجار"
+  },
+  {
+    "question": "Der Brief kommt ---- meiner Freundin",
+    "pronunciation": "دير بريف كومت فون مآينر فرويندين",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["von", "aus", "bei", "zu"],
+    "answer": "von",
+    "meaning": "الرسالة من صديقتي"
+  },
+  {
+    "question": "Er geht ---- seinem Vater spazieren",
+    "pronunciation": "إير جيت ميت زآينم فاتر شباتسيرن",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["mit", "bei", "zu", "von"],
+    "answer": "mit",
+    "meaning": "هو يتمشى مع والده"
+  },
+  {
+    "question": "Die Apotheke ist ---- der Bäckerei",
+    "pronunciation": "دي أبوتيكى إست جيجن أوبر دير بيكراي",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["gegenüber", "neben", "hinter", "vor"],
+    "answer": "gegenüber",
+    "meaning": "الصيدلية مقابل المخبز"
+  },
+  {
+    "question": "---- dem Essen gehen wir ins Kino",
+    "pronunciation": "ناخ ديم إسن جيهن فير إنس كينو",
+    "type": "translation",
+    "rule": "Präpositionen",
+    "options": ["Nach", "Vor", "Bei", "Mit"],
+    "answer": "Nach",
+    "meaning": "بعد الطعام نذهب إلى السينما"
+  }
+]
