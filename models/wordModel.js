@@ -39,6 +39,7 @@ const wordSchema = new mongoose.Schema({
   examples: {
     type: [
       {
+        _id: false,
         sentence: { type: String, required: true },
         meaning: { type: String, required: true },
         pronunciation: { type: String, required: false },
@@ -84,6 +85,7 @@ const wordSchema = new mongoose.Schema({
   synonyms: {
     type: [
       {
+        _id: false,
         word: { type: String, required: true },
         meaning: { type: String, required: true },
         pronunciation: { type: String, required: false },
@@ -94,6 +96,7 @@ const wordSchema = new mongoose.Schema({
   antonyms: {
     type: [
       {
+        _id: false,
         word: { type: String, required: true },
         meaning: { type: String, required: true },
         pronunciation: { type: String, required: false },
