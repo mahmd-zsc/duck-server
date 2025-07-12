@@ -1,4 +1,4 @@
-const { LessonGroup } = require('../models/lessonGroupModel'); // تأكد إن ده هو اسم الموديل
+const  LessonGroup  = require('../models/lessonGroupModel'); // تأكد إن ده هو اسم الموديل
 const asyncHandler = require('express-async-handler');
 const mongoose = require('mongoose');
 

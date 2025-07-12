@@ -346,6 +346,64 @@ const getWordsNeedingReview = asyncHandler(async (req, res) => {
   });
 });
 
+/**
+ * @desc Mark multiple words as important (isImportant = true)
+ * @route PATCH /api/v1/words/batch/mark-important
+ * @access Private
+ */
+const markWordsAsImportant = asyncHandler(async (req, res) => {
+  const { wordIds } = req.body;
+
+  if (!Array.isArray(wordIds) || wordIds.length === 0) {
+    return res
+      .status(400)
+      .json({ message: "يجب إرسال مصفوفة تحتوي على معرفات الكلمات" });
+  }
+
+  const result = await Word.updateMany(
+    { _id: { $in: wordIds }, isImportant: { $ne: true } },
+    { $set: { isImportant: true, updatedAt: Date.now() } }
+  );
+
+  res.status(200).json({
+    message: `تم تعيين ${result.modifiedCount} كلمة كمهمة`,
+  });
+});
+
+/**
+ * @desc Mark multiple words as unimportant (isImportant = false)
+ * @route PATCH /api/v1/words/batch/mark-unimportant
+ * @access Private
+ */
+const markWordsAsUnimportant = asyncHandler(async (req, res) => {
+  const { wordIds } = req.body;
+
+  if (!Array.isArray(wordIds) || wordIds.length === 0) {
+    return res
+      .status(400)
+      .json({ message: "يجب إرسال مصفوفة تحتوي على معرفات الكلمات" });
+  }
+
+  const result = await Word.updateMany(
+    { _id: { $in: wordIds }, isImportant: true },
+    { $set: { isImportant: false, updatedAt: Date.now() } }
+  );
+
+  res.status(200).json({
+    message: `تم إزالة علامة المهمة من ${result.modifiedCount} كلمة`,
+  });
+});
+
+/**
+ * @desc Get all important words (isImportant = true)
+ * @route GET /api/v1/words/important
+ * @access Public
+ */
+const getImportantWords = asyncHandler(async (req, res) => {
+  const words = await Word.find({ isImportant: true });
+  res.status(200).json(words);
+});
+
 module.exports = {
   createWord,
   getWordById,
@@ -363,4 +421,7 @@ module.exports = {
   getUnreviewedWords,
   getHardWordsCount,
   getWordsNeedingReview,
+  markWordsAsImportant,
+  markWordsAsUnimportant,
+  getImportantWords,
 };

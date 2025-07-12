@@ -17,6 +17,10 @@ const wordSchema = new mongoose.Schema({
     required: false,
     trim: true,
   },
+  isImportant: {
+    type: Boolean,
+    default: false,
+  },
   plural: {
     type: String,
     required: false,
@@ -78,6 +82,7 @@ const wordSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+
   lastReviewed: {
     type: Date,
     required: false,
@@ -172,6 +177,7 @@ const createWordValidation = (word) => {
     isReviewed: joi.boolean().optional(),
     reviewCount: joi.number().optional(),
     isHard: joi.boolean().optional(),
+    isImportant: joi.boolean().optional(),
     lastReviewed: joi.date().optional(),
     synonyms: joi
       .array()
@@ -263,6 +269,7 @@ const updateWordValidation = (word) => {
     isReviewed: joi.boolean().optional(),
     reviewCount: joi.number().optional(),
     isHard: joi.boolean().optional(),
+    isImportant: joi.boolean().optional(),
     lastReviewed: joi.date().optional(),
     synonyms: joi
       .array()
