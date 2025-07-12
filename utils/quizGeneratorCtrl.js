@@ -36,8 +36,8 @@ function calculateLevel(word) {
 const preferredQuestionOrder = [
   generateWriteSentenceQuestion,
   generateFillInTheBlanksQuestion,
-  generateArticleQuestion,
   generateWriteTheWordQuestion,
+  generateArticleQuestion,
   generatePluralQuestion,
   generateSentenceOrderQuestion,
   generateTranslationQuestion,
