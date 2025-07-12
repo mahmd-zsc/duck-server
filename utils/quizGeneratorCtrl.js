@@ -87,7 +87,7 @@ function canGenerateQuestion(word, generatorName) {
     case "generateAntonymQuestion":
       return word.antonyms && word.antonyms.length > 0;
     case "generateWriteSentenceQuestion":
-      return word.examples && word.examples.length > 0;
+      return word.isImportant && word.examples && word.examples.length > 0;
     case "generateFillInTheBlanksQuestion":
       return (
         word.type?.toLowerCase() === "verb" &&
